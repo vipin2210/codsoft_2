@@ -5,5 +5,9 @@ import Subscribe from "@/components/Subscribe";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-    return <main></main>;
+    return (
+        <main>
+            <Subscribe />
+        </main>
+    );
 }
