@@ -9,8 +9,8 @@ import EllipseRed from "../../public/EllipseRed.png";
 
 const CallToAction = () => {
   return (
-    <div className="container mx-auto flex flex-row  flex-wrap items-align justify-around">
-      <div className="my-4 lg:w-2/6 mx-auto">
+    <div className="container mx-auto w-fit items-center flex flex-row gap-5 items-align grid sm:grid-cols-3 p-2">
+      <div className="my-4 ">
         <div className="relative flex justify-center items-center">
           <Image src={EllipseBlue} className="top-0 left-0" />
           <Image src={EllipseRed} className="absolute mt-4 ml-4" />
@@ -25,7 +25,7 @@ const CallToAction = () => {
         </div>
       </div>
 
-      <div className="my-4 lg:w-2/6">
+      <div className="my-4 ">
         <div className="relative flex justify-center items-center">
           <Image src={EllipseBlue} className="top-0 left-0" />
           <Image src={EllipseRed} className="absolute mt-4 ml-4" />
@@ -40,7 +40,7 @@ const CallToAction = () => {
         </div>
       </div>
 
-      <div className="my-4 lg:w-2/6">
+      <div className="my-4 ">
         <div className="relative flex justify-center items-center">
           <Image src={EllipseBlue} className="" />
           <Image src={EllipseRed} className="absolute  mt-4 ml-4" />
