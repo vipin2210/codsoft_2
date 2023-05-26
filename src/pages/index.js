@@ -7,14 +7,11 @@ import Subscribe1 from "@/components/Subscribe1";
 
 const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
-  return (
-    <main>
-      <Subscribe />
-      <Navbar />
-
-      <Subscribe1 />
-
-      <CallToAction />
-    </main>
-  );
+    return (
+        <main>
+            <Subscribe1 />
+            <Subscribe />
+            <Navbar />
+        </main>
+    );
 }
