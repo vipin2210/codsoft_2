@@ -4,6 +4,7 @@ module.exports = {
     "./src/pages/**/*.{js,ts,jsx,tsx}",
     "./src/components/**/*.{js,ts,jsx,tsx}",
     "./src/app/**/*.{js,ts,jsx,tsx}",
+    "./src/assets/**/*.{png}",
   ],
   theme: {
     extend: {
@@ -12,9 +13,6 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-      // screens: {
-      //   sm: "500px",
-      // },
     },
   },
   plugins: [],
