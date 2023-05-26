@@ -2,7 +2,7 @@ import React from "react";
 
 const SubscribeButton = () => {
     return (
-        <button className='btn gap-2 p-3 w-full  bg-black text-white border-2 border-red-600 hover:bg-red-600 rounded-2xl xl:h-full xl:flex xl:flex-row xl:justify-center'>
+        <button className='btn gap-2 p-3 md:w-[50%] shadow-gray-500 shadow-lg bg-black text-white   hover:bg-red-600 rounded-2xl md:h-full flex flex-row justify-center'>
             <svg
                 viewBox='0 0 448 512'
                 xmlns='http://www.w3.org/2000/svg'
