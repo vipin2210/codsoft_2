@@ -4,6 +4,9 @@ import Subscribe from "@/components/Subscribe";
 import CallToAction from "@/components/CallToAction";
 import Navbar from "@/components/Navbar";
 import Subscribe1 from "@/components/Subscribe1";
+
+
+
 import EventCard from "@/components/EventCard";
 import EventsCard2 from "@/components/EventsCard2";
 import PastEvent from "@/components/PastEvent";
@@ -18,6 +21,7 @@ export default function Home() {
       <CallToAction />
       {/* <EventsCard2 /> */}
             <EventCard />
+
     <PastEvent />
     </main>
   );
