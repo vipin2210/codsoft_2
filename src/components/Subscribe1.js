@@ -7,7 +7,7 @@ const Subscribe1 = () => {
     return (
         <div className=' md:flex md:flex-row  items-center  justify-center py-5 gap-5 '>
             <div className='flex  flex-row justify-center'>
-                <Image src={someImage} className='hidden sm:flex ' />
+                <Image src={someImage} className='hidden sm:flex ' alt='logo' />
 
                 <div className='  pl-8 ml-8 border-l-4 border-red-500 hidden sm:flex '></div>
                 <div className='text-2xl font-bold text-center '>
@@ -35,7 +35,7 @@ const Subscribe1 = () => {
                                 aria-describedby='helper-checkbox-text'
                                 type='checkbox'
                                 value=''
-                                class='w-4 h-4  text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600'
+                                className='w-4 h-4  text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600'
                             />
                         </div>
 
