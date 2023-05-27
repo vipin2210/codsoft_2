@@ -6,15 +6,17 @@ import Navbar from "@/components/Navbar";
 import Subscribe1 from "@/components/Subscribe1";
 import Footer from "@/components/Footer";
 import ArtistCard from "@/components/ArtistCard";
+import TeammemberCard from "@/components/TeamMemberCard";
 
 const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
-    return (
-        <main>
-            {/* <Subscribe1 />
+  return (
+    <main>
+      {/* <Subscribe1 />
             <Subscribe />
             <Navbar /> */}
-        <ArtistCard/>
-        </main>
-    );
+      {/* <ArtistCard/> */}
+      <TeammemberCard />
+    </main>
+  );
 }

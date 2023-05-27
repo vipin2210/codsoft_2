@@ -5,7 +5,7 @@ import someImage from "../../public/artist.png";
 const ArtistCard = () => {
   return (
     // card-body items-center text-center
-    <div className="flex space-x-5">
+    
       <div class=" flex flex-col justify-center items-center space-y-3 card  max-w-sm bg-base-100 ">
         <figure class=" pt-3">
           <Image src={someImage} className="rounded-xl " />
@@ -23,7 +23,7 @@ const ArtistCard = () => {
           </button>
         </div>
       </div>
-    </div>
+    
   );
 };
 
