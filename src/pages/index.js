@@ -4,17 +4,17 @@ import Subscribe from "@/components/Subscribe";
 import CallToAction from "@/components/CallToAction";
 import Navbar from "@/components/Navbar";
 import Subscribe1 from "@/components/Subscribe1";
-import Footer from "@/components/Footer";
-import ArtistCard from "@/components/ArtistCard";
+import EventCard from "@/components/EventCard";
 
 const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
     return (
-        <main>
-            {/* <Subscribe1 />
+        <main className=''>
+            <Navbar />
+            <Subscribe1 />
             <Subscribe />
-            <Navbar /> */}
-        <ArtistCard/>
+            <CallToAction />
+            <EventCard />
         </main>
     );
 }
