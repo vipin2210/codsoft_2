@@ -8,7 +8,7 @@ const PastEvent = () => {
       <div className="my-4 ">
         <div className="relative flex justify-center items-center">
           <Image src={PastImg} className="top-0 left-0 " />
-          <div className="absolute right-0 bottom-0 bg-neutral-800 p-4 mr-1 -mb-12 w-4/6">
+          <div className="absolute right-0 bottom-0 bg-neutral-800 p-4 mr-1 -mb-12 w-">
             <div>
               <h1 className="text-5xl font-bold text-white">FUNKAAR 2</h1>
               <h1 className="text-2xl text-amber-500">FUNKAAR 2</h1>
