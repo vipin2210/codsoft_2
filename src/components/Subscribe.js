@@ -3,7 +3,7 @@ import SubscribeButton from "./SubscribeButton";
 
 const Subscribe = () => {
     return (
-        <div className='p-8 m-5 py-10 overflow-hidden bg-white   rounded-2xl shadow-2xl  md:flex md:flex-row md:px-7 md:overflow-hidden grid gap-3 md:drop-shadow-xl md:gap-5 md:justify-evenly md:justify-items-center md:place-items-center md:items-center md:content-center'>
+        <div className='p-8 m-5 py-10  bg-white  max-w-4xl  rounded-2xl shadow-2xl  md:flex md:flex-row md:px-7 md:overflow-hidden grid gap-3 md:drop-shadow-xl md:gap-5 md:justify-evenly md:justify-items-center md:place-items-center md:items-center md:content-center'>
             <input
                 type='text'
                 name='name'
