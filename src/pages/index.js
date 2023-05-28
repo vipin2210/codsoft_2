@@ -4,6 +4,7 @@ import Subscribe from "@/components/Subscribe";
 import CallToAction from "@/components/CallToAction";
 import Navbar from "@/components/Navbar";
 import Subscribe1 from "@/components/Subscribe1";
+<<<<<<< HEAD
 import EventsCard2 from "@/components/EventsCard2";
 import PastEvent from "@/components/PastEvent";
 import About from "./about.js";
@@ -26,4 +27,19 @@ export default function Home() {
       <Subscribe1 />
     </main>
   );
+=======
+import EventCard from "@/components/EventCard";
+
+const inter = Inter({ subsets: ["latin"] });
+export default function Home() {
+    return (
+        <main className=''>
+            <Navbar />
+            <Subscribe1 />
+            <Subscribe />
+            <CallToAction />
+            <EventCard />
+        </main>
+    );
+>>>>>>> main
 }
