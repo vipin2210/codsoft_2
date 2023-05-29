@@ -5,99 +5,105 @@ import Link from "next/link";
 import logo from "../../public/logo.png";
 
 function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
-  return (
-    <nav className=" shadow-lg  sticky w-full z-10">
-      <div className="w-full">
-        <div className="flex items-center h-20 w-full">
-          <div className="flex items-center  mx-5 md:mx-16  justify-between w-full">
-            <div className="   ">
-              <Link href="/">
-                <Image src={logo} className="" alt="logo" width={80} />
-              </Link>
-            </div>
-            <div className="hidden md:block">
-              <div className="ml-10 flex items-baseline space-x-4">
-                <Link
-                  href="/home"
-                  className="cursor-pointer hover:underline  decoration-red-600 decoration-2 underline-offset-4 font-semibold px-3 py-2 text-md hover:text-red-600 "
-                >
-                  Home
-                </Link>
-                <Link
-                  href="/about"
-                  className="cursor-pointer hover:underline decoration-red-600 decoration-2 underline-offset-4 font-semibold px-3 py-2 text-md hover:text-red-600 "
-                >
-                  About Us
-                </Link>
-                <Link
-                  href="/services"
-                  className="cursor-pointer hover:underline decoration-red-600 decoration-2 underline-offset-4 font-semibold px-3 py-2 text-md hover:text-red-600 "
-                >
-                  Services
-                </Link>
-                <Link
-                  href="/mission"
-                  className="cursor-pointer hover:underline decoration-red-600 decoration-2 underline-offset-4 font-semibold px-3 py-2 text-md hover:text-red-600 "
-                >
-                  Mission
-                </Link>
-                <Link
-                  href="/contact"
-                  className="cursor-pointer bg-blue-600 text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-black"
-                >
-                  Contact Us
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="mr-10 flex md:hidden ">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              type="button"
-              className="bg-blue-600 inline-flex items-center justify-center p-2 rounded-md text-white  hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-blue-800 focus:ring-white"
-              aria-controls="mobile-menu"
-              aria-expanded="false"
-            >
-              <span className="sr-only">Open main menu</span>
-              {!isOpen ? (
-                <svg
-                  className="block h-6 w-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
-              ) : (
-                <svg
-                  className="block h-6 w-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              )}
-            </button>
-          </div>
-        </div>
-      </div>
+    const [isOpen, setIsOpen] = useState(false);
+    return (
+        <nav className=' shadow-lg  sticky w-full z-10'>
+            <div className='w-full'>
+                <div className='flex items-center h-20 w-full'>
+                    <div className='flex items-center  mx-5 md:mx-16  justify-between w-full'>
+                        <div className='   '>
+                            <Link href='/'>
+                                <Image
+                                    src={logo}
+                                    className=''
+                                    alt='logo'
+                                    width={80}
+                                />
+                            </Link>
+                        </div>
+                        <div className='hidden md:block'>
+                            <div className='ml-10 flex items-baseline space-x-4'>
+                                <Link
+                                    href='/'
+                                    className='cursor-pointer hover:underline  decoration-red-600 decoration-2 underline-offset-4 font-semibold px-3 py-2 text-md hover:text-red-600 '
+                                >
+                                    Home
+                                </Link>
+                                <Link
+                                    href='/about'
+                                    className='cursor-pointer hover:underline decoration-red-600 decoration-2 underline-offset-4 font-semibold px-3 py-2 text-md hover:text-red-600 '
+                                >
+                                    About Us
+                                </Link>
+                                <Link
+                                    href='/services'
+                                    className='cursor-pointer hover:underline decoration-red-600 decoration-2 underline-offset-4 font-semibold px-3 py-2 text-md hover:text-red-600 '
+                                >
+                                    Services
+                                </Link>
+                                <Link
+                                    href='/mission'
+                                    className='cursor-pointer hover:underline decoration-red-600 decoration-2 underline-offset-4 font-semibold px-3 py-2 text-md hover:text-red-600 '
+                                >
+                                    Mission
+                                </Link>
+                                <Link
+                                    href='/contact'
+                                    className='cursor-pointer bg-blue-600 text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-black'
+                                >
+                                    Contact Us
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='mr-10 flex md:hidden '>
+                        <button
+                            onClick={() => setIsOpen(!isOpen)}
+                            type='button'
+                            className='bg-blue-600 inline-flex items-center justify-center p-2 rounded-md text-white  hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-blue-800 focus:ring-white'
+                            aria-controls='mobile-menu'
+                            aria-expanded='false'
+                        >
+                            <span className='sr-only'>Open main menu</span>
+                            {!isOpen ? (
+                                <svg
+                                    className='block h-6 w-6'
+                                    xmlns='http://www.w3.org/2000/svg'
+                                    fill='none'
+                                    viewBox='0 0 24 24'
+                                    stroke='currentColor'
+                                    aria-hidden='true'
+                                >
+                                    <path
+                                        strokeLinecap='round'
+                                        strokeLinejoin='round'
+                                        strokeWidth='2'
+                                        d='M4 6h16M4 12h16M4 18h16'
+                                    />
+                                </svg>
+                            ) : (
+                                <svg
+                                    className='block h-6 w-6'
+                                    xmlns='http://www.w3.org/2000/svg'
+                                    fill='none'
+                                    viewBox='0 0 24 24'
+                                    stroke='currentColor'
+                                    aria-hidden='true'
+                                >
+                                    <path
+                                        strokeLinecap='round'
+                                        strokeLinejoin='round'
+                                        strokeWidth='2'
+                                        d='M6 18L18 6M6 6l12 12'
+                                    />
+                                </svg>
+                            )}
+                        </button>
+                    </div>
+                </div>
 
+            </div>
+           
       <Transition
         show={isOpen}
         enter="transition ease-out duration-100 transform"
