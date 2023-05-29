@@ -4,42 +4,20 @@ import Subscribe from "@/components/Subscribe";
 import CallToAction from "@/components/CallToAction";
 import Navbar from "@/components/Navbar";
 import Subscribe1 from "@/components/Subscribe1";
-<<<<<<< HEAD
-import EventsCard2 from "@/components/EventsCard2";
-import PastEvent from "@/components/PastEvent";
-import About from "./about.js";
-import Mission from "./mission.js";
+import EventCard from "@/components/EventCard";
+import About from "./about";
+import Mission from "./mission";
+import Service from "./service";
 
 const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
-    <main>
-      {/* <Subscribe /> */}
+    <main className="">
       <Navbar />
-      {/* <CallToAction /> */}
-      {/* <EventsCard2 /> */}
-      {/* <PastEvent />  */}
-      {/* import About page directly here for testing purposes it should be used via Routes*/}
-      {/* <About /> */}
-
-      {/* import About page directly here for testing purposes it should be used via Routes*/}
-      <Mission />
+      <About />
+      {/* <Mission /> */}
+      {/* <Service /> */}
       <Subscribe1 />
     </main>
   );
-=======
-import EventCard from "@/components/EventCard";
-
-const inter = Inter({ subsets: ["latin"] });
-export default function Home() {
-    return (
-        <main className=''>
-            <Navbar />
-            <Subscribe1 />
-            <Subscribe />
-            <CallToAction />
-            <EventCard />
-        </main>
-    );
->>>>>>> main
 }
