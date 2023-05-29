@@ -5,7 +5,7 @@ const Footer = () => {
     // max-w-screen-xl
     <div>
       <footer className=" w-full">
-        <div className="flex flex-col py-6 lg:py-8">
+        <div className="flex flex-col  ">
           <div className="mx-auto w-full  p-4 py-6 lg:py-8 bg-white dark:bg-gray-900">
             <div className="md:flex md:justify-between">
               <div className="mb-6 md:mb-0 ">
@@ -146,7 +146,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="sm:flex sm:items-center  sm:justify-between bg-gray-500 h-16 p-4 font si">
+          <div className="sm:flex sm:items-center  sm:justify-between bg-gray-500 lg:h-16  sm:h-20 p-4 font si">
             <span className="text-sm text-gray-500 sm:text-center dark:text-gray-200">
               Copyright © 2023{" "}
               <a href="https://flowbite.com/" className="hover:underline">
