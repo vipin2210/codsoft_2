@@ -8,7 +8,7 @@ import EllipseRed from "../../public/EllipseRed.png";
 const CallToAction = () => {
 
   return (
-    <div className="container mx-auto w-fit items-center flex flex-row gap-5 items-align grid sm:grid-cols-3 p-2">
+    <div className="container mx-auto w-full items-center flex flex-row gap-5 items-align grid sm:grid-cols-3 p-2">
       <div className="my-4 ">
         <div className="relative flex justify-center items-center">
           <Image src={EllipseBlue} className="top-0 left-0" />
