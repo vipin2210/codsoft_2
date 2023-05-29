@@ -101,86 +101,87 @@ function Navbar() {
                         </button>
                     </div>
                 </div>
+
             </div>
-
-            <Transition
-                show={isOpen}
-                enter='transition ease-out duration-100 transform'
-                enterFrom='opacity-0 scale-95'
-                enterTo='opacity-100 scale-100'
-                leave='transition ease-in duration-75 transform'
-                leaveFrom='opacity-100 scale-100'
-                leaveTo='opacity-0 scale-95'
+           
+      <Transition
+        show={isOpen}
+        enter="transition ease-out duration-100 transform"
+        enterFrom="opacity-0 scale-95"
+        enterTo="opacity-100 scale-100"
+        leave="transition ease-in duration-75 transform"
+        leaveFrom="opacity-100 scale-100"
+        leaveTo="opacity-0 scale-95"
+      >
+        {(ref) => (
+          <div className="md:hidden" id="mobile-menu">
+            <div
+              ref={ref}
+              className="bg-white px-2 pt-2 pb-3 space-y-1 sm:px-3"
             >
-                {(ref) => (
-                    <div className='md:hidden' id='mobile-menu'>
-                        <div
-                            ref={ref}
-                            className='bg-white px-2 pt-2 pb-3 space-y-1 sm:px-3'
-                        >
-                            <Link
-                                href='/home'
-                                activeClass='home'
-                                to='home'
-                                smooth={true}
-                                offset={50}
-                                duration={500}
-                                className='cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium'
-                            >
-                                Home
-                            </Link>
-                            <Link
-                                href='/about'
-                                activeClass='about'
-                                to='about'
-                                smooth={true}
-                                offset={50}
-                                duration={500}
-                                className='cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium'
-                            >
-                                About
-                            </Link>
+              <Link
+                href="/home"
+                activeClass="home"
+                to="home"
+                smooth={true}
+                offset={50}
+                duration={500}
+                className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              >
+                Home
+              </Link>
+              <Link
+                href="/about"
+                activeClass="about"
+                to="about"
+                smooth={true}
+                offset={50}
+                duration={500}
+                className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              >
+                About
+              </Link>
 
-                            <Link
-                                href='/services'
-                                activeClass='services'
-                                to='services'
-                                smooth={true}
-                                offset={50}
-                                duration={500}
-                                className='cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium'
-                            >
-                                Services
-                            </Link>
-                            <Link
-                                href='/mission'
-                                activeClass='mission'
-                                to='mission'
-                                smooth={true}
-                                offset={50}
-                                duration={500}
-                                className='cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium'
-                            >
-                                Mission
-                            </Link>
+              <Link
+                href="/services"
+                activeClass="services"
+                to="services"
+                smooth={true}
+                offset={50}
+                duration={500}
+                className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              >
+                Services
+              </Link>
+              <Link
+                href="/mission"
+                activeClass="mission"
+                to="mission"
+                smooth={true}
+                offset={50}
+                duration={500}
+                className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              >
+                Mission
+              </Link>
 
-                            <Link
-                                href='/contact'
-                                activeClass='contact'
-                                to='contact'
-                                smooth={true}
-                                offset={50}
-                                duration={500}
-                                className='cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium'
-                            >
-                                Contact
-                            </Link>
-                        </div>
-                    </div>
-                )}
-            </Transition>
-        </nav>
-    );
+              <Link
+                href="/contact"
+                activeClass="contact"
+                to="contact"
+                smooth={true}
+                offset={50}
+                duration={500}
+                className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              >
+                Contact
+              </Link>
+            </div>
+          </div>
+        )}
+      </Transition>
+    </nav>
+  );
 }
 
 export default Navbar;

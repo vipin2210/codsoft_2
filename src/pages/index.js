@@ -4,6 +4,7 @@ import Subscribe from "@/components/Subscribe";
 import Navbar from "@/components/Navbar";
 import Subscribe1 from "@/components/Subscribe1";
 import EventCard from "@/components/EventCard";
+
 import PastEvent from "@/components/PastEvent";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -161,5 +162,6 @@ export default function Home() {
             </div>
         </main>
     );
+
 
 }
