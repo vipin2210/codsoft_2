@@ -6,7 +6,6 @@ import EllipseBlue from "../../public/EllipseBlue.png";
 import EllipseRed from "../../public/EllipseRed.png";
 
 const CallToAction = () => {
-
   return (
     <div className="container mx-auto w-full items-center flex flex-row gap-5 items-align grid sm:grid-cols-3 p-2">
       <div className="my-4 ">
@@ -45,18 +44,15 @@ const CallToAction = () => {
           <Image src={EllipseRed} className="absolute  mt-4 ml-4" />
           <Image src={Watch} className="absolute ml-[5%] mt-[5%]" />
         </div>
-                <div>
-                    <h1 className='font-bold text-center text-lg mt-2'>
-                        Work Time
-                    </h1>
-                    <h6 className='text-center'>
-                        9:00am-6:00pm (Monday-Friday) <br /> Saturday & Sunday
-                        Half Day
-                    </h6>
-                </div>
-            </div>
+        <div>
+          <h1 className="font-bold text-center text-lg mt-2">Work Time</h1>
+          <h6 className="text-center">
+            9:00am-6:00pm (Monday-Friday) <br /> Saturday & Sunday Half Day
+          </h6>
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default CallToAction;
