@@ -7,7 +7,7 @@ import Glide from "@glidejs/glide";
 function hai() {
   return (
     <main>
-      <Navbar />
+      <Navbar  />
       {/* hero section */}
       <section>
         <div>

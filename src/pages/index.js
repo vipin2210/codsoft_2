@@ -9,12 +9,14 @@ import EventCard from "@/components/EventCard";
 import EventsCard2 from "@/components/EventsCard2";
 import PastEvent from "@/components/PastEvent";
 import Contact from "../pages/contact.js";
+import Hai from "../pages/hai.js";
 
 const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <main>
-      <Contact />
+      {/* <Contact /> */}
+      <Hai />
     </main>
   );
 }
