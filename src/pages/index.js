@@ -39,7 +39,7 @@ export default function Home() {
                             </video>
                         </div>
 
-                        <div className='relative  inset-0 py-8 px-4 mx-auto bg-black opacity-80 text-center lg:py-16 lg:px-12 '>
+                        <div className='relative  inset-0 py-8 px-4 mx-auto  backdrop-brightness-50 text-center lg:py-16 lg:px-12 '>
                             <div className='inline-flex justify-between items-center mb-3     '>
                                 <Image
                                     src='/logo.png'
@@ -63,7 +63,7 @@ export default function Home() {
                             </p>
                             <div className='flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4'>
                                 <a
-                                    href='#'
+                                    href='/donation'
                                     className='inline-flex justify-center items-center py-2 px-7 text-base font-medium text-center bg-red-600 text-white rounded-lg border  hover:bg-black focus:ring-2 focus:ring-gray-100  '
                                 >
                                     Donate
@@ -140,7 +140,6 @@ export default function Home() {
                         <EventCard />
                         <EventCard />
                     </div>
-                  
                 </section>
 
                 {/* Past Event Section  */}
