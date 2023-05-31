@@ -6,6 +6,9 @@ const about = () => {
       <div>
         <div className="">
           <img className="object-fill  h-80 w-full" src="/Frame.png" />
+          <h1 className="relative bottom-64 text-center text-6xl font-bold text-white ">
+            About Us
+          </h1>
         </div>
         <div className=" container mx-auto  flex flex-row grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1">
           <img
@@ -43,11 +46,11 @@ const about = () => {
                   <div class="absolute z-10 w-full h-full -mt-5 -ml-5 rounded-full bg-gray-300"></div>
                   <img
                     class="relative z-20 w-full rounded-full"
-                    src="/ellipse2.png"
+                    src="/ashok.png"
                   />
                 </div>
 
-                <div class="space-y-2 text-center -mt-4">
+                <div class="z-50 space-y-2 text-center -mt-4">
                   <div class="space-y-1 text-lg font-medium leading-6">
                     <h3 className="rounded-full bg-violet-900 text-lg text-white px-14 py-1 ">
                       Ashok Rajput
@@ -61,14 +64,14 @@ const about = () => {
                 <div class="relative p-5">
                   <div class="absolute z-10 w-full h-full -mt-5 -ml-5 rounded-full  bg-gray-300"></div>
                   <img
-                    class="relative z-20 w-full rounded-full"
-                    src="/ellipse2.png"
+                    class="relative z-20 w-44 rounded-full"
+                    src="/taruna.png"
                   />
                 </div>
-                <div class="space-y-2 text-center -mt-4">
+                <div class=" z-50 space-y-2 text-center -mt-4">
                   <div class="space-y-1 text-lg font-medium leading-6">
                     <h3 className="rounded-full bg-violet-900 text-lg text-white px-14 py-1 ">
-                      Tarun Salhan
+                      Taruna Salhan
                     </h3>
                     <p>Director</p>
                   </div>
@@ -78,12 +81,9 @@ const about = () => {
               <div class="flex flex-col items-center justify-center col-span-1">
                 <div class="relative p-5">
                   <div class="absolute z-10 w-full h-full -mt-5 -ml-5 rounded-full bg-gray-300"></div>
-                  <img
-                    class="relative z-20 w-full rounded-full"
-                    src="/ellipse2.png"
-                  />
+                  <img class="relative z-20 rounded-full " src="/Saira.png" />
                 </div>
-                <div class="space-y-2 text-center -mt-4">
+                <div class="z-50 space-y-2 text-center -mt-4">
                   <div class="space-y-1 text-lg font-medium leading-6">
                     <h3 className="rounded-full bg-violet-900 text-lg text-white px-14 py-1">
                       Saira Qureshi

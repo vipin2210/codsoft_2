@@ -8,16 +8,20 @@ import EventCard from "@/components/EventCard";
 import About from "./about";
 import Mission from "./mission";
 import Service from "./service";
+import Footer from "@/components/Footer";
+import Carousal from "@/components/Carousal";
 
 const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <main className="">
       <Navbar />
-      <About />
+      {/* <About /> */}
       {/* <Mission /> */}
-      {/* <Service /> */}
+      <Service />
+      {/* <Carousal /> */}
       <Subscribe1 />
+      <Footer />
     </main>
   );
 }
