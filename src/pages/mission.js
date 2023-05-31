@@ -12,7 +12,7 @@ const mission = () => {
       </div>
 
       <div className="relative container -mt-60 z-20 ">
-        <div className="flex mx-auto grid grid-cols-4 gap-6 w-3/4 rounded-3xl p-6  bg-neutral-800">
+        <div className="flex mx-auto grid-cols-4 gap-6 w-3/4 rounded-3xl p-6  bg-neutral-800">
           <div>
             <img src="/missionImg1.png" />
           </div>

@@ -5,49 +5,74 @@ const about = () => {
     <div>
       <div>
         <div className="">
-          <img className="object-fill  h-80 w-full" src="/Frame.png" />
+          <img className="object-fill  h-96 w-full" src="/Frame.png" />
+          <div className="relative bottom-80 text-center text-6xl font-bold mt-6 text-white ">
+            About Us
+          </div>
+          <div>
+
+          </div>
+
         </div>
-        <div className=" container mx-auto  flex flex-row grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1">
-          <img
-            className="xl:-mt-40 lg:mt-0  md:mt-0 sm:-mt-60 sm:mx-auto lg:h-full md:h-11/12  sm:h-96 sm:w-11/12"
-            src="/AboutImage1.png"
-          />
-          <div className="p-4 relative xl:h-auto lg:h-auto mg:h-80 sm:h-60">
-            <h1 className="text-4xl font-bold ">About Us</h1>
-            <p className="text-lg mt-2">
-              We are aiming at the art and artists of India. We are trying to
-              uplift and save the heritage of all art forms in the nation; we
-              are dedicated to the new art forms and provide them with a stage
-              to showcase their talent. We are going places, across India, to
-              find out the artists of all performing arts to be shown to the
-              world.
-            </p>
-            <ul className="text-lg absolute xl:bottom-40 lg:bottom-20 md:-bottom-28 sm:bottom-0">
-              <li className="inline-block ">Instrument distribution</li>
-              <li className="inline-block ml-20 ">Gurus/ coach</li>
-            </ul>
+        <div className="p-4 relative xl:h-auto lg:h-auto mg:h-80 sm:h-60 text-center justify-center">
+          <h1 className="text-4xl font-bold -mt-20 ">About Us</h1>
+          <p className="text-lg mt-1 p-4">
+            Help artist India was founded in January of 2018. It acknowledges and harbour the veiled, unidentified artists, availing nothing but facilitating the unrevealed talents inhabiting our society. This NGO dreams of re- establishing the sphere of talents and proclaiming the worth of any artist who behold the talent and brew it for the audience. Artists can find this organization extremely helpful and facilitating.
+            Above all saving the Heritage of the India, what makes someone inspiring, is the ability to keep preserving keeping the zeal alive even when the circumstances are not favourable. The reason can be health, old age, finance, or being out of the main stream.
+          </p>
+          <div className="flex justify-center">
+            <div className="w-48 text-start">
+              <ul className="list-disc">
+                <li>Talent Based Events</li>
+                <li>Fund Raising Events</li>
+                <li>Compaigns / Social Work</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className=" w-full md:mt-20" style={{
+        background: "#5C5959",
+      }}>
+        <div className="flex md:flex-row flex-col gap-9 p-12 m-5 ">
+          <div>
+            <img src="/serviceImg1.png" className="transition duration-300 ease-in-out hover:scale-110" />
+          </div>
+          <div>
+            <img src="/serviceImg1.png" className=" transition duration-300 ease-in-out hover:scale-110" />
+          </div>
+          <div>
+            <img src="/serviceImg1.png" className=" transition duration-300 ease-in-out hover:scale-110" />
+          </div>
+          <div>
+            <img src="/serviceImg1.png" className=" transition duration-300 ease-in-out hover:scale-110" />
+          </div>
+          <div>
+            <img src="/serviceImg1.png" className=" transition duration-300 ease-in-out hover:scale-110" />
           </div>
         </div>
       </div>
 
-      <div className="container mx-auto mt-20 border-2 rounded-xl w-4/6  py-2 border-neutral-950">
+      <div className="mx-auto mt-20 border-2 rounded-xl md:w-2/6  py-2 w-64" style={{
+        background: "#A17EBE",
+      }}>
         <h1 className="text-4xl text-center font-bold">CORE TEAM</h1>
       </div>
 
-      <section className="container  mx-auto ">
+      <section className="container mx-auto ">
         <section class="relative mx-auto py-20 overflow-hidden bg-white">
           <div class="relative px-16 mx-auto max-w-7xl">
-            <div class="grid w-full grid-cols-1 gap-10 sm:grid-cols-1 lg:grid-cols-3">
+            <div class="grid w-full grid-cols-1 gap-10 sm:grid-cols-1 md:grid-cols-3">
               <div class="flex flex-col items-center justify-center col-span-1">
                 <div class="relative p-5">
-                  <div class="absolute z-10 w-full h-full -mt-5 -ml-5 rounded-full bg-gray-300"></div>
+                  <div class="absolute z-10 w-full h-full -mt-5 -ml-5 rounded-full  bg-yellow-600"></div>
                   <img
                     class="relative z-20 w-full rounded-full"
-                    src="/ellipse2.png"
+                    src="/ashok 1.png"
                   />
                 </div>
 
-                <div class="space-y-2 text-center -mt-4">
+                <div class="space-y-2 text-center z-50 -mt-4">
                   <div class="space-y-1 text-lg font-medium leading-6">
                     <h3 className="rounded-full bg-violet-900 text-lg text-white px-14 py-1 ">
                       Ashok Rajput
@@ -59,13 +84,13 @@ const about = () => {
 
               <div class="flex flex-col items-center justify-center col-span-1">
                 <div class="relative p-5">
-                  <div class="absolute z-10 w-full h-full -mt-5 -ml-5 rounded-full  bg-gray-300"></div>
+                  <div class="absolute z-10 w-full h-full -mt-5 -ml-5 rounded-full  bg-yellow-600"></div>
                   <img
                     class="relative z-20 w-full rounded-full"
-                    src="/ellipse2.png"
+                    src="/Taruna.png"
                   />
                 </div>
-                <div class="space-y-2 text-center -mt-4">
+                <div class="space-y-2 text-center z-50 -mt-4">
                   <div class="space-y-1 text-lg font-medium leading-6">
                     <h3 className="rounded-full bg-violet-900 text-lg text-white px-14 py-1 ">
                       Tarun Salhan
@@ -77,13 +102,13 @@ const about = () => {
 
               <div class="flex flex-col items-center justify-center col-span-1">
                 <div class="relative p-5">
-                  <div class="absolute z-10 w-full h-full -mt-5 -ml-5 rounded-full bg-gray-300"></div>
+                  <div class="absolute z-10 w-full h-full -mt-5 -ml-5 rounded-full bg-yellow-600"></div>
                   <img
                     class="relative z-20 w-full rounded-full"
-                    src="/ellipse2.png"
+                    src="/Saira.png"
                   />
                 </div>
-                <div class="space-y-2 text-center -mt-4">
+                <div class="space-y-2 text-center z-50 -mt-4">
                   <div class="space-y-1 text-lg font-medium leading-6">
                     <h3 className="rounded-full bg-violet-900 text-lg text-white px-14 py-1">
                       Saira Qureshi
