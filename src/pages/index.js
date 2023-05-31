@@ -4,6 +4,27 @@ import Subscribe from "@/components/Subscribe";
 import Navbar from "@/components/Navbar";
 import Subscribe1 from "@/components/Subscribe1";
 import EventCard from "@/components/EventCard";
+<<<<<<< HEAD
+import About from "./about";
+import Mission from "./mission";
+import Service from "./service";
+import Footer from "@/components/Footer";
+import Carousal from "@/components/Carousal";
+
+const inter = Inter({ subsets: ["latin"] });
+export default function Home() {
+  return (
+    <main className="">
+      <Navbar />
+      {/* <About /> */}
+      {/* <Mission /> */}
+      <Service />
+      {/* <Carousal /> */}
+      <Subscribe1 />
+      <Footer />
+    </main>
+  );
+=======
 
 import PastEvent from "@/components/PastEvent";
 
@@ -164,4 +185,5 @@ export default function Home() {
     );
 
 
+>>>>>>> 87dec8a1ed7397a867ef8ec496580f1c162921c5
 }
