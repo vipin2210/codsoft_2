@@ -6,10 +6,55 @@ import Subscribe1 from "@/components/Subscribe1";
 import EventCard from "@/components/EventCard";
 
 import PastEvent from "@/components/PastEvent";
+import Link from "next/link";
 
+const events = [
+    {
+        poster: "/EventUpcoming1.png",
+        date: 11,
+        month: "june",
+        year: 2023,
+        day: "Sunday",
+        name: "Live in Concert",
+        desc: "Rumaniyat a musical night with Padma Shri Hariharan ,witness the mystic performance of living legend at F Bar and Lounge Noida BOOK YOUR TABLES NOW HURRY !!",
+        link: "/",
+    },
+    {
+        poster: "/EventUpcoming2.png",
+        date: 14,
+        month: "july",
+        year: 2023,
+        day: "Friday",
+        name: "Shaam-e-Ghazal",
+        desc: "Lorem ipsum dolor sit amet consectetur. Tincidunt mus porttitor totor quis aliquet.Malesuada pellentesque ipsum egestas eunullam",
+        link: "/",
+    },
+    {
+        poster: "/EventUpcoming3.png",
+        date: 9,
+        month: "July",
+        year: 2017,
+        day: "Sunday",
+        name: "FUNKAAR 3 & ASH'AAR",
+        desc: "Lorem ipsum dolor sit amet consectetur. Tincidunt mus porttitor totor quis aliquet.Malesuada pellentesque ipsum egestas eunullam",
+        link: "/",
+    },
+];
+
+const pastevents = [
+    {
+        poster: "",
+        name: "",
+        title: "",
+        month: "",
+        year: "",
+        day: "",
+        date:""
+        
+    },
+]
 const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
-
     return (
         <main>
             <Navbar />
@@ -62,12 +107,12 @@ export default function Home() {
                                 consectetur pellentesque euismod. Pulvinar.
                             </p>
                             <div className='flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4'>
-                                <a
+                                <Link
                                     href='/donation'
                                     className='inline-flex justify-center items-center py-2 px-7 text-base font-medium text-center bg-red-600 text-white rounded-lg border  hover:bg-black focus:ring-2 focus:ring-gray-100  '
                                 >
                                     Donate
-                                </a>
+                                </Link>
                             </div>
                             <div className=' flex flex-row justify-center '>
                                 <Subscribe />
@@ -78,7 +123,7 @@ export default function Home() {
 
                 {/* Section 2 */}
                 <section className=''>
-                    <div className='bg-white  relative min-w-full'>
+                    <div className='bg-white p-4 relative min-w-full'>
                         <section className='container items-center  pb-12 mx-auto mt-20 lg:flex md:px-8'>
                             <div className='flex flex-col lg:w-3/4  '>
                                 <div className='flex flex-row gap-2 ml-16'>
@@ -119,8 +164,9 @@ export default function Home() {
 
                             <div>
                                 <img
-                                    src='/Section2.png'
+                                    src='/section2.png'
                                     className='w-full mx-auto mt-6 sm:w-10/12 lg:w-full'
+                                    alt='section2'
                                 />
                             </div>
                         </section>
@@ -131,19 +177,19 @@ export default function Home() {
 
                 {/* Featured Events */}
 
-                <section className='bg-gray-800 py-8 px-4 '>
+                <section className='bg-[#000215] py-8 px-4 '>
                     <h1 className=' text-3xl md:text-6xl flex flex-col font-bold text-left text-white py-8 md:ml-10'>
                         Featured Events
                     </h1>
                     <div className='flex flex-wrap  justify-center  gap-3'>
-                        <EventCard />
-                        <EventCard />
-                        <EventCard />
+                        {events.map((item, i) => (
+                            <EventCard props={item} key={i} />
+                        ))}
                     </div>
                 </section>
 
                 {/* Past Event Section  */}
-                <section className='bg-gray-800 py-8 px-4 '>
+                <section className='bg-[#000215] py-8 px-4 '>
                     <h1 className='text-3xl md:text-6xl flex flex-col font-bold text-left text-white py-8 md:ml-10'>
                         Past Events
                     </h1>
@@ -161,6 +207,4 @@ export default function Home() {
             </div>
         </main>
     );
-
-
 }

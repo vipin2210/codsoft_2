@@ -6,7 +6,7 @@ const donation = () => {
     return (
         <div>
             <Navbar />
-            {/* <div className=''>
+            <div className=''>
                 <img
                     className='object-fill  h-96 w-full'
                     src='/Frame.png'
@@ -16,9 +16,9 @@ const donation = () => {
                 <h1 className='relative bottom-80 text-center text-6xl font-bold  text-white '>
                     Donation
                 </h1>
-            </div> */}
+            </div>
 
-            {/* <div className='relative h-64  bottom-48 mx-48  backdrop-blur-md rounded-2xl '></div> */}
+            <div className='relative h-64  bottom-48 mx-48  backdrop-blur-md rounded-2xl '></div>
 
             <div className=' grid  justify-center   md:flex  md:justify-evenly'>
                 <div className=' max-w-lg text-center'>

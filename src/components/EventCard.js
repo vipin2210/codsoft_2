@@ -1,42 +1,34 @@
 import React from "react";
-import EventCards from "../../public/EventCard.png";
+
 import Image from "next/image";
 
-const EventCard = () => {
+const EventCard = ({ props }) => {
+    const { poster, date, month, day, year, name, desc, link } = props;
     return (
         <div className='bg-transparent max-w-sm sm:max-w-[30%]   mb-4'>
             <div className=''>
                 <a href='#'>
-                    <Image
-                        className=''
-                        src={EventCards}
-                        alt='EventCard'
-                      
-                    />
+                    <img className='' src={poster} alt='EventCard' />
                 </a>
                 <div className='flex flex-row gap-5 mt-4 max-w-sm'>
                     <p className='text-yellow-500 mb-4 text-7xl font-serif'>
-                        9
+                        {date}
                     </p>
-                    <div className='grid text-white'>
-                        <span>July</span>
-                        <span>2017</span>
-                        <span>Sunday</span>
+                    <div className='grid text-white capitalize'>
+                        <span>{month}</span>
+                        <span>{year}</span>
+                        <span>{day}</span>
                     </div>
                     <div className=' w-[100%]   border-b-2 border-yellow-500 items-center mb-11'></div>
                 </div>
-                <a href='#'>
-                    <div className=' font-bold text-2xl tracking-tight mb-1 text-white'>
-                        FUNKAAR 3 & ASH’AAR
-                    </div>
-                </a>
-                <p className='font-normal text-white mb-3 max-w-sm'>
-                    Lorem ipsum dolor sit amet consectetur. Tincidunt mus
-                    porttitor tortor quis aliquet. Malesuada pellentesque ipsum
-                    egestas 
-                </p>
+
+                <div className=' font-bold text-2xl tracking-tight mb-1 text-white uppercase'>
+                    {name}
+                </div>
+
+                <p className='font-normal text-white mb-3 max-w-sm'>{desc}</p>
                 <a
-                    href='#'
+                    href={link}
                     className='text-gray-700 bg-gray-200   hover:bg-blue-600 focus:ring-4  focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center '
                 >
                     Read more
