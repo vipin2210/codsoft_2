@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         // max-w-screen-xl
         <div>
-            <footer className='  bg-[#353535]  w-full'>
+            <footer className='  bg-[#353535]  w-full text-white'>
                 <div className='flex flex-col  '>
                     <div className='mx-auto w-full  p-4 py-6 lg:py-8 bg-[#222423] '>
                         <div className='md:flex md:justify-between'>
@@ -14,14 +14,14 @@ const Footer = () => {
                                         HELPARTISTINDIA
                                     </h2>
                                     <p className=' '>
-                                        Credible Synthesize Visionary Systems
-                                        <br></br> Before Functionalized
-                                        Channels.
-                                    </p>
-                                    <p className=' '>
-                                        Credible Synthesize Visionary Systems
-                                        <br></br> Before Functionalized
-                                        Channels.
+                                        Help artist India was founded in January
+                                        <br />
+                                        of 2018. It acknowledges and harbour the
+                                        veiled,
+                                        <br /> unidentified artists, availing
+                                        nothing <br />
+                                        but facilitating the unrevealed talents
+                                        inhabiting our society.
                                     </p>
                                 </div>
                                 <div>
@@ -29,32 +29,31 @@ const Footer = () => {
                                         OPENING HOURS
                                     </h2>
                                 </div>
+                                <div className='text-sm'>
+                                    9:00am-6:00pm (Monday-Friday)
+                                </div>
+                                <div className='text-sm '>
+                                    Saturday & Sunday Half Day
+                                </div>
                             </div>
                             <div className='grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-4'>
                                 <div>
-                                    <h2 className='mb-6 text-sm font-semibold text-gray-900 uppercase '>
+                                    <h2 className='mb-6 text-lg font-bold uppercase '>
                                         Quick Links
                                     </h2>
-                                    <ul className='text-gray-600  font-medium'>
+                                    <ul className='font-medium'>
                                         <li className='mb-4'>
                                             <a
-                                                href='https://www.helpartistindia.org/'
+                                                href='about'
                                                 className='hover:underline'
                                             >
                                                 About Us
                                             </a>
                                         </li>
+                                      
                                         <li className='mb-4'>
                                             <a
-                                                href='#'
-                                                className='hover:underline'
-                                            >
-                                                Classes
-                                            </a>
-                                        </li>
-                                        <li className='mb-4'>
-                                            <a
-                                                href='https://www.helpartistindia.org/'
+                                                href='/hai'
                                                 className='hover:underline'
                                             >
                                                 H.A.I (HEROS)
@@ -63,10 +62,10 @@ const Footer = () => {
                                     </ul>
                                 </div>
                                 <div>
-                                    <h2 className='mb-6 text-sm font-semibold text-gray-900 uppercase '>
+                                    <h2 className='mb-6 text-lg font-bold uppercase '>
                                         Our Services
                                     </h2>
-                                    <ul className='text-gray-600  font-medium'>
+                                    <ul className='font-medium'>
                                         <li className='mb-4'>
                                             <a
                                                 href='https://www.helpartistindia.org/upcoming/'
@@ -86,10 +85,10 @@ const Footer = () => {
                                     </ul>
                                 </div>
                                 <div>
-                                    <h2 className='mb-6 text-sm font-semibold text-gray-900 uppercase '>
+                                    <h2 className='mb-6 text-lg font-bold uppercase '>
                                         Social Media
                                     </h2>
-                                    <ul className='text-gray-600  font-medium'>
+                                    <ul className='font-medium'>
                                         <li className='mb-4'>
                                             <a
                                                 href='https://www.facebook.com/helpartistindia/'
@@ -125,22 +124,26 @@ const Footer = () => {
                                     </ul>
                                 </div>
                                 <div>
-                                    <h2 className='mb-6 text-sm font-semibold text-gray-900 uppercase '>
+                                    <h2 className='mb-6 text-lg font-bold uppercase '>
                                         CONTACT US
                                     </h2>
-                                    <ul className='text-gray-600  font-small'>
+                                    <ul className='font-small'>
                                         <li className='mb-4'>
                                             <p>
-                                                Credible Synthesize Visionary
-                                                <br></br>Systems Before
-                                                Functionalized<br></br>Channels.
+                                                PLOT-22 Level, Ashirwad
+                                                Apartment <br></br>
+                                                Block-B, SAI TOWER, 5, <br></br>
+                                                Sector 12 Dwarka,<br></br>
+                                                Dwarka, New Delhi, <br></br>
+                                                Delhi 110078,<br></br>
                                             </p>
                                         </li>
                                         <li>
                                             <p>
-                                                Credible Synthesize Visionary
-                                                <br></br>Systems Before
-                                                Functionalized<br></br>Channels.
+                                                helpartistindia@gmail.com
+                                                <br></br>
+                                                +91 - 97117-13123<br></br>
+                                                +91 - 9990913123
                                             </p>
                                         </li>
                                     </ul>
@@ -150,7 +153,7 @@ const Footer = () => {
                     </div>
 
                     <div className='sm:flex sm:items-center  sm:justify-between bg-[#353535] lg:h-16  sm:h-20 p-4 font si'>
-                        <span className='text-sm text-gray-500 sm:text-center '>
+                        <span className='text-sm sm:text-center '>
                             Copyright © 2023{" "}
                             <a
                                 href='https://flowbite.com/'
@@ -161,7 +164,7 @@ const Footer = () => {
                             </a>
                             . All Rights Reserved.
                         </span>
-                        <div className='flex mt-4 space-x-6 sm:justify-center sm:mt-0 text-m text-gray-500 sm:text-center '>
+                        <div className='flex mt-4 space-x-6 sm:justify-center sm:mt-0 text-m sm:text-center '>
                             <p>Terms of use</p>
                             <div className='flex flex-wrap items-center mb-5 text-base md:mb-0 md:pl-8 md:ml-8 md:border-l-4 md:border-gray-100  '></div>
 

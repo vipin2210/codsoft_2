@@ -11,8 +11,6 @@ import {
     Button,
 } from "@material-tailwind/react";
 
-
-
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     return (
@@ -163,7 +161,7 @@ function Navbar() {
                             className='bg-white px-2 pt-2 pb-3 space-y-1 sm:px-3'
                         >
                             <Link
-                                href='/home'
+                                href='/'
                                 activeClass='home'
                                 to='home'
                                 smooth={true}

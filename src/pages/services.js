@@ -14,10 +14,10 @@ const service = () => {
     return (
         <div>
             <Navbar />
-            <div className='bg-neutral-800'>
+            <div className='bg-[#000215]'>
                 <div className=''>
                     <img
-                        className='object-fill  h-80 w-full'
+                        className='object-fill  h-96 w-full'
                         src='/Frame.png'
                     />
                     <Breadcrum name={"Services"} page={"Services"} />

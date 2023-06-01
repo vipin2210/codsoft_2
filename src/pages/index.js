@@ -17,7 +17,7 @@ const events = [
         day: "Sunday",
         name: "Live in Concert",
         desc: "Rumaniyat a musical night with Padma Shri Hariharan ,witness the mystic performance of living legend at F Bar and Lounge Noida BOOK YOUR TABLES NOW HURRY !!",
-        link: "/",
+        link: "https://in.bookmyshow.com/events/rumaniyat-hariharan/ET00360262?webview=true",
     },
     {
         poster: "/EventUpcoming2.png",
@@ -43,16 +43,36 @@ const events = [
 
 const pastevents = [
     {
-        poster: "",
-        name: "",
-        title: "",
-        month: "",
-        year: "",
-        day: "",
-        date:""
-        
+        poster: "/pastevent.png",
+        name: "FUNKAAR 2",
+        title: "FUNKAAR 2",
+        month: "July",
+        year: "2017",
+        day: "Sunday",
+        date: "09",
+        link: "/",
     },
-]
+    {
+        poster: "/pastevent2.png",
+        name: "FUNKAAR 2",
+        title: "FUNKAAR 2",
+        month: "July",
+        year: "2017",
+        day: "Sunday",
+        date: "09",
+        link: "/",
+    },
+    {
+        poster: "/pastevent3.png",
+        name: "FUNKAAR 2",
+        title: "FUNKAAR 2",
+        month: "July",
+        year: "2017",
+        day: "Sunday",
+        date: "09",
+        link: "/",
+    },
+];
 const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
     return (
@@ -84,7 +104,7 @@ export default function Home() {
                             </video>
                         </div>
 
-                        <div className='relative  inset-0 py-8 px-4 mx-auto  backdrop-brightness-50 text-center lg:py-16 lg:px-12 '>
+                        <div className='relative  inset-0 py-8 px-4 mx-auto  backdrop-brightness-50 text-center  lg:py-16 lg:px-12 '>
                             <div className='inline-flex justify-between items-center mb-3     '>
                                 <Image
                                     src='/logo.png'
@@ -96,15 +116,17 @@ export default function Home() {
                             <p className='text-white '>
                                 Art is India ,Inida is Divine
                             </p>
-                            <h1 className='mb-4 text-4xl font-extrabold tracking-tight leading-none uppercase text-gray-900 md:text-5xl lg:text-6xl dark:text-white'>
+                            <h1 className='mb-4 text-4xl font-extrabold tracking-tight leading-none uppercase text-white  md:text-5xl lg:text-6xl '>
                                 Small{" "}
-                                <span className='text-red-600'>Donation</span>{" "}
+                                <span className='text-red-600'>Donation </span>
                                 Can <br /> Change Artist Life
                             </h1>
-                            <p className='mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400'>
-                                Lorem ipsum dolor sit amet consectetur. Duis at{" "}
-                                <br />
-                                consectetur pellentesque euismod. Pulvinar.
+                            <p className='mb-8 text-lg font-normal text-white lg:text-xl sm:px-16 xl:px-48 '>
+                                Help artist India was founded in January of
+                                2018. It acknowledges and harbour the veiled,
+                                unidentified artists, availing nothing but
+                                facilitating the unrevealed talents inhabiting
+                                our society.
                             </p>
                             <div className='flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4'>
                                 <Link
@@ -194,15 +216,11 @@ export default function Home() {
                         Past Events
                     </h1>
                     <div className='flex flex-wrap justify-center overflow-hidden gap-5'>
-                        <PastEvent />
-                        <PastEvent />
-                        <PastEvent />
+                        {pastevents.map((item, i) => (
+                            <PastEvent props={item} key={i} />
+                        ))}
                     </div>
                     <div className='border-4 border-yellow-600 mt-4'></div>
-                </section>
-                {/* Subscribe  */}
-                <section>
-                    <Subscribe1 />
                 </section>
             </div>
         </main>
