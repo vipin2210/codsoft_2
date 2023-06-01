@@ -71,7 +71,7 @@ const mission = () => {
                             <li>
                                 There are plans for financial help for artists,
                                 and to be eligible for assistance under the
-                                scheme,a person's contribution towards art,
+                                scheme,a person&apos;s contribution towards art,
                                 music, writing, performing arts,folk art forms,
                                 etc. Traditional scholars who have made
                                 significant contributions in their fields would

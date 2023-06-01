@@ -37,9 +37,9 @@ const donation = () => {
                     </div>
 
                     <p className='text-2xl mx-4 '>
-                        “It's not how much we give but how much love we put into
-                        giving.” <br /> You’r small contribution can make BIG
-                        changes{" "}
+                        “It&apos;s not how much we give but how much love we put
+                        into giving.” <br /> You’r small contribution can make
+                        BIG changes{" "}
                     </p>
                 </div>
                 <div className=' grid grid-rows-4 '>

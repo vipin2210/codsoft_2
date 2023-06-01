@@ -1,12 +1,5 @@
 import React, { useEffect } from "react";
 import Image from "next/image";
-import Relax from "../../public/RelaxImage.png";
-
-// Carousal ANd REsponsivness pending
-//
-//
-//
-//
 
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
@@ -18,7 +11,7 @@ export const EmblaCarousel = () => {
         <div className='embla' ref={emblaRef}>
             <div className='embla__container'>
                 <div className='embla__slide'>
-                    <Image src={Relax} alt='Relax' />
+                    <img src='/RelaxImage.png' alt='Relax' />
                 </div>
                 <div className='embla__slide'>Slide 2</div>
                 <div className='embla__slide'>Slide 3</div>
@@ -32,33 +25,25 @@ const EventsCard2 = () => {
         <div className='bg-neutral-900 pt-5'>
             <div className='container mx-auto flex gap-10 mt-12 text-white '>
                 <div className='w-3/4'>
-                    <h1 className='font-bold text-6xl'>FUNKAAR 3 & ASH'AAR</h1>
+                    <h1 className='font-bold text-6xl'>
+                        FUNKAAR 3 & AS&apos;HAAR
+                    </h1>
                     <p className='text-lg mt-5 break-keep '>
-                        Lorem ipsum dolor sit amet consectetur. Ullamcorper
-                        viverra tellus malesuada gravida nibh consequat in ut.
-                        Nibh enim arcu ac volutpat sed sit urna enim urna.
-                        Pretium massa scelerisque nunc quis velit risus purus
-                        erat. Mi magna fermentum scelerisque pellentesque id
-                        arcu. Morbi viverra lacus aliquam sed. Aenean viverra
-                        eget malesuada proin sed. Duis leo mauris leo dapibus.
-                        <br></br> Sapien egestas urna venenatis eu pharetra mi
-                        sit. Viverra scelerisque urna risus aliquam. Rhoncus
-                        tristique id risus adipiscing. Vestibulum enim nec ante
-                        nunc magna facilisis integer. Sem massa morbi nec id
-                        amet consequat amet. Ipsum sem tellus facilisi consequat
-                        in diam. Pellentesque faucibus diam mi vitae urna
-                        suspendisse. Cursus orci leo dapibus adipiscing
-                        habitasse volutpat viverra volutpat. A lectus urna
-                        gravida maecenas convallis ultricies velit. At quam quis
-                        non quis turpis mi maecenas mauris. Sodales sodales nec
-                        in faucibus. Tristique risus pellentesque diam neque
-                        enim.
+                        Rumaniyat a musical night with Padma Shri Hariharan
+                        ,witness the mystic performance of living legend at F
+                        Bar and Lounge Noida BOOK YOUR TABLES NOW HURRY !! Help
+                        Artist India Is All Set For Major Musical Events 2023
+                        With... Big Artists Of The Industry ,It Will Be All For
+                        Fundraising For The NGO Dedicated To Upliftment Of Art
+                        And Artists Who Need Help To Live Their Dream Of Being
+                        An Artist Announcement Of These Musical Events Has Been
+                        Met With Enthusiasm By Music Fans Across India.
                     </p>
                     <div className='max-w-2xl mx-auto'> </div>
                 </div>
 
                 <div className='w-1/4 h-full'>
-                    <Image src={Relax} alt='Relax' />
+                    <img src='/RelaxImage.png' alt='Relax' />
                     <div className='flex mt-2 items-start'>
                         <div className=''>
                             <hl className='text-8xl text-amber-500 '>9</hl>

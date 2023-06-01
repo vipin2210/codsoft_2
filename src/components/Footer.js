@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
@@ -43,21 +44,28 @@ const Footer = () => {
                                     </h2>
                                     <ul className='font-medium'>
                                         <li className='mb-4'>
-                                            <a
+                                            <Link
                                                 href='about'
                                                 className='hover:underline'
                                             >
                                                 About Us
-                                            </a>
+                                            </Link>
                                         </li>
-                                      
                                         <li className='mb-4'>
-                                            <a
+                                            <Link
+                                                href='#'
+                                                className='hover:underline'
+                                            >
+                                                Classes
+                                            </Link>
+                                        </li>
+                                        <li className='mb-4'>
+                                            <Link
                                                 href='/hai'
                                                 className='hover:underline'
                                             >
                                                 H.A.I (HEROS)
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -67,20 +75,20 @@ const Footer = () => {
                                     </h2>
                                     <ul className='font-medium'>
                                         <li className='mb-4'>
-                                            <a
+                                            <Link
                                                 href='https://www.helpartistindia.org/upcoming/'
                                                 className='hover:underline '
                                             >
                                                 Event
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li>
-                                            <a
+                                            <Link
                                                 href='https://www.helpartistindia.org/hai/'
                                                 className='hover:underline'
                                             >
                                                 Campaign
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -90,36 +98,36 @@ const Footer = () => {
                                     </h2>
                                     <ul className='font-medium'>
                                         <li className='mb-4'>
-                                            <a
+                                            <Link
                                                 href='https://www.facebook.com/helpartistindia/'
                                                 className='hover:underline'
                                             >
                                                 Facebook
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li className='mb-4'>
-                                            <a
+                                            <Link
                                                 href='https://www.instagram.com/helpartistindia/'
                                                 className='hover:underline'
                                             >
                                                 Instagram
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li className='mb-4'>
-                                            <a
+                                            <Link
                                                 href='https://www.youtube.com/channel/UCZ5LcJ-ZFCAx_5C6Xk3XXOA'
                                                 className='hover:underline'
                                             >
                                                 Youtube
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li>
-                                            <a
+                                            <Link
                                                 href='https://twitter.com/HelpArtistIndia'
                                                 className='hover:underline'
                                             >
                                                 Twitter
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -155,13 +163,13 @@ const Footer = () => {
                     <div className='sm:flex sm:items-center  sm:justify-between bg-[#353535] lg:h-16  sm:h-20 p-4 font si'>
                         <span className='text-sm sm:text-center '>
                             Copyright © 2023{" "}
-                            <a
+                            <Link
                                 href='https://flowbite.com/'
                                 className='hover:underline'
                             >
                                 By helpartistindia
                                 {/* ™ */}
-                            </a>
+                            </Link>
                             . All Rights Reserved.
                         </span>
                         <div className='flex mt-4 space-x-6 sm:justify-center sm:mt-0 text-m sm:text-center '>
