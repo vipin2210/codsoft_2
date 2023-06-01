@@ -73,7 +73,7 @@ const Footer = () => {
                                     <h2 className='mb-6 text-lg font-bold uppercase '>
                                         Our Services
                                     </h2>
-                                    <ul className='font-medium'>
+                                    <ul className='font-medium '>
                                         <li className='mb-4'>
                                             <Link
                                                 href='https://www.helpartistindia.org/upcoming/'
