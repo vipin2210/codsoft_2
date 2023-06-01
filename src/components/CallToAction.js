@@ -1,9 +1,4 @@
 import Image from "next/image";
-import NavigationArrow from "../../public/NavigationArrow.png";
-import Vector from "../../public/Vector.png";
-import Watch from "../../public/Watch.png";
-import EllipseBlue from "../../public/EllipseBlue.png";
-import EllipseRed from "../../public/EllipseRed.png";
 
 const CallToAction = () => {
     return (
@@ -11,17 +6,17 @@ const CallToAction = () => {
             <div className='my-4 '>
                 <div className='relative flex justify-center items-center'>
                     <img
-                        src={EllipseBlue}
+                        src='/EllipseBlue.png'
                         className='top-0 left-0'
                         alt='ellipseblue'
                     />
                     <img
-                        src={EllipseRed}
+                        src='/EllipseRed.png'
                         className='absolute mt-4 ml-4'
                         alt='ellipsered'
                     />
                     <img
-                        src={NavigationArrow}
+                        src='/NavigationArrow.png'
                         className='absolute ml-[5%] mt-[5%]'
                         alt='navigator'
                     />
@@ -40,17 +35,17 @@ const CallToAction = () => {
             <div className='my-4 '>
                 <div className='relative flex justify-center items-center'>
                     <img
-                        src={EllipseBlue}
+                        src='/EllipseBlue.png'
                         className='top-0 left-0'
                         alt='ellipseblue'
                     />
                     <img
-                        src={EllipseRed}
+                        src='/EllipseRed.png'
                         className='absolute mt-4 ml-4'
                         alt='ellipsered'
                     />
                     <img
-                        src={Vector}
+                        src='/Vector.png'
                         className='absolute ml-[5%] mt-[5%]'
                         alt='navigator'
                     />
@@ -66,14 +61,18 @@ const CallToAction = () => {
 
             <div className='my-4 '>
                 <div className='relative flex justify-center items-center'>
-                    <img src={EllipseBlue} className='' alt='ellipseblue' />
                     <img
-                        src={EllipseRed}
+                        src='/EllipseBlue.png'
+                        className=''
+                        alt='ellipseblue'
+                    />
+                    <img
+                        src='/EllipseRed.png'
                         className='absolute  mt-4 ml-4'
                         alt='ellipsered'
                     />
                     <img
-                        src={Watch}
+                        src='/Watch.png'
                         className='absolute ml-[5%] mt-[5%]'
                         alt='navigator'
                     />
