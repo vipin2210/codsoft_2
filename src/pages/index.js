@@ -43,7 +43,7 @@ const events = [
 
 const pastevents = [
     {
-        poster: "/pastevent.png",
+        poster: "/pastevent1.png",
         name: "FUNKAAR 2",
         title: "FUNKAAR 2",
         month: "July",
@@ -89,7 +89,10 @@ export default function Home() {
                                 muted
                                 className='absolute inset-0 aspect-video   sm:flex hidden  '
                             >
-                                <source src='/HeroVideo1.mp4' type='video/mp4' />
+                                <source
+                                    src='/HeroVideo1.mp4'
+                                    type='video/mp4'
+                                />
                             </video>
                             <video
                                 autoPlay
