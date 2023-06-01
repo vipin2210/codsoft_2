@@ -89,7 +89,7 @@ export default function Home() {
                                 muted
                                 className='absolute inset-0 aspect-video   sm:flex hidden  '
                             >
-                                <source src='/HeroVideo.mp4' type='video/mp4' />
+                                <source src='/HeroVideo1.mp4' type='video/mp4' />
                             </video>
                             <video
                                 autoPlay
