@@ -189,9 +189,9 @@ export default function Home() {
 
                             <div>
                                 <img
-                                    src='/section2.png'
+                                    src='/section5.png'
                                     className='w-full mx-auto mt-6 sm:w-10/12 lg:w-full'
-                                    alt='section2'
+                                    alt='Section2'
                                 />
                             </div>
                         </section>
