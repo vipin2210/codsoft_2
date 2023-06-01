@@ -15,7 +15,7 @@ const member = [
   {
     image: "/rohit.png",
     profession: "Sr. Graphic Designer",
-    name: "Nancy NTR",
+    name: "Nancy NTR 2",
   },
 
   {
