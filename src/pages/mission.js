@@ -1,4 +1,5 @@
 import Breadcrum from "@/components/Breadcrum";
+import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
 import React from "react";
 
@@ -7,14 +8,7 @@ const mission = () => {
         <div>
             <Navbar />
             <div className='mb-8'>
-                <div className=''>
-                    <img
-                        className='object-fill  h-96 w-full'
-                        src='/Frame.png'
-                        alt='Frame'
-                    />
-                    <Breadcrum name={"Mission"} page={"Mission"} />
-                </div>
+                <Header image='/Frame.png' name='Mission' page='Mission' />
 
                 <div className='relative container -mt-60 z-20 mx-auto '>
                     <div className=' mx-auto grid grid-cols-4 gap-6 w-3/4 rounded-3xl p-6  bg-[#000000]  '>

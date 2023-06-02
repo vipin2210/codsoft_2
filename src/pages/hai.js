@@ -15,7 +15,7 @@ const member = [
   {
     image: "/rohit.png",
     profession: "Sr. Graphic Designer",
-    name: "Nancy NTR",
+    name: "Nancy NTR 2",
   },
 
   {
@@ -81,7 +81,7 @@ function hai() {
 
             <div
               className="-mt-2.5 md:-mt-4 lg:-mt-6 xl:-mt-10 "
-              style={{
+              style={    {
                 height: "50px",
                 transform: "scale(2)",
                 transformOrigin: "top center",
