@@ -16,7 +16,7 @@ const service = () => {
         <div>
             <Navbar />
             <div className='bg-[#000215]'>
-                <Header image='/Frame.png' name='Services' page='Services' />
+                <Header image='/Frame.png' name='Campaign' page='Services/Campaign' />
 
                 <div className='lg:w-4/5 lg:grid lg:mx-36 items-center'>
                     <CampaignCard />

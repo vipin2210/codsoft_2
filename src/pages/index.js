@@ -7,7 +7,8 @@ import EventCard from "@/components/EventCard";
 
 import PastEvent from "@/components/PastEvent";
 import Link from "next/link";
-import ScrolltoTop from "@/components/ScrolltoTop";
+
+import ScrollTop from "@/components/ScrollTop";
 
 const events = [
     {
@@ -166,32 +167,44 @@ export default function Home() {
                                     Help Artist India
                                 </h1>
 
-                                <h2 className='text-left text-gray-500 xl:text-xl mt-4 '>
-                                    Help artist India was founded in January of
-                                    2018. It acknowledges and harbour the
-                                    veiled, unidentified artists, availing
-                                    nothing but facilitating the unrevealed
-                                    talents inhabiting our society. This NGO
-                                    dreams of re- establishing the sphere of
-                                    talents and proclaiming the worth of any
-                                    artist who behold the talent and brew it for
-                                    the audience. Artists can find this
-                                    organization extremely helpful and
-                                    facilitating. Above all saving the Heritage
-                                    of the India, what makes someone inspiring,
-                                    is the ability to keep preserving keeping
-                                    the zeal alive even when the circumstances
-                                    are not favourable. The reason can be
-                                    health, old age, finance, or being out of
-                                    the main stream. Talent Based Events Fund
-                                    Raising Events Compaigns / Social Work
+                                <h2 className='text-left text-gray-500 xl:text-xl mt-4 lg:mr-64 '>
+                                    Help Artist India was founded in January of
+                                    2018. It acknowledges and harbor the veiled,
+                                    unidentified artists, availing nothing but
+                                    facilitating the unrevealed talents
+                                    inhabiting our society. This NGO dreams of
+                                    re- establishing the sphere of talents and
+                                    proclaiming the worth of any artist who
+                                    behold the talent and brew it for the
+                                    audience. Artists can find this organization
+                                    extremely helpful and facilitating. Above
+                                    all saving the Heritage of the India, what
+                                    makes someone inspiring, keeping the zeal
+                                    alive even when the circumstances are not
+                                    favorable. The reason can be health, old
+                                    age, finance, or being out of the main
+                                    stream.
+                                    <ul className='list-disc ml-8'>
+                                        <li>Talent Based Events</li>
+                                        <li>Fund Raising Events</li>
+                                        <li>Compaigns / Social Work</li>
+                                    </ul>
                                 </h2>
+
+                                <div className=' my-4   '>
+                                    <Link
+                                        href='/donation'
+                                        className='items-center py-2 px-7 text-base font-medium text-center bg-red-600 text-white rounded-lg border  hover:bg-black focus:ring-2 focus:ring-gray-100  '
+                                    >
+                                        MORE INFO
+                                    </Link>
+                                </div>
                             </div>
 
                             <div>
                                 <img
-                                    src='/section5.png'
-                                    className='w-full mx-auto mt-6 sm:w-10/12 lg:w-full'
+                                    src='/section6.png'
+                                    className='w-full mx-auto  mt-6 sm:w-10/12 lg:w-full'
                                     alt='Section2'
                                 />
                             </div>
@@ -226,7 +239,7 @@ export default function Home() {
                     </div>
                     <div className='border-4 border-yellow-600 mt-4'></div>
                 </section>
-                {/* <ScrolltoTop /> */}
+                <ScrollTop />
             </div>
         </main>
     );
