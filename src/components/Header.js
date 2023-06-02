@@ -6,8 +6,8 @@ const Header = ({ image, name, page }) => {
         <div className=''>
             <img
                 className='object-fill  h-96 w-full'
-                src='/Frame.png'
-                alt='Frame'
+                src={image}
+                alt={image}
             />
 
             <Breadcrum name={name} page={page} />
