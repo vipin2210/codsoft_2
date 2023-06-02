@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import CallToAction from "@/components/CallToAction";
 import Footer from "@/components/Footer";
 import Breadcrum from "@/components/Breadcrum";
+import Header from "@/components/Header";
 // import img from "next/image";
 
 function contact() {
@@ -12,13 +13,11 @@ function contact() {
             <Navbar />
             <div>
                 <section>
-                    <div className=''>
-                        <img
-                            className='object-fill  h-80 w-full'
-                            src='/contactus.png'
-                        />
-                        <Breadcrum name={"Contact Us"} page={"Contact us"} />
-                    </div>
+                    <Header
+                        image='/contactus.png'
+                        name='Contact Us'
+                        page='contact'
+                    />
                     <div className='m-8'>
                         <CallToAction />
                     </div>
