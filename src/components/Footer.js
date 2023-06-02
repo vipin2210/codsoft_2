@@ -5,28 +5,24 @@ const Footer = () => {
     return (
         // max-w-screen-xl
         <div>
-            <footer className='  bg-[#353535]  w-full text-white'>
-                <div className='flex flex-col  '>
-                    <div className='mx-auto w-full  p-4 py-6 lg:py-8 bg-[#222423] '>
+            <footer className='  bg-[#000215]  w-full text-white font-sans'>
+                <div className='  '>
+                    <div className=' w-full  p-4 py-6 lg:py-8 bg-[#0D0E19] '>
                         <div className='md:flex md:justify-between'>
                             <div className='mb-6 md:mb-0 '>
                                 <div className='mb-6 '>
-                                    <h2 className='self-center text-2xl font-semibold whitespace-nowrap  mb-5'>
+                                    <h2 className='self-center text-2xl font-semibold whitespace-nowrap text-[#FFD12F] mb-5'>
                                         HELPARTISTINDIA
                                     </h2>
                                     <p className=' '>
-                                        Help artist India was founded in January
-                                        <br />
-                                        of 2018. It acknowledges and harbour the
-                                        veiled,
-                                        <br /> unidentified artists, availing
-                                        nothing <br />
-                                        but facilitating the unrevealed talents
-                                        inhabiting our society.
+                                        Help Artist India - &quot;HAI&quot; is
+                                        an effort <br />
+                                        For the Artist & their Benefits with{" "}
+                                        <br /> in India & worldwide.
                                     </p>
                                 </div>
                                 <div>
-                                    <h2 className='self-center text-2xl font-semibold whitespace-nowrap  mb-5'>
+                                    <h2 className='self-center text-2xl font-semibold whitespace-nowrap text-[#FFD12F] mb-5'>
                                         OPENING HOURS
                                     </h2>
                                 </div>
@@ -37,32 +33,32 @@ const Footer = () => {
                                     Saturday & Sunday Half Day
                                 </div>
                             </div>
-                            <div className='grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-4'>
+                            <div className='grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-4 '>
                                 <div>
-                                    <h2 className='mb-6 text-lg font-bold uppercase '>
+                                    <h2 className='mb-6 text-lg font-bold uppercase text-[#FFD12F] '>
                                         Quick Links
                                     </h2>
                                     <ul className='font-medium'>
                                         <li className='mb-4'>
                                             <Link
-                                                href='about'
-                                                className='hover:underline'
+                                                href='/about'
+                                                className='hover:underline hover:text-blue-400  '
                                             >
                                                 About Us
                                             </Link>
                                         </li>
                                         <li className='mb-4'>
                                             <Link
-                                                href='#'
-                                                className='hover:underline'
+                                                href='/mission'
+                                                className='hover:underline hover:text-blue-400 '
                                             >
-                                                Classes
+                                                Mission
                                             </Link>
                                         </li>
                                         <li className='mb-4'>
                                             <Link
-                                                href='/hai'
-                                                className='hover:underline'
+                                                href=''
+                                                className='hover:underline hover:text-blue-400 '
                                             >
                                                 H.A.I (HEROS)
                                             </Link>
@@ -70,22 +66,22 @@ const Footer = () => {
                                     </ul>
                                 </div>
                                 <div>
-                                    <h2 className='mb-6 text-lg font-bold uppercase '>
+                                    <h2 className='mb-6 text-lg font-bold uppercase text-[#FFD12F]'>
                                         Our Services
                                     </h2>
-                                    <ul className='font-medium'>
+                                    <ul className='font-medium '>
                                         <li className='mb-4'>
                                             <Link
-                                                href='https://www.helpartistindia.org/upcoming/'
-                                                className='hover:underline '
+                                                href='/upcommingEvent'
+                                                className='hover:underline hover:text-blue-400  '
                                             >
                                                 Event
                                             </Link>
                                         </li>
                                         <li>
                                             <Link
-                                                href='https://www.helpartistindia.org/hai/'
-                                                className='hover:underline'
+                                                href='/campaign'
+                                                className='hover:underline hover:text-blue-400 '
                                             >
                                                 Campaign
                                             </Link>
@@ -93,14 +89,14 @@ const Footer = () => {
                                     </ul>
                                 </div>
                                 <div>
-                                    <h2 className='mb-6 text-lg font-bold uppercase '>
+                                    <h2 className='mb-6 text-lg font-bold uppercase text-[#FFD12F] '>
                                         Social Media
                                     </h2>
                                     <ul className='font-medium'>
                                         <li className='mb-4'>
                                             <Link
                                                 href='https://www.facebook.com/helpartistindia/'
-                                                className='hover:underline'
+                                                className='hover:underline hover:text-blue-400 '
                                             >
                                                 Facebook
                                             </Link>
@@ -108,7 +104,7 @@ const Footer = () => {
                                         <li className='mb-4'>
                                             <Link
                                                 href='https://www.instagram.com/helpartistindia/'
-                                                className='hover:underline'
+                                                className='hover:underline hover:text-blue-400 '
                                             >
                                                 Instagram
                                             </Link>
@@ -116,7 +112,7 @@ const Footer = () => {
                                         <li className='mb-4'>
                                             <Link
                                                 href='https://www.youtube.com/channel/UCZ5LcJ-ZFCAx_5C6Xk3XXOA'
-                                                className='hover:underline'
+                                                className='hover:underline hover:text-blue-400 '
                                             >
                                                 Youtube
                                             </Link>
@@ -124,7 +120,7 @@ const Footer = () => {
                                         <li>
                                             <Link
                                                 href='https://twitter.com/HelpArtistIndia'
-                                                className='hover:underline'
+                                                className='hover:underline hover:text-blue-400 '
                                             >
                                                 Twitter
                                             </Link>
@@ -132,25 +128,22 @@ const Footer = () => {
                                     </ul>
                                 </div>
                                 <div>
-                                    <h2 className='mb-6 text-lg font-bold uppercase '>
+                                    <h2 className='mb-6 text-lg font-bold uppercase text-[#FFD12F] '>
                                         CONTACT US
                                     </h2>
                                     <ul className='font-small'>
                                         <li className='mb-4'>
                                             <p>
-                                                PLOT-22 Level, Ashirwad
-                                                Apartment <br></br>
-                                                Block-B, SAI TOWER, 5, <br></br>
-                                                Sector 12 Dwarka,<br></br>
-                                                Dwarka, New Delhi, <br></br>
-                                                Delhi 110078,<br></br>
+                                                Help Artist India, Sai Tower,
+                                                Plot <br /> No.22, Level #5,
+                                                Sector 12B, <br /> Dwarka, New
+                                                Delhi 110078
                                             </p>
                                         </li>
                                         <li>
                                             <p>
-                                                helpartistindia@gmail.com
-                                                <br></br>
-                                                +91 - 97117-13123<br></br>
+                                                helpartistindia@gmail.com <br />
+                                                +91 - 97117-13123 <br />
                                                 +91 - 9990913123
                                             </p>
                                         </li>
@@ -160,24 +153,19 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div className='sm:flex sm:items-center  sm:justify-between bg-[#353535] lg:h-16  sm:h-20 p-4 font si'>
-                        <span className='text-sm sm:text-center '>
-                            Copyright © 2023{" "}
+                    <div className='flex justify-center  bg-[#000215]   p-4 '>
+                        <span className='text-md text-center '>
+                            Copyright © 2023 By{" "}
                             <Link
-                                href='https://flowbite.com/'
-                                className='hover:underline'
+                                href='/'
+                                className='hover:underline hover:text-blue-400 '
                             >
-                                By helpartistindia
-                                {/* ™ */}
-                            </Link>
-                            . All Rights Reserved.
+                                helpartistindia{" "}
+                            </Link>{" "}
+                            <br className=' sm:hidden flex' />
+                            All Rights Reserved.
+                            {/* ™ */}
                         </span>
-                        <div className='flex mt-4 space-x-6 sm:justify-center sm:mt-0 text-m sm:text-center '>
-                            <p>Terms of use</p>
-                            <div className='flex flex-wrap items-center mb-5 text-base md:mb-0 md:pl-8 md:ml-8 md:border-l-4 md:border-gray-100  '></div>
-
-                            <p>Privacy Policy</p>
-                        </div>
                     </div>
                 </div>
             </footer>
