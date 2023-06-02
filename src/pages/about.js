@@ -1,5 +1,6 @@
 import Breadcrum from "@/components/Breadcrum";
 import CoreTeamCard from "@/components/CoreTeamCard";
+import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
 import React from "react";
 
@@ -27,13 +28,7 @@ const about = () => {
         <div>
             <Navbar />
             <div>
-                <div className=''>
-                    <img
-                        className='object-fill  h-96 w-full'
-                        src='/Frame.png'
-                    />
-                    <Breadcrum name='About us' page='About Us' />
-                </div>
+                <Header image='/Frame.png' name='About Us' page='About us' />
                 <div className='p-4 relative xl:h-auto lg:h-auto mg:h-80 sm:h-60 text-center justify-center'>
                     <h1 className='text-4xl font-bold -mt-20 '>About Us</h1>
                     <p className='text-lg mt-1 p-4'>

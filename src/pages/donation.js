@@ -1,5 +1,6 @@
 import ArtistCard from "@/components/ArtistCard";
 import Breadcrum from "@/components/Breadcrum";
+import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
 import SelectArtist from "@/components/SelectArtist";
 import React from "react";
@@ -8,15 +9,7 @@ const donation = () => {
     return (
         <div>
             <Navbar />
-            <div className=''>
-                <img
-                    className='object-fill  h-96 w-full'
-                    src='/Frame.png'
-                    alt='Frame'
-                />
-
-                <Breadcrum name='Donation' page='Donation' />
-            </div>
+            <Header image='/Frame.png' name='Donation' page='Donation' />
 
             <div className='relative h-64  border bottom-56 md:mx-48 backdrop-blur-md rounded-2xl text-center'>
                 <h1 className='text-center text-3xl font-bold  md:text-white text-black p-4'>
@@ -33,7 +26,7 @@ const donation = () => {
                 <div className=' max-w-lg text-center'>
                     <div className='flex gap-5 justify-center'>
                         <h1 className='text-5xl  mb-4'>Donation</h1>
-                        <img src='/Donation Icon 2.png' alt='donationIcons' />
+                        <img src='/DonationIcon.png' alt='donationIcons' />
                     </div>
 
                     <p className='text-2xl mx-4 '>

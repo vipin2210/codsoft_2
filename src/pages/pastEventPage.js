@@ -1,6 +1,7 @@
 import Breadcrum from "@/components/Breadcrum";
 import Button from "@/components/Button";
 import EventCard from "@/components/EventCard";
+import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
 import PastEvent from "@/components/PastEvent";
 import SimpleCarousal from "@/components/SimpleCarousal";
@@ -12,15 +13,7 @@ const pastEventPage = () => {
         <div>
             <Navbar />
             <div className='bg-black'>
-                <div className=''>
-                    <img
-                        className='object-fill  h-80 w-full'
-                        src='/PastEventBanner.png'
-                    />
-                    <Breadcrum name='Event' page='Event' />
-
-                    <Button props='bg-red-600' />
-                </div>
+                <Header image='/Frame.png' name='Past Event' page='Past event' />
 
                 <div className='relative container -mt-14 z-20 mx-auto '>
                     <div className='grid grid-cols-2  gap-x-5'>
