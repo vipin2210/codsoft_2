@@ -14,28 +14,28 @@ const mission = () => {
                 <div className='relative container -mt-60 z-20 mx-auto '>
                     <div className=' mx-auto grid grid-cols-4 gap-6 w-3/4 rounded-3xl p-6  bg-[#000000]  '>
                         <div>
-                            <img src='/m1.png' />
+                            <img src='/mis1.png' />
                         </div>
                         <div>
-                            <img src='/m6.png' />
+                            <img src='/mis6.png' />
                         </div>
                         <div>
-                            <img src='/m3.png' />
+                            <img src='/mis3.png' />
                         </div>
                         <div>
-                            <img src='/m4.png' />
+                            <img src='/mis4.png' />
                         </div>
                         <div>
-                            <img src='/m5.png' />
+                            <img src='/mis5.png' />
                         </div>
                         <div>
-                            <img src='/missionImg4.png' />
+                            <img src='/mis2.png' />
                         </div>
                         <div>
-                            <img src='/missionImg7.png' />
+                            <img src='/mis7.png' />
                         </div>
                         <div>
-                            <img src='/missionImg8.png' />
+                            <img src='/mis8.png' />
                         </div>
                     </div>
                 </div>
@@ -99,7 +99,7 @@ const mission = () => {
 
                         <div>
                             <h1 className='font-bold text-xl mt-4 '>
-                                Musical Traing:
+                                Musical Training:
                             </h1>
                             <p>
                                 We are looking for talent all around us. and a

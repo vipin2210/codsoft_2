@@ -12,7 +12,39 @@ import Breadcrum from "@/components/Breadcrum";
 import Header from "@/components/Header";
 import ScrollTop from "@/components/ScrollTop";
 
+const campaigns = [
+    {
+        name: "Singing Competition By Help Artist India",
+        desc: "Help Artist India is dedicated to music, art, and culture. So as to save the heritage of Indian music and various art forms, we took a survey and went on a hunt through the country to find some unique talent under the series Funkaar. It's a project to showcase talent on a defined stage.We donate musical instruments to needy artists. With our mentors, we go the extra mile to raise funds for this activity. We arrange workshops in some schools and hostels for physically challenged students. to teach music, Getting a platform for the artist is another project that we target because getting work for the artist is the major concern.",
+        link: "/donation",
+        image1: "",
+        image2: "",
+        image3: "",
+    },
+    {
+        name: "Donation By Help Artist India",
+        desc: "Help Artist India is dedicated to music, art, and culture. So as to save the heritage of Indian music and various art forms, we took a survey and went on a hunt through the country to find some unique talent under the series Funkaar. It's a project to showcase talent on a defined stage. We donate musical instruments to needy artists. With our mentors, we go the extra mile to raise funds for this activity. We arrange workshops in some schools and hostels for physically challenged students. to teach music, Getting a platform for the artist is another project that we target because getting work for the artist is the major concern.",
+        link: "/donation",
+        image1: "",
+        image2: "",
+        image3: "",
+    },
+];
 const service = () => {
+<<<<<<< HEAD:src/pages/services.js
+  return (
+    <div>
+      <Navbar />
+      <div className="bg-[#000215]">
+        <div className="">
+          <img className="object-fill  h-96 w-full" src="/Frame.png" />
+          <Breadcrum name={"Services"} page={"Services"} />
+        </div>
+
+        <div className="lg:w-4/5 lg:grid lg:mx-36 items-center">
+          <CampaignCard />
+          <CampaignCard />
+=======
     return (
         <div>
             <Navbar />
@@ -24,13 +56,16 @@ const service = () => {
                 />
 
                 <div className='lg:w-4/5 lg:grid lg:mx-36 items-center'>
-                    <CampaignCard />
-                    <CampaignCard />
+                    <CampaignCard props={campaigns[0]} />
+                    <CampaignCard props={campaigns[1]} />
                 </div>
             </div>
             <ScrollTop />
+>>>>>>> 03cb61295e499ee7c94617bee260b6ca8cd2e485:src/pages/campaign.js
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default service;

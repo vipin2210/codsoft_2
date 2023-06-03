@@ -12,7 +12,11 @@ import {
 } from "@material-tailwind/react";
 
 function Navbar() {
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setOpen] = useState(false);
+
+    const handleDropDown = () => {
+        setOpen(!isOpen);
+    };
     return (
         <nav className=' shadow-lg  sticky w-full z-10 '>
             <div className='w-full'>
@@ -42,35 +46,12 @@ function Navbar() {
                                 >
                                     About Us
                                 </Link>
-                                {/* <Link
-                                    href='/services'
+                                <Link
+                                    href='/event'
                                     className='cursor-pointer hover:underline decoration-red-600 decoration-2 underline-offset-4 font-semibold px-3 py-2 text-md hover:text-red-600 '
                                 >
                                     Services
-                                </Link> */}
-
-                                <Menu>
-                                    <MenuHandler>
-                                        <Button className=' bg-white hover:bg-neutral-200 text-black '>
-                                            Our Services
-                                        </Button>
-                                    </MenuHandler>
-                                    <MenuList>
-                                        <MenuItem>
-                                            <Link href='/campaign'>
-                                                Compaign
-                                            </Link>
-                                        </MenuItem>
-                                        <MenuItem>
-                                            <Link href='/event'>Event</Link>
-                                        </MenuItem>
-                                        <MenuItem>
-                                            <Link href='/pastevents'>
-                                                Past Event
-                                            </Link>
-                                        </MenuItem>
-                                    </MenuList>
-                                </Menu>
+                                </Link>
 
                                 <Link
                                     href='/mission'
@@ -78,31 +59,65 @@ function Navbar() {
                                 >
                                     Mission
                                 </Link>
-                                <Menu>
-                                    <MenuHandler>
-                                        <Button className=' bg-white hover:bg-neutral-200 text-black '>
-                                            More
-                                        </Button>
-                                    </MenuHandler>
-                                    <MenuList>
-                                        {/* <MenuItem>
-                                            <Link href='/hai'>HAI Heros</Link>
-                                        </MenuItem> */}
-                                        <MenuItem>
-                                            <Link href='/hai'>H.A.I Team</Link>
-                                        </MenuItem>
-                                        {/* <MenuItem>
-                                            <Link href='/bookartist'>
-                                                Book Artist
-                                            </Link>
-                                        </MenuItem> */}
-                                        <MenuItem>
-                                            <Link href='/donation'>
-                                                Donation
-                                            </Link>
-                                        </MenuItem>
-                                    </MenuList>
-                                </Menu>
+
+
+
+                                <div className="dropdown">
+                                    <button
+                                        className="text-black bg-white font-semibold hover:underline decoration-red-600 decoration-2 underline-offset-4 rounded-lg text-md px-4 py-2.5 text-center inline-flex items-center hover:text-red-600"
+                                        onClick={handleDropDown}
+                                    >
+                                        More
+                                        <svg
+                                            className="ml-2 w-4 h-4"
+                                            aria-hidden="true"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                                strokeWidth="2"
+                                                d="M19 9l-7 7-7-7"
+                                            ></path>
+                                        </svg>
+                                    </button>
+
+                                    <div
+                                        id="dropdown"
+                                        className={`z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow ${isOpen ? " absolute block" : "hidden"
+                                            }`}
+                                    >
+                                        <ul className=" z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow ">
+                                            <li
+                                            >
+                                                <a href="/ourHeros" className="block py-2 px-4 hover:bg-gray-100">
+                                                    HAI Heros
+                                                </a>
+                                            </li>
+                                            <li
+                                            >
+                                                <a href="/hai" className="block py-2 px-4 hover:bg-gray-100">
+                                                    H.A.I teams
+                                                </a>
+                                            </li>
+                                            <li
+                                            >
+                                                <a href="/bookArtist" className="block py-2 px-4 hover:bg-gray-100">
+                                                    Book Artist
+                                                </a>
+                                            </li>
+                                            <li
+                                            >
+                                                <a href="/donation" className="block py-2 px-4 hover:bg-gray-100">
+                                                    Donation
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
 
                                 <Link
                                     href='/contact'
@@ -115,7 +130,7 @@ function Navbar() {
                     </div>
                     <div className='mr-10 flex md:hidden '>
                         <button
-                            onClick={() => setIsOpen(!isOpen)}
+                            onClick={() => setOpen(!isOpen)}
                             type='button'
                             className='bg-blue-600 inline-flex items-center justify-center p-2 rounded-md text-white  hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-blue-800 focus:ring-white'
                             aria-controls='mobile-menu'
@@ -266,33 +281,68 @@ function Navbar() {
                             >
                                 Contact
                             </Link>
-                            <Menu>
-                                <MenuHandler>
-                                    <Button className=' bg-white  hover:bg-neutral-200 text-black '>
-                                        More
-                                    </Button>
-                                </MenuHandler>
-                                <MenuList>
-                                    {/* <MenuItem>
-                                        <Link href='/hai'>HAI Heros</Link>
-                                    </MenuItem> */}
-                                    <MenuItem>
-                                        <Link href='/hai'>H.A.I Team</Link>
-                                    </MenuItem>
-                                    {/* <MenuItem>
-                                        <Link href='/bookartist'>
-                                            Book Artist
-                                        </Link>
-                                    </MenuItem> */}
-                                    <MenuItem>
-                                        <Link href='/donation'>Donation</Link>
-                                    </MenuItem>
-                                </MenuList>
-                            </Menu>
+                            <div className="dropdown">
+                                <button
+                                    className="text-black bg-white font-xs rounded-lg text-md px-4 py-2.5 text-center inline-flex items-center"
+                                    onClick={handleDropDown}
+                                >
+                                    More
+                                    <svg
+                                        className="ml-2 w-4 h-4"
+                                        aria-hidden="true"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            strokeWidth="2"
+                                            d="M19 9l-7 7-7-7"
+                                        ></path>
+                                    </svg>
+                                </button>
+
+                                <div
+                                    id="dropdown"
+                                    className={`z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow ${isOpen ? " absolute block" : "hidden"
+                                        }`}
+                                >
+                                    <ul className=" z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow ">
+                                        <li
+                                        >
+                                            <a href="/hai" className="block py-2 px-4 hover:bg-gray-100">
+                                                HAI Heros
+                                            </a>
+                                        </li>
+                                        <li
+                                        >
+                                            <a href="/hai" className="block py-2 px-4 hover:bg-gray-100">
+                                                H.A.I teams
+                                            </a>
+                                        </li>
+                                        <li
+                                        >
+                                            <a href="/bookartist" className="block py-2 px-4 hover:bg-gray-100">
+                                                Book Artist
+                                            </a>
+                                        </li>
+                                        <li
+                                        >
+                                            <a href="/donation" className="block py-2 px-4 hover:bg-gray-100">
+                                                Donation
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 )}
             </Transition>
+            <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
         </nav>
     );
 }
