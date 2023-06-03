@@ -12,9 +12,13 @@ import {
 } from "@material-tailwind/react";
 
 function Navbar() {
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setOpen] = useState(false);
+
+    const handleDropDown = () => {
+        setOpen(!isOpen);
+    };
     return (
-        <nav className=' shadow-lg  sticky w-full z-10'>
+        <nav className=' shadow-lg  sticky w-full z-10 '>
             <div className='w-full'>
                 <div className='flex items-center h-20 w-full'>
                     <div className='flex items-center  mx-5 md:mx-16  justify-between w-full'>
@@ -43,55 +47,81 @@ function Navbar() {
                                     About Us
                                 </Link>
                                 <Link
-                                    href='/services'
+                                    href='/event'
                                     className='cursor-pointer hover:underline decoration-red-600 decoration-2 underline-offset-4 font-semibold px-3 py-2 text-md hover:text-red-600 '
                                 >
                                     Services
                                 </Link>
+
                                 <Link
                                     href='/mission'
                                     className='cursor-pointer hover:underline decoration-red-600 decoration-2 underline-offset-4 font-semibold px-3 py-2 text-md hover:text-red-600 '
                                 >
                                     Mission
                                 </Link>
-                                {/* <Menu>
-                                    <MenuHandler>
-                                        <div className="flex flex-row">
-                                           
-                                            <Button className='bg-transparent text-black bg-none'>
-                                                More{" "}
-                                            </Button>
-                                            <svg
-                                                xmlns='http://www.w3.org/2000/svg'
-                                                viewBox='0 0 24 24'
-                                                id='down-arrow'
+
+
+
+                                <div className="dropdown">
+                                    <button
+                                        className="text-black bg-white font-semibold hover:underline decoration-red-600 decoration-2 underline-offset-4 rounded-lg text-md px-4 py-2.5 text-center inline-flex items-center hover:text-red-600"
+                                        onClick={handleDropDown}
+                                    >
+                                        More
+                                        <svg
+                                            className="ml-2 w-4 h-4"
+                                            aria-hidden="true"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                                strokeWidth="2"
+                                                d="M19 9l-7 7-7-7"
+                                            ></path>
+                                        </svg>
+                                    </button>
+
+                                    <div
+                                        id="dropdown"
+                                        className={`z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow ${isOpen ? " absolute block" : "hidden"
+                                            }`}
+                                    >
+                                        <ul className=" z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow ">
+                                            <li
                                             >
-                                                <path d='M17,9.17a1,1,0,0,0-1.41,0L12,12.71,8.46,9.17a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42l4.24,4.24a1,1,0,0,0,1.42,0L17,10.59A1,1,0,0,0,17,9.17Z'></path>
-                                            </svg>
-                                        </div>
-                                    </MenuHandler>
-                                    <MenuList>
-                                        <MenuItem>
-                                            <Link href='/donation'>
-                                                Donation
-                                            </Link>
-                                        </MenuItem>
-                                        <MenuItem>
-                                            <Link href='/donation'>
-                                                Donation
-                                            </Link>
-                                        </MenuItem>
-                                        <MenuItem>
-                                            <Link href='/donation'>
-                                                Donation
-                                            </Link>
-                                        </MenuItem>
-                                    </MenuList>
-                                </Menu> */}
+                                                <a href="/ourHeros" className="block py-2 px-4 hover:bg-gray-100">
+                                                    HAI Heros
+                                                </a>
+                                            </li>
+                                            <li
+                                            >
+                                                <a href="/hai" className="block py-2 px-4 hover:bg-gray-100">
+                                                    H.A.I teams
+                                                </a>
+                                            </li>
+                                            <li
+                                            >
+                                                <a href="/bookArtist" className="block py-2 px-4 hover:bg-gray-100">
+                                                    Book Artist
+                                                </a>
+                                            </li>
+                                            <li
+                                            >
+                                                <a href="/donation" className="block py-2 px-4 hover:bg-gray-100">
+                                                    Donation
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
 
                                 <Link
                                     href='/contact'
-                                    className='cursor-pointer bg-blue-600 text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-black'
+                                    className='cursor-pointer bg-[#FF0000] text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-black'
                                 >
                                     Contact Us
                                 </Link>
@@ -100,7 +130,7 @@ function Navbar() {
                     </div>
                     <div className='mr-10 flex md:hidden '>
                         <button
-                            onClick={() => setIsOpen(!isOpen)}
+                            onClick={() => setOpen(!isOpen)}
                             type='button'
                             className='bg-blue-600 inline-flex items-center justify-center p-2 rounded-md text-white  hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-blue-800 focus:ring-white'
                             aria-controls='mobile-menu'
@@ -184,7 +214,7 @@ function Navbar() {
                             </Link>
 
                             <Link
-                                href='/services'
+                                href=''
                                 activeClass='services'
                                 to='services'
                                 smooth={true}
@@ -194,6 +224,40 @@ function Navbar() {
                             >
                                 Services
                             </Link>
+                            <Link
+                                href='/event'
+                                activeClass='services'
+                                to='services'
+                                smooth={true}
+                                offset={50}
+                                duration={500}
+                                className='cursor-pointer hover:bg-blue-600 ml-4 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium'
+                            >
+                                Event
+                            </Link>
+                            <Link
+                                href='/pastevents'
+                                activeClass='services'
+                                to='services'
+                                smooth={true}
+                                offset={50}
+                                duration={500}
+                                className='cursor-pointer hover:bg-blue-600 ml-4 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium'
+                            >
+                                Past Events
+                            </Link>
+                            <Link
+                                href='/campaign'
+                                activeClass='services'
+                                to='services'
+                                smooth={true}
+                                offset={50}
+                                duration={500}
+                                className='cursor-pointer hover:bg-blue-600 text-black ml-4 hover:text-white block px-3 py-2 rounded-md text-base font-medium'
+                            >
+                                Campaign
+                            </Link>
+
                             <Link
                                 href='/mission'
                                 activeClass='mission'
@@ -217,10 +281,68 @@ function Navbar() {
                             >
                                 Contact
                             </Link>
+                            <div className="dropdown">
+                                <button
+                                    className="text-black bg-white font-xs rounded-lg text-md px-4 py-2.5 text-center inline-flex items-center"
+                                    onClick={handleDropDown}
+                                >
+                                    More
+                                    <svg
+                                        className="ml-2 w-4 h-4"
+                                        aria-hidden="true"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            strokeWidth="2"
+                                            d="M19 9l-7 7-7-7"
+                                        ></path>
+                                    </svg>
+                                </button>
+
+                                <div
+                                    id="dropdown"
+                                    className={`z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow ${isOpen ? " absolute block" : "hidden"
+                                        }`}
+                                >
+                                    <ul className=" z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow ">
+                                        <li
+                                        >
+                                            <a href="/hai" className="block py-2 px-4 hover:bg-gray-100">
+                                                HAI Heros
+                                            </a>
+                                        </li>
+                                        <li
+                                        >
+                                            <a href="/hai" className="block py-2 px-4 hover:bg-gray-100">
+                                                H.A.I teams
+                                            </a>
+                                        </li>
+                                        <li
+                                        >
+                                            <a href="/bookartist" className="block py-2 px-4 hover:bg-gray-100">
+                                                Book Artist
+                                            </a>
+                                        </li>
+                                        <li
+                                        >
+                                            <a href="/donation" className="block py-2 px-4 hover:bg-gray-100">
+                                                Donation
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 )}
             </Transition>
+            <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
         </nav>
     );
 }

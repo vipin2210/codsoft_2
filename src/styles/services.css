@@ -111,3 +111,18 @@
 .swiper-pagination .swiper-pagination-bullet-active {
     background: var(--primary);
 }
+
+.AnyClassForContainer {
+  position: fixed;
+  right: -100px;
+  bottom: 150px;
+  transition: right 0.5s;
+  cursor: pointer;
+  background-color: white;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.AnyClassForTransition {
+  right: 20px;
+}
