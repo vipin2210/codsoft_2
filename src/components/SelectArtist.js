@@ -1,11 +1,17 @@
 import React from "react";
+import ArtistCarsoul from "./ArtistCarsoul";
 
 const SelectArtist = () => {
     return (
         <div>
             <div className='sm:h-72 m-9 rounded-xl border border-zinc-950 bg-gray-50 bg-gradient-to-br from-neutral-50 to-rose-50'>
                 <div className='sm:flex sm:flex-row grid grid-rows-2  gap-12'>
-                    <div className='flex flex-col md:basis-1/3'>
+                    {/* <h1 className='font-extrabold p-2 text-3xl text-center md:text-2xl'>
+                        Select Artist
+                        <ArtistCarsoul />
+                    </h1> */}
+
+                    <div className='sm:flex grid sm:flex-col  justify-center'>
                         <h1 className='font-extrabold p-2 text-3xl text-center md:text-2xl'>
                             Select Artist
                         </h1>
@@ -17,6 +23,7 @@ const SelectArtist = () => {
                             />
                         </div>
                     </div>
+
                     <div className='basis-2/3'>
                         <div>
                             <div className='flex flex-col p-3 text-left'>

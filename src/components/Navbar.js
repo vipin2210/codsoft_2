@@ -14,7 +14,7 @@ import {
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     return (
-        <nav className=' shadow-lg  sticky w-full z-10'>
+        <nav className=' shadow-lg  sticky w-full z-10 '>
             <div className='w-full'>
                 <div className='flex items-center h-20 w-full'>
                     <div className='flex items-center  mx-5 md:mx-16  justify-between w-full'>
@@ -42,56 +42,71 @@ function Navbar() {
                                 >
                                     About Us
                                 </Link>
-                                <Link
+                                {/* <Link
                                     href='/services'
                                     className='cursor-pointer hover:underline decoration-red-600 decoration-2 underline-offset-4 font-semibold px-3 py-2 text-md hover:text-red-600 '
                                 >
                                     Services
-                                </Link>
+                                </Link> */}
+
+                                <Menu>
+                                    <MenuHandler>
+                                        <Button className=' bg-white hover:bg-neutral-200 text-black '>
+                                            Our Services
+                                        </Button>
+                                    </MenuHandler>
+                                    <MenuList>
+                                        <MenuItem>
+                                            <Link href='/campaign'>
+                                                Compaign
+                                            </Link>
+                                        </MenuItem>
+                                        <MenuItem>
+                                            <Link href='/event'>Event</Link>
+                                        </MenuItem>
+                                        <MenuItem>
+                                            <Link href='/pastevents'>
+                                                Past Event
+                                            </Link>
+                                        </MenuItem>
+                                    </MenuList>
+                                </Menu>
+
                                 <Link
                                     href='/mission'
                                     className='cursor-pointer hover:underline decoration-red-600 decoration-2 underline-offset-4 font-semibold px-3 py-2 text-md hover:text-red-600 '
                                 >
                                     Mission
                                 </Link>
-                                {/* <Menu>
+                                <Menu>
                                     <MenuHandler>
-                                        <div className="flex flex-row">
-                                           
-                                            <Button className='bg-transparent text-black bg-none'>
-                                                More{" "}
-                                            </Button>
-                                            <svg
-                                                xmlns='http://www.w3.org/2000/svg'
-                                                viewBox='0 0 24 24'
-                                                id='down-arrow'
-                                            >
-                                                <path d='M17,9.17a1,1,0,0,0-1.41,0L12,12.71,8.46,9.17a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42l4.24,4.24a1,1,0,0,0,1.42,0L17,10.59A1,1,0,0,0,17,9.17Z'></path>
-                                            </svg>
-                                        </div>
+                                        <Button className=' bg-white hover:bg-neutral-200 text-black '>
+                                            More
+                                        </Button>
                                     </MenuHandler>
                                     <MenuList>
+                                        {/* <MenuItem>
+                                            <Link href='/hai'>HAI Heros</Link>
+                                        </MenuItem> */}
                                         <MenuItem>
-                                            <Link href='/donation'>
-                                                Donation
-                                            </Link>
+                                            <Link href='/hai'>H.A.I Team</Link>
                                         </MenuItem>
-                                        <MenuItem>
-                                            <Link href='/donation'>
-                                                Donation
+                                        {/* <MenuItem>
+                                            <Link href='/bookartist'>
+                                                Book Artist
                                             </Link>
-                                        </MenuItem>
+                                        </MenuItem> */}
                                         <MenuItem>
                                             <Link href='/donation'>
                                                 Donation
                                             </Link>
                                         </MenuItem>
                                     </MenuList>
-                                </Menu> */}
+                                </Menu>
 
                                 <Link
                                     href='/contact'
-                                    className='cursor-pointer bg-blue-600 text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-black'
+                                    className='cursor-pointer bg-[#FF0000] text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-black'
                                 >
                                     Contact Us
                                 </Link>
@@ -184,7 +199,7 @@ function Navbar() {
                             </Link>
 
                             <Link
-                                href='/services'
+                                href=''
                                 activeClass='services'
                                 to='services'
                                 smooth={true}
@@ -194,6 +209,40 @@ function Navbar() {
                             >
                                 Services
                             </Link>
+                            <Link
+                                href='/event'
+                                activeClass='services'
+                                to='services'
+                                smooth={true}
+                                offset={50}
+                                duration={500}
+                                className='cursor-pointer hover:bg-blue-600 ml-4 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium'
+                            >
+                                Event
+                            </Link>
+                            <Link
+                                href='/pastevents'
+                                activeClass='services'
+                                to='services'
+                                smooth={true}
+                                offset={50}
+                                duration={500}
+                                className='cursor-pointer hover:bg-blue-600 ml-4 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium'
+                            >
+                                Past Events
+                            </Link>
+                            <Link
+                                href='/campaign'
+                                activeClass='services'
+                                to='services'
+                                smooth={true}
+                                offset={50}
+                                duration={500}
+                                className='cursor-pointer hover:bg-blue-600 text-black ml-4 hover:text-white block px-3 py-2 rounded-md text-base font-medium'
+                            >
+                                Campaign
+                            </Link>
+
                             <Link
                                 href='/mission'
                                 activeClass='mission'
@@ -217,6 +266,29 @@ function Navbar() {
                             >
                                 Contact
                             </Link>
+                            <Menu>
+                                <MenuHandler>
+                                    <Button className=' bg-white  hover:bg-neutral-200 text-black '>
+                                        More
+                                    </Button>
+                                </MenuHandler>
+                                <MenuList>
+                                    {/* <MenuItem>
+                                        <Link href='/hai'>HAI Heros</Link>
+                                    </MenuItem> */}
+                                    <MenuItem>
+                                        <Link href='/hai'>H.A.I Team</Link>
+                                    </MenuItem>
+                                    {/* <MenuItem>
+                                        <Link href='/bookartist'>
+                                            Book Artist
+                                        </Link>
+                                    </MenuItem> */}
+                                    <MenuItem>
+                                        <Link href='/donation'>Donation</Link>
+                                    </MenuItem>
+                                </MenuList>
+                            </Menu>
                         </div>
                     </div>
                 )}
