@@ -8,14 +8,66 @@ import SimpleCarousal from "@/components/SimpleCarousal";
 
 import React from "react";
 
+const pastevent = [
+    {
+        name: "LIVE IN CONCERT",
+        desc: "“Chitrahaar” a musical night with Padma Shri Hariharan, witness the mystic performance of living legend at F Bar and Lounge Noida. BOOK YOUR TABLES NOW HURRY !! Help Artist India Is All Set For Major Musical Events 2023 With Big Artists Of The Industry, It Will Be All For Fundraising For The NGO Dedicated To Upliftment Of Art And Artists Who Need Help To Live Their Dream Of Being An Artist.  Announcement Of These Musical Events Has Been Met With Enthusiasm By Music Fans Across India.",
+        link: "",
+        poster: "",
+        image1: "",
+        image2: "",
+        date: "11",
+        year: "2023",
+        day: "sunday",
+        month: "June",
+    },
+    {
+        name: "",
+        desc: "",
+        link: "",
+        poster: "",
+        image1: "",
+        image2: "",
+        date: "",
+        year: "",
+        day: "",
+    },
+    {
+        name: "",
+        desc: "",
+        link: "",
+        poster: "",
+        image1: "",
+        image2: "",
+        date: "",
+        year: "",
+        day: "",
+    },
+    {
+        name: "",
+        desc: "",
+        link: "",
+        poster: "",
+        image1: "",
+        image2: "",
+        date: "",
+        year: "",
+        day: "",
+    },
+];
+
 const pastEventPage = () => {
     return (
         <div>
             <Navbar />
             <div className='bg-black'>
-                <Header image='/Frame.png' name='Past Event' page='Past event' />
+                <Header
+                    image='/Frame.png'
+                    name='Event'
+                    page='Past event'
+                />
 
-                <div className='relative container -mt-14 z-20 mx-auto '>
+                <div className='relative container -mt-14 z-20 mx-auto p-16 '>
                     <div className='grid grid-cols-2  gap-x-5'>
                         <div className=''>
                             <a href='#'>
@@ -34,7 +86,7 @@ const pastEventPage = () => {
                                     <span>2023</span>
                                     <span>SUNDAY</span>
                                 </div>
-                                <div className=' w-[100%]   border-b-2 border-yellow-500 items-center mb-11'></div>
+                                {/* <div className=' w-[100%]   border-b-2 border-yellow-500 items-center mb-11'></div> */}
                             </div>
                         </div>
                         <div className='text-white -ml-32'>
@@ -59,10 +111,24 @@ const pastEventPage = () => {
                             <button className=' mt-8 lg:text-2xl sm:text-xl p-4 px-72  font-bold border-4 rounded-xl border-w  mb-8 border-blue-400 text-blue-300 '>
                                 Book Table
                             </button>
-                            <SimpleCarousal />
+                            <SimpleCarousal
+                                image1='/comingsoon.png'
+                                image2='/comingsoon.png'
+                            />
                         </div>{" "}
-                        <div className='w-[100%] border-b-2 border-yellow-500  mb-11 ml-80'></div>
+                        <div className='w-full border-4  border-yellow-500  mb-11 ml-96'></div>
                     </div>
+
+
+
+
+                    {/*  */}
+
+
+
+
+
+                    {/*  */}
 
                     {/* pastevent 2  from right to left*/}
                     <div className='mt-10 grid grid-cols-2 '>
@@ -88,7 +154,10 @@ const pastEventPage = () => {
                             <button className=' mt-8 lg:text-2xl sm:text-xl p-4 px-60  font-bold border-4 rounded-xl border-w  mb-8 border-blue-400 text-blue-300 '>
                                 Book Table
                             </button>
-                            <SimpleCarousal />
+                            <SimpleCarousal
+                                image1='/comingsoon.png'
+                                image2='/comingsoon.png'
+                            />
                         </div>
                         <div className='ml-36'>
                             <div className=''>
@@ -108,11 +177,10 @@ const pastEventPage = () => {
                                         <span>2023</span>
                                         <span>FRIDAY</span>
                                     </div>
-                                    <div className=' w-[100%]   border-b-2 border-yellow-500 items-center mb-11'></div>
                                 </div>
                             </div>
                         </div>
-                        <div className='w-[100%] border-b-2 border-yellow-500  mb-11 ml-80'></div>
+                        <div className='w-full border-4  border-yellow-500  mb-11 ml-96'></div>
                     </div>
 
                     <div className='grid grid-cols-2 gap-x-5'>
@@ -133,7 +201,6 @@ const pastEventPage = () => {
                                     <span>2023</span>
                                     <span>SUNDAY</span>
                                 </div>
-                                <div className=' w-[100%]   border-b-2 border-yellow-500 items-center mb-11'></div>
                             </div>
                         </div>
                         <div className='text-white -ml-32'>
@@ -158,9 +225,12 @@ const pastEventPage = () => {
                             <button className=' mt-8 lg:text-2xl sm:text-xl p-4 px-72  font-bold border-4 rounded-xl border-w  mb-8 border-blue-400 text-blue-300 '>
                                 Book Table
                             </button>
-                            <SimpleCarousal />
+                            <SimpleCarousal
+                                image1='/comingsoon.png'
+                                image2='/comingsoon.png'
+                            />
                         </div>{" "}
-                        <div className='w-[100%] border-b-2 border-yellow-500  mb-11 ml-80'></div>
+                        <div className='w-full border-4  border-yellow-500  mb-11 ml-96'></div>
                     </div>
                 </div>
             </div>

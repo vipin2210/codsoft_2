@@ -1,37 +1,38 @@
-import Breadcrum from "@/components/Breadcrum";
 import CoreTeamCard from "@/components/CoreTeamCard";
 import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
 import React from "react";
-import Prize from '@/components/Prize.js'
+import Prize from "@/components/Prize.js";
 import Glider from "react-glider";
 import "glider-js/glider.min.css";
+import ScrollTop from "@/components/ScrollTop";
 const about = () => {
     const prize = [
         {
             image: "/prize1.png",
-        }, {
-            image: "/prize2.png",
-
         },
         {
-            image: "/prize3.png"
+            image: "/prize2.png",
+        },
+        {
+            image: "/prize3.png",
         },
         {
             image: "/1.jpg",
-        }, {
-            image: "/2.jpg",
-
         },
         {
-            image: "/3.jpg"
-        }, {
-            image: "/prize3.png"
+            image: "/2.jpg",
+        },
+        {
+            image: "/3.jpg",
+        },
+        {
+            image: "/prize3.png",
         },
         {
             image: "/4.jpg",
         },
-    ]
+    ];
     const teams = [
         {
             photo: "/ashok.png",
@@ -57,30 +58,53 @@ const about = () => {
             <div>
                 <Header image='/Frame.png' name='About Us' page='About us' />
                 <div className='p-4 relative xl:h-auto lg:h-auto mg:h-80 sm:h-60 text-left justify-center'>
-                    <h1 className='text-4xl font-bold -mt-20 text-center'>About Us</h1>
-                    <p className='text-lg mt-1 ml-8 mr-8 p-4 sm:text-center'>
-                        Help Artist India was founded in January of 2018. It acknowledges and harbour the veiled,
-                        unidentified artists, availing nothing but facilitating the unrevealed talents
-                        inhabiting our society. This NGO dreams of re- establishing the sphere of talents
-                        and proclaiming the worth of any artist who behold the talent and brew it for the audience.
-                        Artists can find this organization extremely helpful and facilitating.
-                        Above all saving the Heritage of the India, what makes someone inspiring,
-                        is the ability to keep preserving keeping the zeal alive even when the circumstances are
-                        not favourable. The reason can be health, old age, finance, or being out of the main stream.
-
+                    <h1 className='text-4xl font-bold -mt-20 text-center'>
+                        About Us
+                    </h1>
+                    <p className='text-lg mt-1 sm:mx-8  p-4 sm:text-center'>
+                        Help Artist India was founded in January of 2018. It
+                        acknowledges and harbour the veiled, unidentified
+                        artists, availing nothing but facilitating the
+                        unrevealed talents inhabiting our society. This NGO
+                        dreams of re- establishing the sphere of talents and
+                        proclaiming the worth of any artist who behold the
+                        talent and brew it for the audience. Artists can find
+                        this organization extremely helpful and facilitating.
+                        Above all saving the Heritage of the India, what makes
+                        someone inspiring, is the ability to keep preserving
+                        keeping the zeal alive even when the circumstances are
+                        not favourable. The reason can be health, old age,
+                        finance, or being out of the main stream.
                     </p>
-                    <div className='flex md:flex-row flex-col pl-7 text-2xl text-red-600 font-bold'>
-                        <div className="w-2/6"><ul><li className="list-disc ml-24">Talent Based Events</li></ul></div>
-                        <div className="w-2/6"><ul><li className="list-disc ml-24">Fund Raising Events</li></ul></div>
-                        <div className="w-2/6"><ul><li className="list-disc ml-24">Compaigns /Social Work</li></ul></div>
+                    <div className='sm:flex md:flex-row grid justify-start ml-8 text-2xl text-[#F20C36] font-bold mb-16 '>
+                        <div className='sm:w-2/6'>
+                            <ul>
+                                <li className='list-disc sm:ml-24'>
+                                    Talent Based Events
+                                </li>
+                            </ul>
+                        </div>
+                        <div className='sm:w-2/6'>
+                            <ul>
+                                <li className='list-disc sm:ml-24'>
+                                    Fund Raising Events
+                                </li>
+                            </ul>
+                        </div>
+                        <div className='sm:w-2/6'>
+                            <ul>
+                                <li className='list-disc sm:ml-24'>
+                                    Compaigns /Social Work
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div className=' w-full md:mt-20 bg-[#5C5959]'>
+            <div className=' w-full  bg-[#5C5959] mt-48 lg:mt-36'>
                 <div className='flex md:flex-row flex-col gap-9 p-12 m-5 '>
-
                     <Glider
-                        className="glider-container p-5 "
+                        className='glider-container p-5  '
                         // draggable
                         scrollPropagate
                         hasArrows
@@ -89,6 +113,7 @@ const about = () => {
                         slidesToShow={1}
                         rewind
                         // exactWidth
+                        draggable={true}
                         responsive={[
                             {
                                 breakpoint: 800,
@@ -106,15 +131,17 @@ const about = () => {
                             },
                         ]}
                     >
-                        {prize.map((item) => (
-                            <Prize props={item} />
+                        {prize.map((item, i) => (
+                            <Prize key={i} props={item} />
                         ))}
                     </Glider>
                 </div>
             </div>
 
             <div className='mx-auto mt-20 rounded-2xl md:w-1/3  w-64 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500'>
-                <h1 className='text-4xl text-center font-bold p-4'>CORE TEAM</h1>
+                <h1 className='text-4xl text-center font-bold p-4'>
+                    CORE TEAM
+                </h1>
             </div>
 
             <section className='container mx-auto '>
@@ -128,6 +155,7 @@ const about = () => {
                     </div>
                 </section>
             </section>
+            <ScrollTop />
         </div>
     );
 };
