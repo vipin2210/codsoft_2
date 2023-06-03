@@ -9,28 +9,28 @@ import ScrollTop from "@/components/ScrollTop";
 const about = () => {
     const prize = [
         {
-            image: "/Prize1.png",
+            image: "/a1.png",
         },
         {
-            image: "/Prize2.png",
+            image: "/a2.png",
         },
         {
-            image: "/Prize3.png",
+            image: "/a3.png",
         },
         {
-            image: "/1.JPG",
+            image: "/a4.png",
         },
         {
-            image: "/2.JPG",
+            image: "/a5.png",
         },
         {
-            image: "/3.JPG",
+            image: "/a6.png",
         },
         {
-            image: "/5.JPG",
+            image: "/a7.png",
         },
         {
-            image: "/4.JPG",
+            image: "/a8.png",
         },
     ];
     const teams = [
@@ -101,7 +101,7 @@ const about = () => {
                     </div>
                 </div>
             </div>
-            <div className=' w-full  bg-[#5C5959] mt-48 lg:mt-36'>
+            <div className=' w-full  bg-[#5C5959] mt-48 lg:mt-16'>
                 <div className='flex md:flex-row flex-col gap-9 p-12 m-5 '>
                     <Glider
                         className='glider-container p-5  '

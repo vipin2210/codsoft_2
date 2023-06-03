@@ -32,7 +32,7 @@ const member = [
     {
         image: "/varish.png",
         profession: "Video Editor",
-        name: "Varish Sharma ",
+        name: "Varish Saxena ",
     },
 ];
 function hai() {
