@@ -193,7 +193,7 @@ export default function Home() {
 
                                 <div className=' my-4   '>
                                     <Link
-                                        href='/donation'
+                                        href='/about'
                                         className='items-center py-2 px-7 text-base font-medium text-center bg-red-600 text-white rounded-lg border  hover:bg-black focus:ring-2 focus:ring-gray-100  '
                                     >
                                         MORE INFO
