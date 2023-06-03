@@ -11,25 +11,22 @@ import Navbar from "@/components/Navbar";
 import Breadcrum from "@/components/Breadcrum";
 
 const service = () => {
-    return (
-        <div>
-            <Navbar />
-            <div className='bg-[#000215]'>
-                <div className=''>
-                    <img
-                        className='object-fill  h-96 w-full'
-                        src='/Frame.png'
-                    />
-                    <Breadcrum name={"Services"} page={"Services"} />
-                </div>
-
-                <div className='lg:w-4/5 lg:grid lg:mx-36 items-center'>
-                    <CampaignCard />
-                    <CampaignCard />
-                </div>
-            </div>
+  return (
+    <div>
+      <Navbar />
+      <div className="bg-[#000215]">
+        <div className="">
+          <img className="object-fill  h-96 w-full" src="/Frame.png" />
+          <Breadcrum name={"Services"} page={"Services"} />
         </div>
-    );
+
+        <div className="lg:w-4/5 lg:grid lg:mx-36 items-center">
+          <CampaignCard />
+          <CampaignCard />
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default service;
