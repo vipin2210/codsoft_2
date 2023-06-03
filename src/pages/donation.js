@@ -2,6 +2,7 @@ import ArtistCard from "@/components/ArtistCard";
 import Breadcrum from "@/components/Breadcrum";
 import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
+import ScrollTop from "@/components/ScrollTop";
 import SelectArtist from "@/components/SelectArtist";
 import React from "react";
 
@@ -11,17 +12,17 @@ const donation = () => {
             <Navbar />
             <Header image='/Frame.png' name='Donation' page='Donation' />
 
-            <div className='relative h-64  border bottom-56 md:mx-48 backdrop-blur-md rounded-2xl text-center'>
-                <h1 className='text-center text-3xl font-bold  md:text-white text-black p-4'>
+            <div className='relative h-64  bottom-56 xl:mx-48 sm:mx-8 mx-2 bg-neutral-900 rounded-2xl text-center'>
+                <h1 className='text-center text-3xl font-bold  text-white  p-4'>
                     DONATION
                 </h1>
-                <div className='md:text-white text-black'>
+                <div className='text-white '>
                     “We can’t help every Artist we meet, but…Everyone can help
                     at least one Artist”
                 </div>
                 <SelectArtist />
             </div>
-
+<div className="h-96 sm:hidden"></div>
             <div className=' grid  justify-center   md:flex  md:justify-evenly'>
                 <div className=' max-w-lg text-center'>
                     <div className='flex gap-5 justify-center'>
@@ -98,6 +99,7 @@ const donation = () => {
                     </button>
                 </div>
             </div>
+            <ScrollTop />
         </div>
     );
 };

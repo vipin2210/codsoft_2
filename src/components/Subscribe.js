@@ -18,7 +18,7 @@ const Subscribe = () => {
                 className='w-full px-4 py-3 border-2  rounded-lg focus:ring focus:ring-blue-500 focus:outline-none h-full border-gray-500'
                 placeholder='Email address'
             />
-            <select className='select select-bordered  w-full px-4 py-3  border-2  rounded-lg focus:ring focus:ring-blue-500 focus:outline-none md:h-full border-gray-500'>
+            <select className='select select-bordered  w-full px-4 py-3  border-2  rounded-lg focus:ring focus:ring-blue-500 focus:outline-none md:h-full border-gray-900'>
                 <option disabled={true} defaultValue='Category'>
                     Category
                 </option>

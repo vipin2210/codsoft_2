@@ -1,6 +1,7 @@
 import Breadcrum from "@/components/Breadcrum";
 import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
+import ScrollTop from "@/components/ScrollTop";
 import React from "react";
 
 const mission = () => {
@@ -16,7 +17,7 @@ const mission = () => {
                             <img src='/m1.png' />
                         </div>
                         <div>
-                            <img src='/m2.png' />
+                            <img src='/m6.png' />
                         </div>
                         <div>
                             <img src='/m3.png' />
@@ -152,6 +153,7 @@ const mission = () => {
                     </div>
                 </div>
             </div>
+            <ScrollTop />
         </div>
     );
 };
