@@ -15,24 +15,23 @@ const member = [
   {
     image: "/rohit.png",
     profession: "Sr. Graphic Designer",
-    name: "Nancy NTR 2",
+    name: "Rohit Thakur",
   },
-
-  {
-    image: "/prateek.png",
-    profession: "Video Editor",
-    name: "Prateek Saxena",
-  },
-  {
-    image: "/rohitsharma.png",
-    profession: "Social Media Manager",
-    name: "Rohit Sharma",
-  },
-  {
-    image: "/varish.png",
-    profession: "Video Editor",
-    name: "Varish Sharma ",
-  },
+    {
+        image: "/prateek.png",
+        profession: "Video Editor",
+        name: "Prateek Saxena",
+    },
+    {
+        image: "/rohitsharma.png",
+        profession: "Social Media Manager",
+        name: "Rohit Sharma",
+    },
+    {
+        image: "/varish.png",
+        profession: "Video Editor",
+        name: "Varish Saxena ",
+    },
 ];
 function hai() {
   return (
