@@ -5,6 +5,7 @@ import CallToAction from "@/components/CallToAction";
 import Footer from "@/components/Footer";
 import Breadcrum from "@/components/Breadcrum";
 import Header from "@/components/Header";
+import ScrollTop from "@/components/ScrollTop";
 // import img from "next/image";
 
 function contact() {
@@ -150,6 +151,7 @@ function contact() {
                     </section>
                 </section>
             </div>
+            <ScrollTop />
         </main>
     );
 }

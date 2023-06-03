@@ -14,7 +14,7 @@ import {
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     return (
-        <nav className=' shadow-lg  sticky w-full z-10'>
+        <nav className=' shadow-lg  sticky w-full z-10 '>
             <div className='w-full'>
                 <div className='flex items-center h-20 w-full'>
                     <div className='flex items-center  mx-5 md:mx-16  justify-between w-full'>
@@ -64,6 +64,11 @@ function Navbar() {
                                         <MenuItem>
                                             <Link href='/event'>Event</Link>
                                         </MenuItem>
+                                        <MenuItem>
+                                            <Link href='/pastevents'>
+                                                Past Event
+                                            </Link>
+                                        </MenuItem>
                                     </MenuList>
                                 </Menu>
 
@@ -80,19 +85,17 @@ function Navbar() {
                                         </Button>
                                     </MenuHandler>
                                     <MenuList>
-                                        <MenuItem>
+                                        {/* <MenuItem>
                                             <Link href='/hai'>HAI Heros</Link>
-                                        </MenuItem>
+                                        </MenuItem> */}
                                         <MenuItem>
-                                            <Link href='/haiteam'>
-                                                H.A.I Team
-                                            </Link>
+                                            <Link href='/hai'>H.A.I Team</Link>
                                         </MenuItem>
-                                        <MenuItem>
+                                        {/* <MenuItem>
                                             <Link href='/bookartist'>
                                                 Book Artist
                                             </Link>
-                                        </MenuItem>
+                                        </MenuItem> */}
                                         <MenuItem>
                                             <Link href='/donation'>
                                                 Donation
@@ -218,6 +221,17 @@ function Navbar() {
                                 Event
                             </Link>
                             <Link
+                                href='/pastevents'
+                                activeClass='services'
+                                to='services'
+                                smooth={true}
+                                offset={50}
+                                duration={500}
+                                className='cursor-pointer hover:bg-blue-600 ml-4 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium'
+                            >
+                                Past Events
+                            </Link>
+                            <Link
                                 href='/campaign'
                                 activeClass='services'
                                 to='services'
@@ -259,17 +273,17 @@ function Navbar() {
                                     </Button>
                                 </MenuHandler>
                                 <MenuList>
-                                    <MenuItem>
+                                    {/* <MenuItem>
                                         <Link href='/hai'>HAI Heros</Link>
-                                    </MenuItem>
+                                    </MenuItem> */}
                                     <MenuItem>
-                                        <Link href='/haiteam'>H.A.I Team</Link>
+                                        <Link href='/hai'>H.A.I Team</Link>
                                     </MenuItem>
-                                    <MenuItem>
+                                    {/* <MenuItem>
                                         <Link href='/bookartist'>
                                             Book Artist
                                         </Link>
-                                    </MenuItem>
+                                    </MenuItem> */}
                                     <MenuItem>
                                         <Link href='/donation'>Donation</Link>
                                     </MenuItem>
