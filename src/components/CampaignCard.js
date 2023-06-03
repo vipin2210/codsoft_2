@@ -2,6 +2,8 @@ import React from "react";
 import Carousal from "./Carousal";
 import Link from "next/link";
 
+
+
 const CampaignCard = ({ props }) => {
     const { name, desc, link, image1, image2, image3 } = props;
 
@@ -30,15 +32,17 @@ const CampaignCard = ({ props }) => {
                                     DONATE NOW
                                 </button>
                             </Link>
-                        </div>
-                    </div>
-                    <div className=''>
-                        <Carousal />
-                    </div>
-                </div>
+                   
+
             </div>
+          </div>
+          <div className="">
+            <Carousal />
+          </div>
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default CampaignCard;
