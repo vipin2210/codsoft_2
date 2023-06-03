@@ -1,3 +1,5 @@
+<<<<<<< HEAD:src/pages/pastEventPage.js
+=======
 import Breadcrum from "@/components/Breadcrum";
 import Button from "@/components/Button";
 import EventCard from "@/components/EventCard";
@@ -239,3 +241,4 @@ const pastEventPage = () => {
 };
 
 export default pastEventPage;
+>>>>>>> 03cb61295e499ee7c94617bee260b6ca8cd2e485:src/pages/event.js
