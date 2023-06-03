@@ -24,8 +24,8 @@ const pastEventPage = () => {
         </div>
 
         <div className="relative container -mt-14 z-20 mx-auto ">
-          <div className="grid grid-cols-2  gap-x-5">
-            <div className="">
+          <div className="grid sm:grid-cols-2 grid-cols-1 gap-x-5">
+            <div className="w-72 sm:w-96 md:w-80 sm:ml-0 mx-auto">
               <a href="#">
                 <img className="" src="/hariharan.png" alt="hariharan" />
               </a>
@@ -36,11 +36,13 @@ const pastEventPage = () => {
                   <span>2023</span>
                   <span>SUNDAY</span>
                 </div>
-                <div className=" w-[100%]   border-b-2 border-yellow-500 items-center mb-11"></div>
+                <div className=" w-[100%] border-b-2 border-yellow-500 items-center mb-11 mr-10"></div>
               </div>
             </div>
-            <div className="text-white -ml-32">
-              <h1 className="text-6xl font-bold ">LIVE IN CONCERT</h1>
+            <div className="text-white mt-10 sm:mt-0 ml-0 md:ml-0 lg:-ml-32">
+              <h1 className="font-bold text-4xl sm:text-6xl">
+                LIVE IN CONCERT
+              </h1>
               <h2 className="text-lg mt-10">
                 Rumaniyat a musical night with Padma Shri Hariharan ,witness the
                 mystic performance of living legend at F Bar and Lounge Noida
@@ -54,12 +56,12 @@ const pastEventPage = () => {
                 Announcement Of These Musical Events Has Been Met With
                 Enthusiasm By Music Fans Across India.
               </h2>
-              <button className=" mt-8 lg:text-2xl sm:text-xl p-4 px-72  font-bold border-4 rounded-xl border-w  mb-8 border-blue-400 text-blue-300 ">
+              <button className="my-8 text-lg sm:text-xl lg:text-2xl px-6 py-4  sm:p-4 sm:px-72 md:px-24 lg:px-72 font-bold border-4 rounded-xl border-w   border-blue-400 text-blue-300 ">
                 Book Table
               </button>
               <SimpleCarousal />
-            </div>{" "}
-            <div className="w-[100%] border-b-2 border-yellow-500  mb-11 ml-80"></div>
+            </div>
+            <div className="w-[100%] border-b-2 border-yellow-500  mb-11  ml-0 sm:ml-80"></div>
           </div>
 
           {/* pastevent 2  from right to left*/}
