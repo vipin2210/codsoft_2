@@ -9,28 +9,28 @@ import ScrollTop from "@/components/ScrollTop";
 const about = () => {
     const prize = [
         {
-            image: "/prize1.png",
+            image: "/Prize1.png",
         },
         {
-            image: "/prize2.png",
+            image: "/Prize2.png",
         },
         {
-            image: "/prize3.png",
+            image: "/Prize3.png",
         },
         {
-            image: "/1.jpg",
+            image: "/1.JPG",
         },
         {
-            image: "/2.jpg",
+            image: "/2.JPG",
         },
         {
-            image: "/3.jpg",
+            image: "/3.JPG",
         },
         {
-            image: "/prize3.png",
+            image: "/5.JPG",
         },
         {
-            image: "/4.jpg",
+            image: "/4.JPG",
         },
     ];
     const teams = [
