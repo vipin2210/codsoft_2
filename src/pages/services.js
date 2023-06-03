@@ -9,6 +9,7 @@ import { EffectCoverflow, Pagination, Navigation } from "swiper";
 import CampaignCard from "@/components/CampaignCard";
 import Navbar from "@/components/Navbar";
 import Breadcrum from "@/components/Breadcrum";
+import Header from "@/components/Header";
 
 const service = () => {
   return (
