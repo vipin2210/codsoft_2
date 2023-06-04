@@ -27,10 +27,10 @@ const Footer = () => {
                                     </h2>
                                 </div>
                                 <div className='text-sm'>
-                                    9:00am-6:00pm (Monday-Friday)
+                               Monday-Sunday
                                 </div>
                                 <div className='text-sm '>
-                                    Saturday & Sunday Half Day
+                                   10 Am to 7Pm
                                 </div>
                             </div>
                             <div className='grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-4 '>
