@@ -1,20 +1,21 @@
 import React from "react";
 import bg from "../../public/ourHerosMain.png";
 import ArtistCard from "@/components/ArtistCard";
+import Navbar from "@/components/Navbar";
 
 function ourHeros() {
-  const teams = [
-    {
-      photo: "/hariharann.png",
-      name: "Padman Shri Hariharan",
-      profession: "Singer",
-    },
+    const teams = [
+        {
+            photo: "/hariharann.png",
+            name: "Padman Shri Hariharan",
+            profession: "Singer",
+        },
 
-    {
-      photo: "/kavitaa.png",
-      name: "Kavita Seth",
-      profession: "Singer",
-    },
+        {
+            photo: "/kavitaa.png",
+            name: "Kavita Seth",
+            profession: "Singer",
+        },
 
     {
       photo: "/Rakeshh.png",
@@ -133,12 +134,10 @@ function ourHeros() {
               {teams.map((item, i) => (
                 <ArtistCard key={i} props={item} />
               ))}
+
             </div>
-          </div>
         </div>
-      </section>
-    </div>
-  );
+    );
 }
 
 export default ourHeros;
