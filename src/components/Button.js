@@ -15,7 +15,7 @@ function Button({ props }) {
                     UP COMING
                 </Link>
                 <Link
-                    href='/pastEventPage'
+                    href='/pastevents'
                     className='inline-flex items-center transition-all ease-in
                     duration-75 justify-center p-3 text-lg text-gray-900
                     md:text-base rounded-lg group bg-gradient-to-br
@@ -39,7 +39,7 @@ function Button({ props }) {
                 </Link>
 
                 <Link
-                    href='/pastEventPage'
+                    href='/pastevents'
                     className='inline-flex items-center transition-all eease-in duration-75  justify-center p-3  text-lg text-gray-900 md:text-base rounded-lg group bg-gradient-to-br  hover:text-white hover:bg-red-600  focus:bg-red-600 w-full  focus:text-white font-bold '
                 >
                     PAST EVENTS

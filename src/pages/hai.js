@@ -15,24 +15,23 @@ const member = [
   {
     image: "/rohit.png",
     profession: "Sr. Graphic Designer",
-    name: "Nancy NTR 2",
+    name: "Rohit Thakur",
   },
-
-  {
-    image: "/prateek.png",
-    profession: "Video Editor",
-    name: "Prateek Saxena",
-  },
-  {
-    image: "/rohitsharma.png",
-    profession: "Social Media Manager",
-    name: "Rohit Sharma",
-  },
-  {
-    image: "/varish.png",
-    profession: "Video Editor",
-    name: "Varish Sharma ",
-  },
+    {
+        image: "/prateek.png",
+        profession: "Video Editor",
+        name: "Prateek Saxena",
+    },
+    {
+        image: "/rohitsharma.png",
+        profession: "Social Media Manager",
+        name: "Rohit Sharma",
+    },
+    {
+        image: "/varish.png",
+        profession: "Video Editor",
+        name: "Varish Saxena ",
+    },
 ];
 function hai() {
   return (
@@ -81,7 +80,7 @@ function hai() {
 
             <div
               className="-mt-2.5 md:-mt-4 lg:-mt-6 xl:-mt-10 "
-              style={    {
+              style={{
                 height: "50px",
                 transform: "scale(2)",
                 transformOrigin: "top center",
