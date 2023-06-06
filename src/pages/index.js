@@ -9,6 +9,7 @@ import PastEvent from "@/components/PastEvent";
 import Link from "next/link";
 
 import ScrollTop from "@/components/ScrollTop";
+import Message from "@/components/Message";
 
 const events = [
     {
@@ -244,6 +245,10 @@ export default function Home() {
                         ))}
                     </div>
                     <div className='border-4 border-yellow-600 mt-4'></div>
+                </section>
+
+                <section>
+                    <Message />
                 </section>
                 <ScrollTop />
             </div>

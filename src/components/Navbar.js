@@ -95,7 +95,7 @@ function Navbar() {
                                         <ul className=' z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow '>
                                             <li>
                                                 <Link
-                                                    href='/events'
+                                                    href='/services'
                                                     className='block py-2 px-4 hover:bg-gray-100'
                                                 >
                                                     Events

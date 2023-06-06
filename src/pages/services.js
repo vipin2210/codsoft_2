@@ -19,12 +19,12 @@ const events = () => {
             <Navbar />
 
             <div className='bg-black'>
-                <div className=''>
+                <div className='mb-16'>
                     <img
                         className='object-fill  h-80 w-full'
                         src='/PastEventBanner.png'
                     />
-                    <Breadcrum name='Services' page='Services' />
+                    <Breadcrum name='Events' page='Services/Events' />
                     {/* Button */}
                     <div>
                         <div class='containerTab '>
@@ -49,7 +49,7 @@ const events = () => {
                                     id='radio-2'
                                     name='tabs'
                                     value='pastEvent'
-                                     onChange={handleChange}
+                                    onChange={handleChange}
                                 />
                                 <label
                                     class='tabButton w-[150px] min-[360px]:w-[180px] text-lg min-[360px]:text-xl sm:w-[200px] text-center'
@@ -72,7 +72,7 @@ const events = () => {
                                 <a href='#'>
                                     <img
                                         className=''
-                                        src='/hariharan.png'
+                                        src='/EventUpcoming1.png'
                                         alt='hariharan'
                                     />
                                 </a>

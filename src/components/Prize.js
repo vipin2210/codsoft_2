@@ -5,11 +5,11 @@ const Prize = ({ props }) => {
     return (
         <div>
             <div className='card bg-base-100 grid justify-center'>
-                <div className='p-4'>
+                <div className='p-1'>
                     <img
                         src={image}
                         alt={image}
-                        className='object-fill w-96 rounded-3xl h-72 '
+                        className='object-fill w-96 h-72 '
                     />
                 </div>
             </div>

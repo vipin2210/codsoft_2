@@ -9,28 +9,40 @@ import ScrollTop from "@/components/ScrollTop";
 const about = () => {
     const prize = [
         {
-            image: "/a1.png",
+            image: "/about1.webp",
         },
         {
-            image: "/a2.png",
+            image: "/about2.webp",
         },
         {
-            image: "/a3.png",
+            image: "/about3.webp",
         },
         {
-            image: "/a4.png",
+            image: "/about4.webp",
         },
         {
-            image: "/a5.png",
+            image: "/about5.webp",
         },
         {
-            image: "/a6.png",
+            image: "/about6.webp",
         },
         {
-            image: "/a7.png",
+            image: "/about7.webp",
         },
         {
-            image: "/a8.png",
+            image: "/about8.webp",
+        },
+        {
+            image: "/about9.webp",
+        },
+        {
+            image: "/about10.webp",
+        },
+        {
+            image: "/about11.webp",
+        },
+        {
+            image: "/about12.webp",
         },
     ];
     const teams = [
@@ -120,6 +132,7 @@ const about = () => {
                                 settings: {
                                     slidesToShow: 2,
                                     hasDots: true,
+                                    duration: 0.25,
                                 },
                             },
                             {
@@ -127,6 +140,7 @@ const about = () => {
                                 settings: {
                                     slidesToShow: 4,
                                     hasDots: true,
+                                    duration: 0.25,
                                 },
                             },
                         ]}
