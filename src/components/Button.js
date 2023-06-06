@@ -1,49 +1,31 @@
 import Link from "next/link";
-import React from "react";
+import { useState } from "react";
 
-function Button({ props }) {
-   
+function Button() {
     return (
-        <div className='mb-36 flex justify-center '>
-            <div
-                className={` hidden border-2 rounded-xl  p-1 md:rounded-2xl border-gray-300  bg-white sm:w-1/2  sm:flex sm:flex-row  justify-center md:text-sm   `}
-            >
-                <Link
-                    href='/Events'
-                    className={` inline-flex items-center transition-all ease-in duration-75 justify-center p-3  mr-4   text-gray-900 rounded-lg md:text-base group bg-gradient-to-br hover:bg-red-600 hover:text-white  focus:bg-red-600  w-full focus:text-white text-lg font-bold ${props}`}
+        <div class='containerTab '>
+            <div class='tabsButton  rounded-full p-1 '>
+                <input type='radio' id='radio-1' name='tabs' />
+                <label
+                    class='tabButton w-[150px] min-[360px]:w-[180px] text-lg min-[360px]:text-xl sm:w-[200px]
+                   
+                    text-center '
+                    for='radio-1'
                 >
-                    UP COMING
-                </Link>
-                <Link
-                    href='/pastevents'
-                    className='inline-flex items-center transition-all ease-in
-                    duration-75 justify-center p-3 text-lg text-gray-900
-                    md:text-base rounded-lg group bg-gradient-to-br
-                    hover:text-white hover:bg-red-600 focus:bg-red-600 w-full
-                    focus:text-white font-bold '
+                    Upcoming Events
+                </label>
+                <input type='radio' id='radio-2' name='tabs' />
+                <label
+                    class='tabButton w-[150px] min-[360px]:w-[180px] text-lg min-[360px]:text-xl sm:w-[200px] text-center'
+                    for='radio-2'
                 >
-                    PAST EVENTS
-                </Link>
-            </div>
-            <div className={`sm:hidden bg-white rounded-lg  `}>
-                <Link
-                    href='/event'
-                    className={` inline-flex items-center transition-all ease-in
-                    duration-75 justify-center p-3 text-gray-900 rounded-lg 
-                    md:text-base group bg-gradient-to-br hover:bg-red-600
-                    hover:text-white focus:bg-red-600 w-full focus:text-white
-                    text-lg font-bold mb-4 ${props}`}
-                >
-                    {" "}
-                    UP COMING
-                </Link>
-
-                <Link
-                    href='/pastevents'
-                    className='inline-flex items-center transition-all eease-in duration-75  justify-center p-3  text-lg text-gray-900 md:text-base rounded-lg group bg-gradient-to-br  hover:text-white hover:bg-red-600  focus:bg-red-600 w-full  focus:text-white font-bold '
-                >
-                    PAST EVENTS
-                </Link>
+                    Past Events
+                </label>
+                {/* <input type='radio' id='radio-3' name='tabs' />
+                <label class='tabButton' for='radio-3'>
+                    Completed 
+                </label> */}
+                <span class='gliderTabButton w-[150px] min-[360px]:w-[180px] rounded-full sm:w-[200px]'></span>
             </div>
         </div>
     );

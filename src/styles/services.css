@@ -91,11 +91,11 @@
 
 .slider-controler .slider-arrow ion-icon {
     font-size: 2rem;
-    color: #DC9407;
+    color: #dc9407;
 }
 
 .slider-controler .slider-arrow::after {
-    content: '';
+    content: "";
 }
 
 .swiper-pagination {
@@ -113,16 +113,93 @@
 }
 
 .AnyClassForContainer {
-  position: fixed;
-  right: -100px;
-  bottom: 150px;
-  transition: right 0.5s;
-  cursor: pointer;
-  background-color: white;
-  font-size: 20px;
-  padding: 10px;
+    position: fixed;
+    right: -100px;
+    bottom: 150px;
+    transition: right 0.5s;
+    cursor: pointer;
+    background-color: white;
+    font-size: 20px;
+    padding: 10px;
 }
 
 .AnyClassForTransition {
-  right: 20px;
+    right: 20px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
+.containerTab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tabsButton {
+    display: flex;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 0 1px 0 rgba(#185ee0, 0.15), 0 6px 12px 0 rgba(#185ee0, 0.15);
+    padding: 0.75rem;
+
+    * {
+        z-index: 2;
+    }
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.tabButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 54px;
+
+    font-size: 1.25rem;
+    font-weight: 500;
+    border-radius: 99px;
+    cursor: pointer;
+    transition: color 0.15s ease-in;
+    z-index: 3;
+}
+
+input[type="radio"] {
+    &:checked {
+        & + label {
+            color: white;
+        }
+    }
+}
+
+input[id="radio-1"] {
+    &:checked {
+        & ~ .gliderTabButton {
+            transform: translateX(0);
+        }
+    }
+}
+
+input[id="radio-2"] {
+    &:checked {
+        & ~ .gliderTabButton {
+            transform: translateX(100%);
+        }
+    }
+}
+
+.gliderTabButton {
+    position: absolute;
+    display: flex;
+    height: 54px;
+    background-color: red;
+    z-index: 1;
+
+    transition: 0.25s ease-out;
+}
+
+@media (max-width: 700px) {
+    .tabs {
+        transform: scale(0.6);
+    }
 }
