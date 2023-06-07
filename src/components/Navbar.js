@@ -375,7 +375,7 @@ function Navbar() {
                                                 href='/hai'
                                                 className='block py-2 px-4 hover:bg-gray-100'
                                             >
-                                                HAI Heros
+                                                H.A.I Heros
                                             </Link>
                                         </li>
                                         <li>
@@ -383,7 +383,7 @@ function Navbar() {
                                                 href='/hai'
                                                 className='block py-2 px-4 hover:bg-gray-100'
                                             >
-                                                H.A.I teams
+                                                H.A.I team
                                             </Link>
                                         </li>
                                         <li>

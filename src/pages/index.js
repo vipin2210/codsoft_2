@@ -10,6 +10,7 @@ import Link from "next/link";
 
 import ScrollTop from "@/components/ScrollTop";
 import Message from "@/components/Message";
+import Script from "next/script";
 
 const events = [
     {
@@ -78,6 +79,7 @@ const pastevents = [
 ];
 const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
+   
     return (
         <main>
             <Navbar />
@@ -85,11 +87,12 @@ export default function Home() {
                 {/* Hero Section */}
                 <section className='relative bg-cover'>
                     <div className='bg-hero-section bg-no-repeat   '>
-                        <div className=''>
+                        <div className='' id='myvideo'>
                             <video
                                 autoPlay
                                 loop
                                 muted
+                                
                                 className='absolute inset-0 aspect-video   sm:flex hidden  '
                             >
                                 <source
