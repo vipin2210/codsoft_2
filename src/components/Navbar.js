@@ -184,14 +184,6 @@ function Navbar() {
                                                     Donation
                                                 </Link>
                                             </li>
-                                            <li>
-                                                <Link
-                                                    href='/campaign'
-                                                    className='block py-2 px-4 hover:bg-gray-100'
-                                                >
-                                                    Campaign
-                                                </Link>
-                                            </li>
                                         </ul>
                                     </div>
                                 </div>

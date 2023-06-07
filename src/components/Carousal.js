@@ -35,7 +35,6 @@ const Carousal = () => {
                 <SwiperSlide>
                     <img src='/serviceImg2.png' alt='slide_image' />
                 </SwiperSlide>
-
                 <SwiperSlide>
                     <img src='/serviceImg2.png' alt='slide_image' />
                 </SwiperSlide>

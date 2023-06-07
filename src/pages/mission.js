@@ -12,7 +12,7 @@ const mission = () => {
                 <Header image='/Frame.png' name='Mission' page='Mission' />
 
                 <div className='relative container -mt-60 z-20 mx-auto '>
-                    <div className=' mx-auto grid grid-cols-4 gap-6 w-3/4 rounded-3xl p-6  bg-[#000000]  '>
+                    <div className=' mx-auto grid grid-cols-4 gap-6 w-3/4 rounded-3xl p-6  bg-[#FFD12F]  '>
                         <div>
                             <img src='/mis1.png' />
                         </div>

@@ -11,6 +11,7 @@ import Link from "next/link";
 import ScrollTop from "@/components/ScrollTop";
 import Message from "@/components/Message";
 import Script from "next/script";
+import { useRef } from "react";
 
 const events = [
     {
@@ -30,7 +31,7 @@ const events = [
         year: 2023,
         day: "Friday",
         name: "Shaam-e-Ghazal",
-        desc: " ",
+        desc: " To be announced Soon",
         link: "/",
     },
     {
@@ -79,7 +80,10 @@ const pastevents = [
 ];
 const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
-   
+    const videoRef = useRef();
+    const setPlayBack = () => {
+        videoRef.current.playbackRate = 0.4;
+    };
     return (
         <main>
             <Navbar />
@@ -91,8 +95,9 @@ export default function Home() {
                             <video
                                 autoPlay
                                 loop
+                                ref={videoRef}
+                                onCanPlay={() => setPlayBack()}
                                 muted
-                                
                                 className='absolute inset-0 aspect-video   sm:flex hidden  '
                             >
                                 <source
@@ -130,13 +135,13 @@ export default function Home() {
                                 <span className='text-red-600'>Donation </span>
                                 Can <br /> Change Artist Life
                             </h1>
-                            <p className='mb-8 text-lg font-normal text-white lg:text-xl sm:px-16 xl:px-48 '>
+                            {/* <p className='mb-8 text-lg font-normal text-white lg:text-xl sm:px-16 xl:px-48 '>
                                 Help artist India was founded in January of
                                 2018. It acknowledges and harbour the veiled,
                                 unidentified artists, availing nothing but
                                 facilitating the unrevealed talents inhabiting
                                 our society.
-                            </p>
+                            </p> */}
                             <div className='flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4'>
                                 <Link
                                     href='/donation'
@@ -250,8 +255,9 @@ export default function Home() {
                     <div className='border-4 border-yellow-600 mt-4'></div>
                 </section>
 
-                <section>
+                <section className='flex flex-col justify-center '>
                     <Message />
+                    <hr className='border-yellow-600 border-b-8 rounded-full '></hr>
                 </section>
                 <ScrollTop />
             </div>

@@ -4,7 +4,7 @@ const Prize = ({ props }) => {
     const { image } = props;
     return (
         <div>
-            <div className='card bg-base-100 grid justify-center'>
+            <div className='card bg-[#FFD12F] grid justify-center'>
                 <div className='p-1'>
                     <img
                         src={image}

@@ -2,6 +2,7 @@ import React from "react";
 import bg from "../../public/ourHerosMain.png";
 import ArtistCard from "@/components/ArtistCard";
 import Navbar from "@/components/Navbar";
+import ScrollTop from "@/components/ScrollTop";
 
 function ourHeros() {
     const teams = [
@@ -28,7 +29,7 @@ function ourHeros() {
             profession: "Actor",
         },
         {
-            photo: "/Nawazz.png",
+            photo: "/LateShriSardoolSikander.webp",
             name: "Late Shri Sardool Sikander",
             profession: "Singer",
         },
@@ -146,6 +147,7 @@ function ourHeros() {
                     </div>
                 </section>
             </div>
+            <ScrollTop />
         </div>
     );
 }

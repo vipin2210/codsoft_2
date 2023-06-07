@@ -44,6 +44,12 @@ const about = () => {
         {
             image: "/about12.webp",
         },
+        {
+            image: "/about13.jpg",
+        },
+        {
+            image: "/about14.jpg",
+        },
     ];
     const teams = [
         {
@@ -113,10 +119,10 @@ const about = () => {
                     </div>
                 </div>
             </div>
-            <div className=' w-full  bg-[#5C5959] mt-48 lg:mt-16'>
-                <div className='flex md:flex-row flex-col gap-9 p-12 m-5 '>
+            <div className=' w-full  bg-[#FFD12F] mt-48 lg:mt-16'>
+                <div className='flex md:flex-row flex-col gap-9  m-5 '>
                     <Glider
-                        className='glider-container p-5  '
+                        className='glider-container p-2  '
                         // draggable
                         scrollPropagate
                         hasArrows
