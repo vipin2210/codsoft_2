@@ -7,7 +7,7 @@ import "swiper/css/navigation";
 
 import { EffectCoverflow, Pagination, Navigation } from "swiper";
 
-const Carousal = ({ props }) => {
+const Carousal1 = ({ props }) => {
     const { img1, img2, img3 } = props;
     return (
         <div className='mx-auto'>
@@ -34,13 +34,13 @@ const Carousal = ({ props }) => {
                 className='swiper_container'
             >
                 <SwiperSlide>
-                    <img src="/mis1.png" alt='slide_image' />
+                    <img src='/mis4.png' alt='slide_image' />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="/mis2.png" alt='slide_image' />
+                    <img src='/mis5.png' alt='slide_image' />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="/mis3.png" alt='slide_image' />
+                    <img src='/mis6.png' alt='slide_image' />
                 </SwiperSlide>
 
                 <div className='slider-controler'>
@@ -57,4 +57,4 @@ const Carousal = ({ props }) => {
     );
 };
 
-export default Carousal;
+export default Carousal1;

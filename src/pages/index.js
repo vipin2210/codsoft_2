@@ -119,7 +119,7 @@ export default function Home() {
                         </div>
 
                         <div className='relative  inset-0 py-8 px-4 mx-auto  backdrop-brightness-50 text-center  lg:py-16 lg:px-12 '>
-                            <div className='inline-flex justify-between items-center mb-3     '>
+                            <div className='inline-flex justify-between  items-center mb-3     '>
                                 <Image
                                     src='/logo.png'
                                     width={150}
@@ -127,9 +127,12 @@ export default function Home() {
                                     alt='logo'
                                 />
                             </div>
-                            {/* <p className='text-white '>
-                                Art is India ,Inida is Divine
-                            </p> */}
+                            <div className="flex justify-center">
+                                <p className='text-yellow-400 font-extrabold border-2 px-4 border-yellow-400 rounded-full'>
+                                    Art is India ,India is Divine
+                                </p>
+                            </div>
+                           
                             <h1 className='mb-4 text-4xl font-extrabold tracking-tight leading-none uppercase text-white  md:text-5xl lg:text-6xl '>
                                 Small{" "}
                                 <span className='text-red-600'>Donation </span>

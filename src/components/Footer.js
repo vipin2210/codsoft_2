@@ -26,8 +26,9 @@ const Footer = () => {
                                         OPENING HOURS
                                     </h2>
                                 </div>
-                                <div className='text-sm'>Monday-Sunday</div>
-                                <div className='text-sm '>10 Am to 7Pm</div>
+                                <div className='text-sm'>
+                                    Monday-Sunday <br /> 10 Am to 7Pm
+                                </div>
                             </div>
                             <div className='grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-4 '>
                                 <div>
@@ -53,10 +54,19 @@ const Footer = () => {
                                         </li>
                                         <li className='mb-4'>
                                             <Link
-                                                href=''
+                                                href='ourHeros'
                                                 className='hover:underline hover:text-blue-400 '
                                             >
-                                                H.A.I (HEROS)
+                                                H.A.I Heroes
+                                            </Link>
+                                        </li>
+                                       
+                                        <li className='mb-4'>
+                                            <Link
+                                                href='hai'
+                                                className='hover:underline hover:text-blue-400 '
+                                            >
+                                                H.A.I Team
                                             </Link>
                                         </li>
                                     </ul>
@@ -68,7 +78,7 @@ const Footer = () => {
                                     <ul className='font-medium '>
                                         <li className='mb-4'>
                                             <Link
-                                                href='/upcommingEvent'
+                                                href='/services'
                                                 className='hover:underline hover:text-blue-400  '
                                             >
                                                 Event
@@ -137,10 +147,14 @@ const Footer = () => {
                                             </p>
                                         </li>
                                         <li>
+                                            <p className='-ml-12  md:-ml-16 lg:ml-0'>
+                                                helpartistindia@gmail.com
+                                                <br />
+                                                info@helpartistindia.com
+                                            </p>
                                             <p>
-                                                helpartistindia@gmail.com <br />
-                                                info@helpartistindia.com <br />
-                                                +91 - 97117-13123 <br />
+                                                +91 - 97117-13123
+                                                <br />
                                                 +91 - 9990913123
                                             </p>
                                         </li>
