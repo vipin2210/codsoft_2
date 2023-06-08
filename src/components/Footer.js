@@ -26,12 +26,8 @@ const Footer = () => {
                                         OPENING HOURS
                                     </h2>
                                 </div>
-                                <div className='text-sm'>
-                               Monday-Sunday
-                                </div>
-                                <div className='text-sm '>
-                                   10 Am to 7Pm
-                                </div>
+                                <div className='text-sm'>Monday-Sunday</div>
+                                <div className='text-sm '>10 Am to 7Pm</div>
                             </div>
                             <div className='grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-4 '>
                                 <div>
@@ -143,6 +139,7 @@ const Footer = () => {
                                         <li>
                                             <p>
                                                 helpartistindia@gmail.com <br />
+                                                info@helpartistindia.com <br />
                                                 +91 - 97117-13123 <br />
                                                 +91 - 9990913123
                                             </p>

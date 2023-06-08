@@ -135,7 +135,7 @@ function ourHeros() {
                 <section>
                     <div>
                         <div className=' text-3xl md:text-5xl text-center m-12'>
-                            <h1 className=' md:font-extrabold'>Our Heros</h1>
+                            <h1 className=' md:font-extrabold'>Our Heroes</h1>
                         </div>
                         <div>
                             <div className=' grid w-full    gap-10 grid-cols-1 md:grid-cols-3 lg:grid-cols-4 sm:grid-cols-2 '>

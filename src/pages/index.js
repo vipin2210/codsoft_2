@@ -127,9 +127,9 @@ export default function Home() {
                                     alt='logo'
                                 />
                             </div>
-                            <p className='text-white '>
+                            {/* <p className='text-white '>
                                 Art is India ,Inida is Divine
-                            </p>
+                            </p> */}
                             <h1 className='mb-4 text-4xl font-extrabold tracking-tight leading-none uppercase text-white  md:text-5xl lg:text-6xl '>
                                 Small{" "}
                                 <span className='text-red-600'>Donation </span>
