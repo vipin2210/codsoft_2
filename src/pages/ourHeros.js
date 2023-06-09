@@ -8,7 +8,7 @@ function ourHeros() {
     const teams = [
         {
             photo: "/hariharann.png",
-            name: "Padman Shri Hariharan",
+            name: "Padam Shri Hariharan",
             profession: "Singer",
             twitter: "https://twitter.com/singerhariharan?lang=en",
             insta: "https://www.instagram.com/singerhariharana/",
