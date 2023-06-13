@@ -5,17 +5,17 @@ export const form1 = () => {
     const { register } = form;
     return (
         <div className="flex flex-col justify-center bg-[#0e101c]">
-            <div className=" font-bold text-[#FFD12F]  p-10 border-b-2 border-[rgb(79,98,148)]">
-                <h1 className="text-4xl">Join as Artist</h1>
-                <p className="text-white mt-2">
+            <div className=" font-bold text-[#FFD12F]  p-10 border-b-2 border-[hsl(223,30%,45%)] text-center">
+                <h1 className="text-4xl md:text-center">Join as Artist</h1>
+                <p className="text-white mt-2 ">
                     This free lorem ipsum generator lets you choose how many sentences,
                     paragraphs or list items you want. You can also select to include HTML
                     markup and specify how big the text should be. It currently supports
                     standard Lorem Ipsum, Marvel Ipsum, Batman Ipsum and Pokemon Ipsum.
                 </p>
             </div>
-            <div className="flex flex-row justify-center p-10 ">
-                <img src="/logo.png" className="w-72" />
+            <div className="flex flex-row justify-center p-7 pb-4 ">
+                <img src="/logo.png" className="w-64" />
             </div>
 
             <form className="flex flex-col gap-5 items-center m-10  text-white">
@@ -280,7 +280,7 @@ export const form1 = () => {
                     </div>
 
                 </div>
-                <button className="border  uppercase px-[50px] py-[15px] rounded-lg mt-5 hover:bg-red-600">
+                <button className="border  uppercase px-[50px] py-[15px] rounded-lg mt-5 hover:bg-neutral-800 bg-[#ff0000]">
                     Submit
                 </button>
             </form>
