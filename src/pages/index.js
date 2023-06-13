@@ -223,7 +223,7 @@ export default function Home() {
 
                             <div>
                                 <img
-                                    src='/home/aboutSection.png'
+                                    src='/aboutSection.jpg'
                                     className='w-full mx-auto  mt-6 sm:w-10/12 lg:w-full'
                                     alt='Section2'
                                 />
