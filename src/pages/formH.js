@@ -138,7 +138,7 @@ export const formH = () => {
                 />
               </div>
 
-              <button className=" w-full sm:w-fit  border   uppercase px-[50px] py-[15px] rounded-lg mt-5 hover:bg-red-600">
+              <button className=" w-full sm:w-fit  border   uppercase px-[50px] py-[15px] rounded-lg mt-5 bg-[#FF0000]  text-white hover:bg-neutral-800">
                 Submit
               </button>
             </div>
