@@ -28,17 +28,17 @@ const events = [
         year: 2023,
         day: "Friday",
         name: "Shaam-e-Ghazal",
-        desc: "Lorem ipsum dolor sit amet consectetur. Tincidunt mus porttitor totor quis aliquet.Malesuada pellentesque ipsum egestas eunullam",
+        desc: " ",
         link: "/",
     },
     {
-        poster: "/EventUpcoming3.png",
-        date: 9,
+        poster: "/Funkaar3banner.png",
+        date: "00",
         month: "July",
         year: 2017,
         day: "Sunday",
         name: "FUNKAAR 3 & ASH'AAR",
-        desc: "Lorem ipsum dolor sit amet consectetur. Tincidunt mus porttitor totor quis aliquet.Malesuada pellentesque ipsum egestas eunullam",
+        desc: "We all love music; some listen to it, and some sing. If You Have A Singing Talent In You, Help Artist India by Giving You A Platform To Perform.",
         link: "/",
     },
 ];
@@ -136,7 +136,13 @@ export default function Home() {
                             <div className='flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4'>
                                 <Link
                                     href='/donation'
-                                    className='inline-flex justify-center items-center py-2 px-7 text-base font-medium text-center bg-red-600 text-white rounded-lg border  hover:bg-black focus:ring-2 focus:ring-gray-100  '
+                                    className='  py-2 px-7 text-base font-medium text-center  text-white rounded-[8px] border  hover:bg-black focus:ring-2 focus:ring-gray-100  '
+                                    style={{
+                                        background:
+                                            "linear-gradient(90deg, #650000 0%, #FF0000 100%)",
+
+                                        border: "2px solid #FFFFFF",
+                                    }}
                                 >
                                     Donate
                                 </Link>
@@ -203,7 +209,7 @@ export default function Home() {
 
                             <div>
                                 <img
-                                    src='/section6.png'
+                                    src='/home/aboutSection.png'
                                     className='w-full mx-auto  mt-6 sm:w-10/12 lg:w-full'
                                     alt='Section2'
                                 />

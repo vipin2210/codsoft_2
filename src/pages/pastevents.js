@@ -101,23 +101,24 @@ const pastEventPage = () => {
                             </h2>
                             <h2 className='text-lg my-8'>
                                 The Ministry of Culture, Government of India, in
-                                collaboration with the "Swar Dharohar
-                                Foundation," inaugurated the three-day "Swar
-                                Dharohar Festival" under Kalanjali. "Swar
-                                Dharohar Festival" is a music, art, and
-                                literature festival to showcase the iconic art
-                                and culture of India and the rich literary art
-                                and heritage of Indian states. The Swar Dharohar
-                                festival was inaugurated today by Chief Guest
-                                Sh. Mehtab Ali (sitar player) and Pt. Lalit
-                                Prasad (classical vocal). On the first day,
-                                classical performances, ghazals, Kavi Sammelan,
-                                Mushaira, and Sufi performances were organised.
-                                Ghazal was performed by Sh. Diwakar Meena; Sh.
-                                Hamsar Hayat and Athar Hayat performed Sufi
-                                music. on December 3rd and 4th, 2022, at the
-                                Central Vista, India Gate, New Delhi, Delhi.
-                                Swar Dharohar Utsav started in the morning with
+                                collaboration with the &quot;Swar Dharohar
+                                Foundation,&quot; inaugurated the three-day
+                                &quot;Swar Dharohar Festival&quot; under
+                                Kalanjali. &quot;Swar Dharohar Festival&quot; is
+                                a music, art, and literature festival to
+                                showcase the iconic art and culture of India and
+                                the rich literary art and heritage of Indian
+                                states. The Swar Dharohar festival was
+                                inaugurated today by Chief Guest Sh. Mehtab Ali
+                                (sitar player) and Pt. Lalit Prasad (classical
+                                vocal). On the first day, classical
+                                performances, ghazals, Kavi Sammelan, Mushaira,
+                                and Sufi performances were organised. Ghazal was
+                                performed by Sh. Diwakar Meena; Sh. Hamsar Hayat
+                                and Athar Hayat performed Sufi music. on
+                                December 3rd and 4th, 2022, at the Central
+                                Vista, India Gate, New Delhi, Delhi. Swar
+                                Dharohar Utsav started in the morning with
                                 Ragaas, and many celebrities performed. In this
                                 programme, upcoming local artists will perform
                                 with legends on the same platform to showcase

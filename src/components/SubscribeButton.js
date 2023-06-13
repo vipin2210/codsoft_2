@@ -2,7 +2,10 @@ import React from "react";
 
 const SubscribeButton = () => {
     return (
-        <button className='btn gap-2 p-3 md:w-[50%]  shadow-lg bg-black text-white   hover:bg-red-600 rounded-2xl md:h-full flex flex-row justify-center $className'>
+        <button
+            className='btn gap-2 p-3 md:w-[50%]  shadow-lg bg-black text-white   hover:bg-[#FF0000] rounded-[11px] md:h-full flex flex-row justify-center '
+            style={{ boxShadow: "0px 0px 9px 4px rgba(255, 0, 0, 0.88)" }}
+        >
             <svg
                 width='24'
                 height='24'

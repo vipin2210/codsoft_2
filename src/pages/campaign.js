@@ -31,20 +31,6 @@ const campaigns = [
     },
 ];
 const service = () => {
-<<<<<<< HEAD:src/pages/services.js
-  return (
-    <div>
-      <Navbar />
-      <div className="bg-[#000215]">
-        <div className="">
-          <img className="object-fill  h-96 w-full" src="/Frame.png" />
-          <Breadcrum name={"Services"} page={"Services"} />
-        </div>
-
-        <div className="lg:w-4/5 lg:grid lg:mx-36 items-center">
-          <CampaignCard />
-          <CampaignCard />
-=======
     return (
         <div>
             <Navbar />
@@ -61,11 +47,8 @@ const service = () => {
                 </div>
             </div>
             <ScrollTop />
->>>>>>> 03cb61295e499ee7c94617bee260b6ca8cd2e485:src/pages/campaign.js
         </div>
-      </div>
-    </div>
-  );
+    );
 };
 
 export default service;
