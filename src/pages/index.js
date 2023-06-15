@@ -129,16 +129,16 @@ export default function Home() {
                             </div>
                             <div className='flex justify-center'>
                                 <p className='text-yellow-400 font-extrabold border-2 px-4 border-yellow-400 rounded-full'>
-                                    Art is India ,India is Divine
+                                    Art is India, India is Divine
                                 </p>
                             </div>
 
-                            <h1 className='mb-4 text-4xl font-extrabold tracking-tight leading-none uppercase text-white  md:text-5xl lg:text-6xl '>
+                            <h1 className='my-4 text-4xl font-extrabold tracking-tight leading-none uppercase text-white  md:text-5xl lg:text-6xl '>
                                 Small{" "}
-                                <span className='text-yellow-400 '>
-                                    Donation{" "}
+                                <span className='text-yellow-400 u '>
+                                    DONATION{" "}
                                 </span>
-                                Can <br /> Change Artist&apos;Life
+                                Can <br /> Change Artist&apos;s Life
                             </h1>
                             {/* <p className='mb-8 text-lg font-normal text-white lg:text-xl sm:px-16 xl:px-48 '>
                                 Help artist India was founded in January of
@@ -150,7 +150,7 @@ export default function Home() {
                             <div className='flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4'>
                                 <Link
                                     href='/donation'
-                                    className='  py-2 px-7 text-base font-medium text-center  text-white rounded-[14px] border  hover:bg-black focus:ring-2 focus:ring-gray-100  '
+                                    className=' uppercase py-2 px-7 text-base font-medium text-center  text-white rounded-[14px] border  hover:bg-black focus:ring-2 focus:ring-gray-100  '
                                     style={{
                                         background:
                                             "linear-gradient(90deg, rgba(101, 0, 0, 0.32) 0.45%, rgba(36, 0, 255, 0.24) 106.51%)",
