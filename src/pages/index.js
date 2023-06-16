@@ -134,7 +134,7 @@ export default function Home() {
                             </div>
 
                             <h1 className='my-4 text-4xl font-extrabold tracking-tight leading-none uppercase text-white  md:text-5xl lg:text-6xl '>
-                                Small{" "}
+                                A Small{" "}
                                 <span className='text-yellow-400 u '>
                                     DONATION{" "}
                                 </span>

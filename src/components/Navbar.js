@@ -246,11 +246,11 @@ function Navbar() {
 
                                                             <li>
                                                                 <Link
-                                                                    href='/'
+                                                                    href='/joinAsArtist'
                                                                     className='block py-2 px-4 hover:bg-gray-100'
                                                                 >
-                                                                    Sponser With
-                                                                    Us
+                                                                    Join As
+                                                                    Artist
                                                                 </Link>
                                                             </li>
 
