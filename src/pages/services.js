@@ -7,6 +7,8 @@ import PastEvent from "@/components/PastEvent";
 import SimpleCarousal from "@/components/SimpleCarousal";
 import SimpleCarousalComing from "@/components/SimpleCarousalComing";
 import { useState } from "react";
+import Glider from "react-glider";
+import "glider-js/glider.min.css";
 
 const images = [
     { img: "/Dharohar1.png" },
@@ -49,13 +51,13 @@ const events = () => {
                 <div className='mb-16'>
                     <img
                         className='object-fill  h-80 w-full'
-                        src='/PastEventBanner.png'
+                        src='/banner/eventsbanner.jpg'
                     />
                     <Breadcrum name='Events' page='Services/Events' />
                     {/* Button */}
                     <div>
                         <div class='containerTab '>
-                            <div class='tabsButton  rounded-full p-1 '>
+                            <div class='tabsButton  rounded-2xl p-1 '>
                                 <input
                                     type='radio'
                                     id='radio-1'
@@ -69,7 +71,7 @@ const events = () => {
                                     onChange={handleChange}
                                 />
                                 <label
-                                    class='tabButton w-[150px] min-[360px]:w-[180px] text-lg min-[360px]:text-xl sm:w-[200px]
+                                    class='tabButton w-[150px] min-[360px]:w-[180px] text-lg min-[360px]:text-xl sm:w-[200px] font-bold
                    
                     text-center '
                                     for='radio-1'
@@ -84,12 +86,12 @@ const events = () => {
                                     onChange={handleChange}
                                 />
                                 <label
-                                    class='tabButton w-[150px] min-[360px]:w-[180px] text-lg min-[360px]:text-xl sm:w-[200px] text-center'
+                                    class='tabButton w-[150px] min-[360px]:w-[180px] text-lg min-[360px]:text-xl sm:w-[200px] text-center font-bold'
                                     for='radio-2'
                                 >
                                     Past Events
                                 </label>
-                                <span class='gliderTabButton w-[150px] min-[360px]:w-[180px] rounded-full sm:w-[200px]'></span>
+                                <span class='gliderTabButton w-[150px] min-[360px]:w-[180px] rounded-2xl sm:w-[200px]'></span>
                             </div>
                         </div>
                     </div>
@@ -282,20 +284,21 @@ const events = () => {
                                 </h1>
                                 <h2 className='text-md mt-10'>
                                     The Ministry of Culture, Government of
-                                    India, in collaboration with the "Swar
-                                    Dharohar Foundation," inaugurated the
-                                    three-day "Swar Dharohar Festival" under
-                                    Kalanjali. "Swar Dharohar Festival" is a
-                                    music, art, and literature festival to
-                                    showcase the iconic art and culture of India
-                                    and the rich literary art and heritage of
-                                    Indian states. The Swar Dharohar festival
-                                    was inaugurated today by Chief Guest Sh.
-                                    Mehtab Ali (sitar player) and Pt. Lalit
-                                    Prasad (classical vocal). On the first day,
-                                    classical performances, ghazals, Kavi
-                                    Sammelan, Mushaira, and Sufi performances
-                                    were organised. Ghazal was performed by Sh.
+                                    India, in collaboration with the &quot;Swar
+                                    Dharohar Foundation,&quot; inaugurated the
+                                    three-day &quot;Swar Dharohar Festival&quot;
+                                    under Kalanjali. &quot;Swar Dharohar
+                                    Festival&quot; is a music, art, and
+                                    literature festival to showcase the iconic
+                                    art and culture of India and the rich
+                                    literary art and heritage of Indian states.
+                                    The Swar Dharohar festival was inaugurated
+                                    today by Chief Guest Sh. Mehtab Ali (sitar
+                                    player) and Pt. Lalit Prasad (classical
+                                    vocal). On the first day, classical
+                                    performances, ghazals, Kavi Sammelan,
+                                    Mushaira, and Sufi performances were
+                                    organised. Ghazal was performed by Sh.
                                     Diwakar Meena; Sh. Hamsar Hayat and Athar
                                     Hayat performed Sufi music.
                                 </h2>
@@ -321,7 +324,128 @@ const events = () => {
                                     </div>
                                 </div>
 
-                                <SimpleCarousal images={images} />
+                                {/* <SimpleCarousal images={images} /> */}
+
+                                {/* */}
+
+                                <div className=' mr-10 ml-10 sm:mr-4 sm:ml-4 '>
+                                    <Glider
+                                        className='glider-container'
+                                        // draggable
+                                        scrollPropagate
+                                        hasArrows
+                                        hasDots
+                                        // itemWidth={6}
+                                        slidesToShow={1}
+                                        rewind
+                                        // exactWidth
+                                        responsive={[
+                                            {
+                                                breakpoint: 850,
+                                                settings: {
+                                                    slidesToShow: 2,
+                                                },
+                                            },
+                                            {
+                                                breakpoint: 1100,
+                                                settings: {
+                                                    slidesToShow: 2,
+                                                },
+                                            },
+                                        ]}
+                                    >
+                                        {/* {console.log(images)} */}
+
+                                        {/* {props.images.map((element, i) => {
+                    <div className=' h-40 bg-white ' key={i}>
+                        <img
+                            className='object-cover rounded-2xl h-full'
+                            src={element.img}
+                        />
+                        <h1 className='text-white'>{element.img}</h1>
+                    </div>;
+                    {
+                        console.log(`${element.img}`);
+                    }
+                })} */}
+
+                                        <div className=' h-24  w-16'>
+                                            <img
+                                                className='object-cover rounded-2xl  '
+                                                src='/dharover/1.JPG'
+                                            />
+                                        </div>
+
+                                        <div className=' h-24 w-16'>
+                                            <img
+                                                className='object-cover rounded-2xl '
+                                                src='/dharover/2.JPG'
+                                            />
+                                        </div>
+
+                                        <div className=' h-24 w-16'>
+                                            <img
+                                                className='object-cover rounded-2xl'
+                                                src='/dharover/3.JPG'
+                                            />
+                                        </div>
+
+                                        <div className=' h-24 w-16'>
+                                            <img
+                                                className='object-cover rounded-2xl'
+                                                src='/dharover/4.JPG'
+                                            />
+                                        </div>
+
+                                        <div className=' h-24 w-16'>
+                                            <img
+                                                className='object-cover rounded-2xl'
+                                                src='/dharover/5.JPG'
+                                            />
+                                        </div>
+
+                                        <div className=' h-24 w-16'>
+                                            <img
+                                                className='object-cover rounded-2xl '
+                                                src='/dharover/6.JPG'
+                                            />
+                                        </div>
+
+                                        <div className=' h-24 w-16'>
+                                            <img
+                                                className='object-cover rounded-2xl'
+                                                src='/dharover/7.JPG'
+                                            />
+                                        </div>
+
+                                        <div className=' h-24 w-16'>
+                                            <img
+                                                className='object-cover rounded-2xl '
+                                                src='/dharover/8.JPG'
+                                            />
+                                        </div>
+                                        <div className=' h-24 w-16'>
+                                            <img
+                                                className='object-cover rounded-2xl '
+                                                src='/dharover/9.JPG'
+                                            />
+                                        </div>
+                                        <div className=' h-24 w-16'>
+                                            <img
+                                                className='object-cover rounded-2xl '
+                                                src='/dharover/10.JPG'
+                                            />
+                                        </div>
+                                        <div className=' h-24 w-16'>
+                                            <img
+                                                className='object-cover rounded-2xl '
+                                                src='/dharover/11.JPG'
+                                            />
+                                        </div>
+                                    </Glider>
+                                </div>
+
+                                {/*  */}
                             </div>
                             <div className='w-[100%] border-b-2 border-yellow-500  mb-11  ml-0 sm:ml-80'></div>{" "}
                         </div>
@@ -360,12 +484,121 @@ const events = () => {
                                         <span>SATURDAY</span>
                                     </div>
                                 </div>
-                                <SimpleCarousal
+                                {/* <SimpleCarousal
                                     images={[
                                         { img: "pastevent.png" },
                                         { img: "pastevent4.png" },
                                     ]}
-                                />
+                                    /> */}
+
+                                {/*  */}
+                                <div className=' mr-10 ml-10 sm:mr-4 sm:ml-4 '>
+                                    <Glider
+                                        className='glider-container'
+                                        // draggable
+                                        scrollPropagate
+                                        hasArrows
+                                        hasDots
+                                        // itemWidth={6}
+                                        slidesToShow={1}
+                                        rewind
+                                        // exactWidth
+                                        responsive={[
+                                            {
+                                                breakpoint: 850,
+                                                settings: {
+                                                    slidesToShow: 2,
+                                                },
+                                            },
+                                            {
+                                                breakpoint: 1100,
+                                                settings: {
+                                                    slidesToShow: 2,
+                                                },
+                                            },
+                                        ]}
+                                    >
+                                        {/* {console.log(images)} */}
+
+                                        {/* {props.images.map((element, i) => {
+                    <div className=' h-40 bg-white ' key={i}>
+                        <img
+                            className='object-cover rounded-2xl h-full'
+                            src={element.img}
+                        />
+                        <h1 className='text-white'>{element.img}</h1>
+                    </div>;
+                    {
+                        console.log(`${element.img}`);
+                    }
+                })} */}
+
+                                        <div className=' h-24  w-16'>
+                                            <img
+                                                className='object-cover rounded-2xl  '
+                                                src='/funkaar1/1.JPG'
+                                            />
+                                        </div>
+
+                                        <div className=' h-24 w-16'>
+                                            <img
+                                                className='object-cover rounded-2xl '
+                                                src='/funkaar1/2.JPG'
+                                            />
+                                        </div>
+
+                                        <div className=' h-24 w-16'>
+                                            <img
+                                                className='object-cover rounded-2xl'
+                                                src='/funkaar1/3.JPG'
+                                            />
+                                        </div>
+
+                                        <div className=' h-24 w-16'>
+                                            <img
+                                                className='object-cover rounded-2xl'
+                                                src='/funkaar1/4.JPG'
+                                            />
+                                        </div>
+
+                                        <div className=' h-24 w-16'>
+                                            <img
+                                                className='object-cover rounded-2xl'
+                                                src='/funkaar1/5.JPG'
+                                            />
+                                        </div>
+
+                                        <div className=' h-24 w-16'>
+                                            <img
+                                                className='object-cover rounded-2xl '
+                                                src='/funkaar1/6.JPG'
+                                            />
+                                        </div>
+
+                                        <div className=' h-24 w-16'>
+                                            <img
+                                                className='object-cover rounded-2xl'
+                                                src='/funkaar1/7.JPG'
+                                            />
+                                        </div>
+
+                                        <div className=' h-24 w-16'>
+                                            <img
+                                                className='object-cover rounded-2xl '
+                                                src='/funkaar1/8.JPG'
+                                            />
+                                        </div>
+                                        <div className=' h-24 w-16'>
+                                            <img
+                                                className='object-cover rounded-2xl '
+                                                src='/funkaar1/9.JPG'
+                                            />
+                                        </div>
+                                        
+                                    </Glider>
+                                </div>
+
+                                {/*  */}
                             </div>
                             <div className='ml-0 sm:ml-36 md:ml-10 lg:ml-56 min-[350px]:mx-auto max-[639px]:mx-auto min-[640px]:ml-14 max-[768px]:ml-14 min-[1024px]:ml-40 max-[1279px]:ml-40 mx-auto'>
                                 <div className='w-72 sm:w-96 md:w-72 min-[640px]:w-60 max-[768px]:w-60 sm:ml-0 mx-auto'>
@@ -423,12 +656,139 @@ const events = () => {
                                         <span>SUNDAY</span>
                                     </div>
                                 </div>
-                                <SimpleCarousal
+                                {/* <SimpleCarousal
                                     images={[
                                         { img: "serviceImg1.png" },
                                         { img: "serviceImg1.png" },
                                     ]}
-                                />
+                                /> */}
+
+                                {/*  */}
+
+                                <div className=' mr-10 ml-10 sm:mr-4 sm:ml-4 '>
+                                    <Glider
+                                        className='glider-container'
+                                        // draggable
+                                        scrollPropagate
+                                        hasArrows
+                                        hasDots
+                                        // itemWidth={6}
+                                        slidesToShow={1}
+                                        rewind
+                                        // exactWidth
+                                        responsive={[
+                                            {
+                                                breakpoint: 850,
+                                                settings: {
+                                                    slidesToShow: 2,
+                                                },
+                                            },
+                                            {
+                                                breakpoint: 1100,
+                                                settings: {
+                                                    slidesToShow: 2,
+                                                },
+                                            },
+                                        ]}
+                                    >
+                                        {/* {console.log(images)} */}
+
+                                        {/* {props.images.map((element, i) => {
+                    <div className=' h-40 bg-white ' key={i}>
+                        <img
+                            className='object-cover rounded-2xl h-full'
+                            src={element.img}
+                        />
+                        <h1 className='text-white'>{element.img}</h1>
+                    </div>;
+                    {
+                        console.log(`${element.img}`);
+                    }
+                })} */}
+
+                                        <div className=' h-24  w-16'>
+                                            <img
+                                                className='object-cover rounded-2xl  '
+                                                src='/funkaar2/1.JPG'
+                                            />
+                                        </div>
+
+                                        <div className=' h-24 w-16'>
+                                            <img
+                                                className='object-cover rounded-2xl '
+                                                src='/funkaar2/2.JPG'
+                                            />
+                                        </div>
+
+                                        <div className=' h-24 w-16'>
+                                            <img
+                                                className='object-cover rounded-2xl'
+                                                src='/funkaar2/3.JPG'
+                                            />
+                                        </div>
+
+                                        <div className=' h-24 w-16'>
+                                            <img
+                                                className='object-cover rounded-2xl'
+                                                src='/funkaar2/4.JPG'
+                                            />
+                                        </div>
+
+                                        <div className=' h-24 w-16'>
+                                            <img
+                                                className='object-cover rounded-2xl'
+                                                src='/funkaar2/5.JPG'
+                                            />
+                                        </div>
+
+                                        <div className=' h-24 w-16'>
+                                            <img
+                                                className='object-cover rounded-2xl '
+                                                src='/funkaar2/6.JPG'
+                                            />
+                                        </div>
+
+                                        <div className=' h-24 w-16'>
+                                            <img
+                                                className='object-cover rounded-2xl'
+                                                src='/funkaar2/7.JPG'
+                                            />
+                                        </div>
+
+                                        <div className=' h-24 w-16'>
+                                            <img
+                                                className='object-cover rounded-2xl '
+                                                src='/funkaar2/8.JPG'
+                                            />
+                                        </div>
+                                        <div className=' h-24 w-16'>
+                                            <img
+                                                className='object-cover rounded-2xl '
+                                                src='/funkaar2/9.JPG'
+                                            />
+                                        </div>
+                                        <div className=' h-24 w-16'>
+                                            <img
+                                                className='object-cover rounded-2xl '
+                                                src='/funkaar2/10.JPG'
+                                            />
+                                        </div>
+                                        <div className=' h-24 w-16'>
+                                            <img
+                                                className='object-cover rounded-2xl '
+                                                src='/funkaar2/11.JPG'
+                                            />
+                                        </div>
+                                        <div className=' h-24 w-16'>
+                                            <img
+                                                className='object-cover rounded-2xl '
+                                                src='/funkaar2/12.JPG'
+                                            />
+                                        </div>
+                                    </Glider>
+                                </div>
+
+                                {/*  */}
                             </div>{" "}
                             <div className='w-[100%] border-b-2 border-yellow-500  mb-11  ml-0 sm:ml-80'></div>{" "}
                         </div>

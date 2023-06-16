@@ -19,7 +19,7 @@ const hariharan = () => {
             <Navbar />
             <div>
                 <Header
-                    image='/Frame.png'
+                    image='/banner/profilebanner.jpg'
                     name='Profile view'
                     page='Our Heroes'
                 />

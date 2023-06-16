@@ -19,7 +19,7 @@ const nawaz = () => {
             <Navbar />
             <div>
                 <Header
-                    image='/Frame.png'
+                    image='/banner/profilebanner.jpg'
                     name='Profile view'
                     page='Our Heroes'
                 />
@@ -51,8 +51,8 @@ const nawaz = () => {
                             contribution to the arts has to be written in golden
                             words. We are proud and blessed that he is one of
                             our guides and mentors at the Foundation, He is
-                            appointed as the institution's guardian and mentor.
-                            Mr. Siddiqui appreciates the concept of the
+                            appointed as the institution&apos;s guardian and
+                            mentor. Mr. Siddiqui appreciates the concept of the
                             organisation and also supports the organisation for
                             its initiative to help needy artists .
                         </p>

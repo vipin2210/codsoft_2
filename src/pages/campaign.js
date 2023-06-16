@@ -36,7 +36,7 @@ const service = () => {
             <Navbar />
             <div className='bg-[#000215]'>
                 <Header
-                    image='/Frame.png'
+                    image='/banner/campaignbanner.jpg'
                     name='Campaign'
                     page='Services/Campaign'
                 />

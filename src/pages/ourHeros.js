@@ -3,6 +3,7 @@ import bg from "../../public/ourHerosMain.png";
 import ArtistCard from "@/components/ArtistCard";
 import Navbar from "@/components/Navbar";
 import ScrollTop from "@/components/ScrollTop";
+import Header from "@/components/Header";
 
 function ourHeros() {
     const teams = [
@@ -65,9 +66,11 @@ function ourHeros() {
             <Navbar />
             <div className='p-5 w-full '>
                 <section>
-                    <div>
-                        <img src='/ourHerosPhoto.png' className='w-full' />
-                    </div>
+                    <Header
+                        image='/banner/ourHerobanner.jpg'
+                        name='Our Heroes'
+                        page='Our Heroes'
+                    />
                     <div>
                         <div className=' flex flex-row items-center gap-14 '>
                             <div className='skew-x-12 '>

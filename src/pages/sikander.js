@@ -19,7 +19,7 @@ const sikander = () => {
             <Navbar />
             <div>
                 <Header
-                    image='/Frame.png'
+                    image='/banner/profilebanner.jpg'
                     name='Profile view'
                     page='Our Heroes'
                 />
@@ -39,14 +39,14 @@ const sikander = () => {
                             2021) was an Indian singer associated with
                             Punjabi-language folk and pop music who made his
                             first appearances on radio and television in the
-                            early 1980s with his introductory album, "Roadways
-                            Di Laari". He also acted in some Punjabi-language
-                            films, including A Shining Star in the History of
-                            Punjabi Music and Folk Music. He is a descendant of
-                            the Patiala Gharana. We are honoured and grateful
-                            that he agreed to serve as our mentor for Help
-                            Artist India. his kind guidelines will be followed.
-                            for the upliftment of the artist.
+                            early 1980s with his introductory album,
+                            &quot;Roadways Di Laari&quot;. He also acted in some
+                            Punjabi-language films, including A Shining Star in
+                            the History of Punjabi Music and Folk Music. He is a
+                            descendant of the Patiala Gharana. We are honoured
+                            and grateful that he agreed to serve as our mentor
+                            for Help Artist India. his kind guidelines will be
+                            followed. for the upliftment of the artist.
                         </p>
                         <Link
                             href='https://en.wikipedia.org/wiki/Sardool_Sikander'

@@ -19,7 +19,7 @@ const rakeshBedi = () => {
             <Navbar />
             <div>
                 <Header
-                    image='/Frame.png'
+                    image='/banner/profilebanner.jpg'
                     name='Profile view'
                     page='Our Heroes'
                 />
@@ -46,7 +46,7 @@ const rakeshBedi = () => {
                             arts has to be written in golden words. We are proud
                             and blessed that he is one of our guides and mentors
                             at the Foundation, He is appointed as the
-                            institution's guardian and mentor. Mr. Bedi
+                            institution&apos;s guardian and mentor. Mr. Bedi
                             appreciates the concept of the organisation and also
                             supports the organisation for its initiative to help
                             needy artists .
@@ -78,8 +78,6 @@ const rakeshBedi = () => {
                         </div>
                     </div>
                 </div>
-
-                
             </div>
         </div>
     );
