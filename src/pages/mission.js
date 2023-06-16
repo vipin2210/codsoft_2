@@ -2,6 +2,7 @@ import Breadcrum from "@/components/Breadcrum";
 import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
 import ScrollTop from "@/components/ScrollTop";
+import Image from "next/image";
 import React from "react";
 
 const mission = () => {
@@ -9,33 +10,77 @@ const mission = () => {
         <div>
             <Navbar />
             <div className='mb-8'>
-                <Header image='/Frame.png' name='Mission' page='Mission' />
+                <Header
+                    image='/banner/ourmissionbanner.jpg'
+                    name='Mission'
+                    page='Mission'
+                />
 
                 <div className='relative container -mt-60 z-20 mx-auto '>
-                    <div className=' mx-auto grid grid-cols-4 gap-6 w-3/4 rounded-3xl p-6  bg-[#000000]  '>
-                        <div>
-                            <img src='/mis1.png' />
+                    <div className=' mx-auto grid grid-cols-4 gap-6 w-3/4 rounded-xl p-6  bg-[#FFD12F]  '>
+                        <div className='max-h-[300]'>
+                            <Image
+                                src='/mis1.png'
+                                width={276}
+                                height={300}
+                                alt='mis1'
+                            />
                         </div>
-                        <div>
-                            <img src='/mis6.png' />
+                        <div className='max-h-[300]'>
+                            <Image
+                                src='/mis6.png'
+                                width={276}
+                                height={300}
+                                alt='mis1'
+                            />
                         </div>
-                        <div>
-                            <img src='/mis3.png' />
+                        <div className='max-h-[300]'>
+                            <Image
+                                src='/mis3.png'
+                                width={276}
+                                height={300}
+                                alt='mis1'
+                            />
                         </div>
-                        <div>
-                            <img src='/mis4.png' />
+                        <div className='max-h-[300]'>
+                            <Image
+                                src='/mis4.png'
+                                width={276}
+                                height={300}
+                                alt='mis1'
+                            />
                         </div>
-                        <div>
-                            <img src='/mis5.png' />
+                        <div className='max-h-[300]'>
+                            <Image
+                                src='/mis5.png'
+                                width={276}
+                                height={300}
+                                alt='mis1'
+                            />
                         </div>
-                        <div>
-                            <img src='/mis2.png' />
+                        <div className='max-h-[300]'>
+                            <Image
+                                src='/mis2.png'
+                                width={276}
+                                height={300}
+                                alt='mis1'
+                            />
                         </div>
-                        <div>
-                            <img src='/mis7.png' />
+                        <div className='max-h-[300]'>
+                            <Image
+                                src='/mis7.png'
+                                width={276}
+                                height={300}
+                                alt='mis1'
+                            />
                         </div>
-                        <div>
-                            <img src='/mis8.png' />
+                        <div className='max-h-[300]'>
+                            <Image
+                                src='/mis8.png'
+                                width={276}
+                                height={300}
+                                alt='mis1'
+                            />
                         </div>
                     </div>
                 </div>
