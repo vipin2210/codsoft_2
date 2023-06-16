@@ -138,7 +138,7 @@ export default function Home() {
                                 <span className='text-yellow-400 u '>
                                     DONATION{" "}
                                 </span>
-                                Can <br /> Change Artist&apos;s Life
+                                Can <br /> Change Needy Artist&apos;s Life
                             </h1>
                             {/* <p className='mb-8 text-lg font-normal text-white lg:text-xl sm:px-16 xl:px-48 '>
                                 Help artist India was founded in January of
