@@ -1,8 +1,10 @@
+
 import Navbar from "@/components/Navbar";
 import React from "react";
 import { useForm } from "react-hook-form";
 
 export const formH = () => {
+
     // eslint-disable-next-line react-hooks/rules-of-hooks
     const form = useForm();
     const { register } = form;
@@ -189,6 +191,7 @@ export const formH = () => {
             </div>
         </div>
     );
+
 };
 
 export default formH;
