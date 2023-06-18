@@ -26,9 +26,9 @@ const CallToAction = () => {
                         Our Office Address
                     </h1>
                     <h6 className='text-center'>
-                        835 Middle Country Rd, Seldon,
+                        Help Artist India, Sai Tower, Plot No.22, Level #5,
+                        Sector 12B, Dwarka, New Delhi 110078
                     </h6>
-                    <h6 className='text-center'>Ny11784, United States</h6>
                 </div>
             </div>
 
@@ -54,8 +54,10 @@ const CallToAction = () => {
                     <h1 className='font-bold text-center text-lg mt-2'>
                         Call Us Anytime
                     </h1>
-                    <h6 className='text-center'>help24/7@gmail.com</h6>
-                    <h6 className='text-center'>(+163)-1202-0088</h6>
+                    <h6 className='text-center'>helpartistindia@gmail.com</h6>
+                    <h6 className='text-center'>
+                        +91 - 97117-13123 <br /> +91 - 9990913123
+                    </h6>
                 </div>
             </div>
 
@@ -82,8 +84,7 @@ const CallToAction = () => {
                         Work Time
                     </h1>
                     <h6 className='text-center'>
-                        9:00am-6:00pm (Monday-Friday) <br /> Saturday & Sunday
-                        Half Day
+                        10:00 AM - 7:00PM (Monday- Sunday)
                     </h6>
                 </div>
             </div>
