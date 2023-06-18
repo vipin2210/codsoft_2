@@ -2,35 +2,63 @@ import React from "react";
 import bg from "../../public/ourHerosMain.png";
 import ArtistCard from "@/components/ArtistCard";
 import Navbar from "@/components/Navbar";
+import ScrollTop from "@/components/ScrollTop";
+import Header from "@/components/Header";
 
 function ourHeros() {
     const teams = [
         {
             photo: "/hariharann.png",
-            name: "Padman Shri Hariharan",
+            name: "Padma Shri Hariharan",
             profession: "Singer",
+            twitter: "https://twitter.com/singerhariharan?lang=en",
+            insta: "https://www.instagram.com/singerhariharana/",
+            facebook: "https://www.facebook.com/SingerHariharanA",
+            link: "https://en.wikipedia.org/wiki/Hariharan_(singer)",
+            profile: "/hariharan",
         },
 
         {
             photo: "/kavitaa.png",
             name: "Kavita Seth",
             profession: "Singer",
+            twitter: "https://twitter.com/kavitaseth?lang=en",
+            insta: "https://www.instagram.com/sethkavita/",
+            facebook: "https://www.facebook.com/kavita.sufi/",
+            link: "https://en.wikipedia.org/wiki/Kavita_Seth",
+            profile: "/kavitaSeth",
         },
 
         {
             photo: "/Rakeshh.png",
             name: "Rakesh Bedi",
             profession: "Actor",
+            twitter: "https://twitter.com/bolbedibol?lang=en",
+            insta: "https://www.instagram.com/therakeshbedi/",
+            facebook: "https://www.facebook.com/rakesh.bedi.980/",
+            link: "https://en.wikipedia.org/wiki/Rakesh_Bedi",
+            profile: "/rakeshBedi",
         },
         {
             photo: "/Nawazz.png",
             name: "Nawazuddin Siddiqui",
             profession: "Actor",
+            twitter:
+                "https://twitter.com/Nawazuddin_S?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+            insta: "https://www.instagram.com/nawazuddin._siddiqui/",
+            facebook: "https://www.facebook.com/NawazuddinSiddiqui/",
+            link: "https://en.wikipedia.org/wiki/Nawazuddin_Siddiqui",
+            profile: "/nawaz",
         },
         {
-            photo: "/Nawazz.png",
+            photo: "/LateShriSardoolSikander.webp",
             name: "Late Shri Sardool Sikander",
             profession: "Singer",
+            twitter: "https://twitter.com/sardoolsikander?lang=en",
+            insta: "https://www.instagram.com/sardoolsikander/?hl=en",
+            facebook: "https://www.facebook.com/sardool.sikander.9",
+            link: "https://en.wikipedia.org/wiki/Sardool_Sikander",
+            profile: "/sikander",
         },
     ];
     return (
@@ -38,9 +66,11 @@ function ourHeros() {
             <Navbar />
             <div className='p-5 w-full '>
                 <section>
-                    <div>
-                        <img src='/ourHerosPhoto.png' className='w-full' />
-                    </div>
+                    <Header
+                        image='/banner/ourHerobanner.jpg'
+                        name='Our Heroes'
+                        page='Our Heroes'
+                    />
                     <div>
                         <div className=' flex flex-row items-center gap-14 '>
                             <div className='skew-x-12 '>
@@ -134,7 +164,7 @@ function ourHeros() {
                 <section>
                     <div>
                         <div className=' text-3xl md:text-5xl text-center m-12'>
-                            <h1 className=' md:font-extrabold'>Our Heros</h1>
+                            <h1 className=' md:font-extrabold'>Our Heroes</h1>
                         </div>
                         <div>
                             <div className=' grid w-full    gap-10 grid-cols-1 md:grid-cols-3 lg:grid-cols-4 sm:grid-cols-2 '>
@@ -146,6 +176,7 @@ function ourHeros() {
                     </div>
                 </section>
             </div>
+            <ScrollTop />
         </div>
     );
 }
