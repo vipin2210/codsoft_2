@@ -163,7 +163,7 @@ function Navbar() {
                                                     href='/ourHeros'
                                                     className='block py-2 px-4 hover:bg-gray-100'
                                                 >
-                                                    HAI Heros
+                                                    H.A.I Heros
                                                 </Link>
                                             </li>
                                             <li>
@@ -171,7 +171,7 @@ function Navbar() {
                                                     href='/hai'
                                                     className='block py-2 px-4 hover:bg-gray-100'
                                                 >
-                                                    H.A.I teams
+                                                    H.A.I Team
                                                 </Link>
                                             </li>
                                             <li>
@@ -228,7 +228,7 @@ function Navbar() {
                                                         <ul className=' z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow '>
                                                             <li>
                                                                 <Link
-                                                                    href='/'
+                                                                    href='/volunteer'
                                                                     className='block py-2 px-4 hover:bg-gray-100'
                                                                 >
                                                                     Volunteer
@@ -236,7 +236,7 @@ function Navbar() {
                                                             </li>
                                                             <li>
                                                                 <Link
-                                                                    href='/formH'
+                                                                    href='/formHelpPartner'
                                                                     className='block py-2 px-4 hover:bg-gray-100'
                                                                 >
                                                                     Corporate
@@ -256,7 +256,7 @@ function Navbar() {
 
                                                             <li>
                                                                 <Link
-                                                                    href='/'
+                                                                    href='/formWorkUs'
                                                                     className='block py-2 px-4 hover:bg-gray-100'
                                                                 >
                                                                     Work With Us
@@ -477,6 +477,75 @@ function Navbar() {
                                             </Link>
                                         </li>
                                     </ul>
+                                </div>
+                                <div className='dropdown'>
+                                    <button
+                                        className='text-black z-30 bg-white text-start   hover:underline decoration-red-600 decoration-2 underline-offset-4 rounded-lg  px-4 py-2.5  inline-flex items-center hover:text-red-600'
+                                        onClick={handleDropDownInvolve}
+                                    >
+                                        Join & Get Involved
+                                        <svg
+                                            className='ml-2 w-4 h-4'
+                                            aria-hidden='true'
+                                            fill='none'
+                                            stroke='currentColor'
+                                            viewBox='0 0 24 24'
+                                            xmlns='http://www.w3.org/2000/svg'
+                                        >
+                                            <path
+                                                strokeLinecap='round'
+                                                strokeLinejoin='round'
+                                                strokeWidth='2'
+                                                d='M19 9l-7 7-7-7'
+                                            ></path>
+                                        </svg>
+                                    </button>
+
+                                    <div
+                                        id='dropdown'
+                                        className={`z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow  ${
+                                            isInvolveOpen
+                                                ? " absolute block"
+                                                : "hidden"
+                                        }`}
+                                    >
+                                        <ul className=' z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow '>
+                                            <li>
+                                                <Link
+                                                    href='/volunteer'
+                                                    className='block py-2 px-4 hover:bg-gray-100'
+                                                >
+                                                    Volunteer
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    href='/formHelpPartner'
+                                                    className='block py-2 px-4 hover:bg-gray-100'
+                                                >
+                                                    Corporate Partnership
+                                                </Link>
+                                            </li>
+
+                                            <li>
+                                                <Link
+                                                    href='/joinAsArtist'
+                                                    className='block py-2 px-4 hover:bg-gray-100'
+                                                >
+                                                    Join As Artist
+                                                </Link>
+                                            </li>
+
+                                            <li>
+                                                <Link
+                                                    href='/formWorkUs'
+                                                    className='block py-2 px-4 hover:bg-gray-100'
+                                                >
+                                                    Work With Us
+                                                </Link>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
