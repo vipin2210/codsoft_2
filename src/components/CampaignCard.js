@@ -2,10 +2,13 @@ import React from "react";
 import Carousal from "./Carousal";
 import Link from "next/link";
 
-
-
 const CampaignCard = ({ props }) => {
     const { name, desc, link, image1, image2, image3 } = props;
+    const image = {
+        image1,
+        image2,
+        image3,
+    };
 
     return (
         <div>
@@ -20,29 +23,23 @@ const CampaignCard = ({ props }) => {
                             <hr className='  border-2 mt-1 w-[50%] ' />
 
                             <div className='my-8'>
-                                <p className='my-2'>
-                                   {desc}
-                                </p>
-                                <p className='my-2'>
-                                 
-                                </p>
+                                <p className='my-2'>{desc}</p>
+                                <p className='my-2'></p>
                             </div>
                             <Link href='/donation'>
                                 <button className='lg:text-2xl sm:text-xl p-4 px-8  font-bold border-4 rounded-xl border-w  mb-8 hover:border-yellow-300 hover:text-yellow-300 '>
                                     DONATE NOW
                                 </button>
                             </Link>
-                   
-
+                        </div>
+                    </div>
+                    <div className=''>
+                        <Carousal props={image} />
+                    </div>
+                </div>
             </div>
-          </div>
-          <div className="">
-            <Carousal />
-          </div>
         </div>
-      </div>
-    </div>
-  );
+    );
 };
 
 export default CampaignCard;

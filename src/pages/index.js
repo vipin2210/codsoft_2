@@ -9,6 +9,9 @@ import PastEvent from "@/components/PastEvent";
 import Link from "next/link";
 
 import ScrollTop from "@/components/ScrollTop";
+import Message from "@/components/Message";
+import Script from "next/script";
+import { useRef } from "react";
 
 const events = [
     {
@@ -28,7 +31,7 @@ const events = [
         year: 2023,
         day: "Friday",
         name: "Shaam-e-Ghazal",
-        desc: " ",
+        desc: " To be announced Soon",
         link: "/",
     },
     {
@@ -77,6 +80,10 @@ const pastevents = [
 ];
 const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
+    const videoRef = useRef();
+    const setPlayBack = () => {
+        videoRef.current.playbackRate = 0.4;
+    };
     return (
         <main>
             <Navbar />
@@ -84,10 +91,12 @@ export default function Home() {
                 {/* Hero Section */}
                 <section className='relative bg-cover'>
                     <div className='bg-hero-section bg-no-repeat   '>
-                        <div className=''>
+                        <div className='' id='myvideo'>
                             <video
                                 autoPlay
                                 loop
+                                ref={videoRef}
+                                onCanPlay={() => setPlayBack()}
                                 muted
                                 className='absolute inset-0 aspect-video   sm:flex hidden  '
                             >
@@ -110,7 +119,7 @@ export default function Home() {
                         </div>
 
                         <div className='relative  inset-0 py-8 px-4 mx-auto  backdrop-brightness-50 text-center  lg:py-16 lg:px-12 '>
-                            <div className='inline-flex justify-between items-center mb-3     '>
+                            <div className='inline-flex justify-between  items-center mb-3     '>
                                 <Image
                                     src='/logo.png'
                                     width={150}
@@ -118,28 +127,33 @@ export default function Home() {
                                     alt='logo'
                                 />
                             </div>
-                            <p className='text-white '>
-                                Art is India ,Inida is Divine
-                            </p>
-                            <h1 className='mb-4 text-4xl font-extrabold tracking-tight leading-none uppercase text-white  md:text-5xl lg:text-6xl '>
-                                Small{" "}
-                                <span className='text-red-600'>Donation </span>
-                                Can <br /> Change Artist Life
+                            <div className='flex justify-center'>
+                                <p className='text-yellow-400 font-extrabold border-2 px-4 border-yellow-400 rounded-full'>
+                                    Art is India, India is Divine
+                                </p>
+                            </div>
+
+                            <h1 className='my-4 text-4xl font-extrabold tracking-tight leading-none uppercase text-white  md:text-5xl lg:text-6xl '>
+                                A Small{" "}
+                                <span className='text-yellow-400 u '>
+                                    DONATION{" "}
+                                </span>
+                                Can <br /> Change Needy Artist&apos;s Life
                             </h1>
-                            <p className='mb-8 text-lg font-normal text-white lg:text-xl sm:px-16 xl:px-48 '>
+                            {/* <p className='mb-8 text-lg font-normal text-white lg:text-xl sm:px-16 xl:px-48 '>
                                 Help artist India was founded in January of
                                 2018. It acknowledges and harbour the veiled,
                                 unidentified artists, availing nothing but
                                 facilitating the unrevealed talents inhabiting
                                 our society.
-                            </p>
+                            </p> */}
                             <div className='flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4'>
                                 <Link
                                     href='/donation'
-                                    className='  py-2 px-7 text-base font-medium text-center  text-white rounded-[8px] border  hover:bg-black focus:ring-2 focus:ring-gray-100  '
+                                    className=' uppercase py-2 px-7 text-base font-medium text-center  text-white rounded-[14px] border  hover:bg-black focus:ring-2 focus:ring-gray-100  '
                                     style={{
                                         background:
-                                            "linear-gradient(90deg, #650000 0%, #FF0000 100%)",
+                                            "linear-gradient(90deg, rgba(101, 0, 0, 0.32) 0.45%, rgba(36, 0, 255, 0.24) 106.51%)",
 
                                         border: "2px solid #FFFFFF",
                                     }}
@@ -209,7 +223,7 @@ export default function Home() {
 
                             <div>
                                 <img
-                                    src='/home/aboutSection.png'
+                                    src='/aboutSection.jpg'
                                     className='w-full mx-auto  mt-6 sm:w-10/12 lg:w-full'
                                     alt='Section2'
                                 />
@@ -244,6 +258,11 @@ export default function Home() {
                         ))}
                     </div>
                     <div className='border-4 border-yellow-600 mt-4'></div>
+                </section>
+
+                <section className='flex flex-col justify-center '>
+                    <Message />
+                    <hr className='border-yellow-600 border-b-8 rounded-full '></hr>
                 </section>
                 <ScrollTop />
             </div>

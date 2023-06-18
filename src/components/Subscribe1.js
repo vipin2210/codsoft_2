@@ -25,7 +25,7 @@ const Subscribe1 = () => {
                     <div className='flex sm:flex-row flex-col items-center  gap-5  mb-5'>
                         <input
                             type='text'
-                            className=' px-3 py-4 w-full  text-xl placeholder-gray-600 bg-gray-200 rounded-lg focus:outline-none focus:ring-4 focus:ring-blue-600 focus:ring-opacity-50'
+                            className=' px-3 py-4 w-full  text-xl placeholder-gray-600 bg-gray-200 text-black rounded-lg focus:outline-none focus:ring-4 focus:ring-blue-600 focus:ring-opacity-50'
                             placeholder='Enter Your Email'
                         />
 
@@ -54,7 +54,7 @@ const Subscribe1 = () => {
                                     aria-describedby='helper-checkbox-text'
                                     type='checkbox'
                                     value=''
-                                    className='w-4 h-4  text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600'
+                                    className='w-4 h-4  text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500   focus:ring-2 '
                                 />
                             </div>
 

@@ -2,11 +2,18 @@ import React from "react";
 
 const Breadcrum = ({ name, page }) => {
     return (
-        <div className='relative bottom-64 text-center'>
-            <h1 className='  text-6xl font-bold text-white '>{name}</h1>
-            <div className='flex items-center justify-center gap-2 text-white'>
+        <div className='relative bottom-64 ml-8 '>
+            <h1
+                className='  text-6xl font-bold text-[#D5FA2F] '
+                style={{
+                    Stroke: "Solid rgba(213, 255, 47, 0.97)",
+                }}
+            >
+                {name}
+            </h1>
+            <div className='flex items-center  gap-2 text-white'>
                 <div>
-                    <p className='text-red-600 text-2xl'>Home</p>
+                    <p className='text-[#D5FA2F] text-2xl'>Home</p>
                 </div>
                 <div>
                     <svg

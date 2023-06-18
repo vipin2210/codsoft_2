@@ -24,6 +24,10 @@ const Subscribe = () => {
                 </option>
                 <option>Singer</option>
                 <option>Dancer</option>
+                <option>Writters</option>
+                <option>Folk Artist</option>
+                <option>Standup Comedian</option>
+                <option>Any Other Art Form</option>
             </select>
             <SubscribeButton />
         </div>
