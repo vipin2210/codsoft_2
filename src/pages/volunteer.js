@@ -142,7 +142,7 @@ export const volunteer = () => {
                                         {...register("date")}
                                     />
                                 </div>
-                                <button className="border uppercase px-[50px] py-[15px] rounded-lg mt-5 hover:bg-neutral-800 bg-[#ff0000] ">
+                                <button className="border w-full  sm:w-fit uppercase px-[50px] py-[15px] rounded-lg mt-5 hover:bg-neutral-800 bg-[#ff0000] ">
                                     Submit
                                 </button>
 
