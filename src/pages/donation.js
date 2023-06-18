@@ -12,7 +12,8 @@ const donation = () => {
             <Navbar />
             <Header
                 image='/banner/donationbanner.jpg'
-                name='Donation'
+                
+                img='/DONATION.png'
                 page='Donation'
             />
 

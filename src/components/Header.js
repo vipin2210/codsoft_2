@@ -1,16 +1,12 @@
 import React from "react";
 import Breadcrum from "./Breadcrum";
 
-const Header = ({ image, name, page }) => {
+const Header = ({ image, name, img, page }) => {
     return (
         <div className=''>
-            <img
-                className='object-fill  h-96 w-full'
-                src={image}
-                alt={image}
-            />
+            <img className='object-fill  h-96 w-full' src={image} alt={image} />
 
-            <Breadcrum name={name} page={page} />
+            <Breadcrum name={name} img={img} page={page} />
         </div>
     );
 };

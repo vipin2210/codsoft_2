@@ -12,7 +12,7 @@ const mission = () => {
             <div className='mb-8'>
                 <Header
                     image='/banner/ourmissionbanner.jpg'
-                    name='Mission'
+                    img='missionHead.png'
                     page='Mission'
                 />
 
