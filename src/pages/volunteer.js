@@ -28,7 +28,7 @@ export const volunteer = () => {
 
                             <div>
                                 <label className=" font-extrabold" htmlFor="namec">
-                                    Name
+                                    Name<span className="text-red-500 text-[18px]"> *</span>
                                 </label>
                                 <input
                                     className=" w-full border-4 rounded-md p-1  text-black text-[14px]"
@@ -40,7 +40,7 @@ export const volunteer = () => {
                             </div>
                             <div>
                                 <label className=" font-extrabold" htmlFor="age">
-                                    Age
+                                    Age<span className="text-red-500 text-[18px]"> *</span>
                                 </label>
                                 <input
                                     className=" w-full border-4 rounded-md p-1  text-black text-[14px]"
@@ -52,7 +52,7 @@ export const volunteer = () => {
                             </div>
                             <div>
                                 <label className=" font-extrabold" htmlFor="qua">
-                                    Qualification
+                                    Qualification<span className="text-red-500 text-[18px]"> *</span>
                                 </label>
                                 <input
                                     className=" w-full border-4 rounded-md p-1   text-black text-[14px]"
@@ -64,7 +64,7 @@ export const volunteer = () => {
                             </div>
                             <div>
                                 <label className=" font-extrabold" htmlFor="loc">
-                                    Location
+                                    Location<span className="text-red-500 text-[18px]"> *</span>
                                 </label>
                                 <input
                                     className=" w-full border-4 rounded-md p-1   text-black text-[14px]"
@@ -77,7 +77,7 @@ export const volunteer = () => {
                             </div>
                             <div>
                                 <label className=" font-extrabold" htmlFor="con">
-                                    Emergency Contact No.
+                                    Emergency Contact No.<span className="text-red-500 text-[18px]"> *</span>
                                 </label>
                                 <input
                                     className=" w-full border-4 rounded-md p-1 text-black text-[14px]"
@@ -93,7 +93,7 @@ export const volunteer = () => {
 
                             <div>
                                 <label className=" font-extrabold" htmlFor="aadhar">
-                                    Aadhar Card No.
+                                    Aadhar Card No.<span className="text-red-500 text-[18px]"> *</span>
                                 </label>
                                 <input
                                     className=" w-full border-4 rounded-md p-1   text-black text-[14px]"
@@ -105,7 +105,7 @@ export const volunteer = () => {
                             </div>
                             <div>
                                 <label className=" font-extrabold" htmlFor="doc">
-                                    PDF for Document
+                                    PDF for Document<span className="text-red-500 text-[18px]"> *</span>
                                 </label>
                                 <input
                                     className=" w-full border-2 rounded-md p-1 bg-white  text-black text-[14px]"
@@ -117,7 +117,7 @@ export const volunteer = () => {
                             </div>
                             <div>
                                 <label className=" font-extrabold" htmlFor="photo">
-                                    Photograph
+                                    Photograph<span className="text-red-500 text-[18px]"> *</span>
                                 </label>
                                 <input
                                     className=" w-full border-2 rounded-md p-1 bg-white  text-black text-[14px]"
@@ -132,7 +132,7 @@ export const volunteer = () => {
 
                                 <div className="">
                                     <label className=" font-extrabold " htmlFor="date">
-                                        Date
+                                        Date<span className="text-red-500 text-[18px]"> *</span>
                                     </label>
                                     <input
                                         className=" w-full border-4 rounded-md p-1  text-black text-[14px]"
