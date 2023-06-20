@@ -26,7 +26,7 @@ export const JoinAsArtist = () => {
                     <div className='flex flex-col md:flex-row gap-9'>
                         <div className='flex flex-col gap-5 md:w-1/2 '>
                             <div className='flex flex-col justify-start md:hidden'>
-                                <div className='font-extrabold'>Event Name</div>
+                                <div className='font-extrabold'>Event Name<span className="text-red-500 text-[18px]"> *</span></div>
                                 <label htmlFor='event'>
                                     <input
                                         {...register("fu", { required: true })}
@@ -84,7 +84,7 @@ export const JoinAsArtist = () => {
                                     className=' font-extrabold'
                                     htmlFor='namec'
                                 >
-                                    Name
+                                    Name<span className="text-red-500 text-[18px]"> *</span>
                                 </label>
                                 <input
                                     className=' w-full border-4 rounded-md p-1  text-black text-[14px]'
@@ -99,7 +99,7 @@ export const JoinAsArtist = () => {
                                     className=' font-extrabold'
                                     htmlFor='age'
                                 >
-                                    Age
+                                    Age<span className="text-red-500 text-[18px]"> *</span>
                                 </label>
                                 <input
                                     className=' w-full border-4 rounded-md p-1  text-black text-[14px]'
@@ -114,7 +114,7 @@ export const JoinAsArtist = () => {
                                     className=' font-extrabold'
                                     htmlFor='contact'
                                 >
-                                    Contact No.
+                                    Contact No.<span className="text-red-500 text-[18px]"> *</span>
                                 </label>
                                 <input
                                     className=' w-full border-4 rounded-md p-1   text-black text-[14px]'
@@ -129,7 +129,7 @@ export const JoinAsArtist = () => {
                                     className=' font-extrabold'
                                     htmlFor='address'
                                 >
-                                    Address
+                                    Address<span className="text-red-500 text-[18px]"> *</span>
                                 </label>
                                 <input
                                     className=' w-full border-4 rounded-md p-1   text-black text-[14px]'
@@ -144,7 +144,7 @@ export const JoinAsArtist = () => {
                                     className=' font-extrabold'
                                     htmlFor='username'
                                 >
-                                    Artist Category
+                                    Artist Category<span className="text-red-500 text-[18px]"> *</span>
                                 </label>
                                 <input
                                     className=' w-full border-4 rounded-md p-1 text-black text-[14px]'
@@ -154,7 +154,7 @@ export const JoinAsArtist = () => {
                                 />
                             </div>
                             <div className='sm:flex flex-col justify-start hidden'>
-                                <div className='font-extrabold'>Event Name</div>
+                                <div className='font-extrabold'>Event Name<span className="text-red-500 text-[18px]"> *</span></div>
                                 <label htmlFor='event'>
                                     <input
                                         {...register("fu", { required: true })}
@@ -213,7 +213,7 @@ export const JoinAsArtist = () => {
                                     className=' font-extrabold'
                                     htmlFor='location'
                                 >
-                                    Father&apos;s Name
+                                    Father&apos;s Name<span className="text-red-500 text-[18px]"> *</span>
                                 </label>
                                 <input
                                     className=' w-full border-4 rounded-md p-1   text-black text-[14px]'
@@ -228,7 +228,7 @@ export const JoinAsArtist = () => {
                                     className=' font-extrabold'
                                     htmlFor='mother'
                                 >
-                                    Mother&apos;s Name
+                                    Mother&apos;s Name<span className="text-red-500 text-[18px]"> *</span>
                                 </label>
                                 <input
                                     className=' w-full border-4 rounded-md p-1   text-black text-[14px]'
@@ -243,7 +243,7 @@ export const JoinAsArtist = () => {
                                     className=' font-extrabold'
                                     htmlFor='occu'
                                 >
-                                    Occupation
+                                    Occupation<span className="text-red-500 text-[18px]"> *</span>
                                 </label>
                                 <input
                                     className=' w-full border-4 rounded-md p-1   text-black text-[14px]'
@@ -260,7 +260,7 @@ export const JoinAsArtist = () => {
                                         className=' font-extrabold'
                                         htmlFor='instagram'
                                     >
-                                        Instagram Profile Link
+                                        Instagram Profile Link<span className="text-red-500 text-[18px]"> *</span>
                                     </label>
                                     <input
                                         className=' w-full border-4 rounded-md p-1  text-black text-[14px]'
@@ -275,7 +275,7 @@ export const JoinAsArtist = () => {
                                         className=' font-extrabold '
                                         htmlFor='date'
                                     >
-                                        Date
+                                        Date<span className="text-red-500 text-[18px]"> *</span>
                                     </label>
                                     <input
                                         className=' w-full border-4 rounded-md p-1  text-black text-[14px]'
@@ -290,7 +290,7 @@ export const JoinAsArtist = () => {
                                         className=' font-extrabold'
                                         htmlFor='date'
                                     >
-                                        Brief Intro (min 100 words)
+                                        Brief Intro (min 100 words)<span className="text-red-500 text-[18px]"> *</span>
                                     </label>
                                     <textarea
                                         className=' w-full border-4 rounded-md p-1  text-black text-[14px]'

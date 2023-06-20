@@ -13,7 +13,7 @@ const BookArtistCard = ({ props }) => {
           </h1>
         </div>
         <div className=" justify-center ">
-          <button className="  lg:text-xl  md:text-lg sm:text-xs bg-red-600  hover:bg-red-400 lg:py-2 py-2 sm:py-0 md:py-1 lg:px-4 px-6 md:px-6 rounded-md  border-2 border-gray-100 ">
+          <button className="  lg:text-xl  md:text-lg sm:text-xs bg-red-600  hover:bg-red-400 lg:py-2 py-2 sm:py-0 md:py-1 lg:px-4 px-6 md:px-6 rounded-md  border-2 border-gray-300 ">
             Book Artist
           </button>
         </div>
