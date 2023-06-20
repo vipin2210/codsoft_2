@@ -4,9 +4,9 @@ import "glider-js/glider.min.css";
 const ArtistCarsoul = () => {
   const teams = [
     {
-      photo: "/b1hariharan.png",
-      name: "Padman Shri Hariharan",
-      proffesion: "Legendary Singer",
+      photo: "/b6mcsq.png",
+      name: "MC Square",
+      proffesion: "Rapper",
     },
 
     {
@@ -20,20 +20,16 @@ const ArtistCarsoul = () => {
       name: "Master Saleem",
       proffesion: "Punjabi Singer",
     },
-    {
-      photo: "/b4jasbir.png",
-      name: "Jasbir Jassi",
-      proffesion: "Punjabi Singer",
-    },
+
     {
       photo: "/b5khan.png",
       name: "Khan Saab",
       proffesion: "Punjabi Singer",
     },
     {
-      photo: "/b6mcsq.png",
-      name: "MC Square",
-      proffesion: "Rapper",
+      photo: "/b4jasbir.png",
+      name: "Jasbir Jassi",
+      proffesion: "Punjabi Singer",
     },
     {
       photo: "/b7king.png",
@@ -59,6 +55,11 @@ const ArtistCarsoul = () => {
       photo: "/b11indian.png",
       name: "Indian Ocean Band",
       proffesion: "Musical Band",
+    },
+    {
+      photo: "/b1hariharan.png",
+      name: "Padman Shri Hariharan",
+      proffesion: "Legendary Singer",
     },
     {
       photo: "/b12jyoti.png",
@@ -98,23 +99,47 @@ const ArtistCarsoul = () => {
   ];
   return (
     <Glider
-      className="glider-container p-8  "
+      className="glider-container px-5 pt-5"
       // draggable
-      scrollPropagate
+      // scrollPropagate
       hasArrows
-      //hasDots
-      itemWidth={40}
-      slidesToShow={1}
+      itemWidth={200}
+      slidesToShow={4}
+      slidesToScroll={4}
       rewind
       exactWidth
       draggable={true}
+      // responsive={[
+      //   {
+      //     breakpoint: 850,
+      //     settings: {
+      //       slidesToShow: 2,
+      //     },
+      //   },
+      //   {
+      //     breakpoint: 1100,
+      //     settings: {
+      //       slidesToShow: 4,
+      //     },
+      //   },
+      // ]}
     >
       {teams.map((item, i) => (
-        <img
-          class="sm:h-56 sm:w-56 w-48 h-48 sm:mx-12 my-2 rounded-full  border-black border-2 "
-          src={item.photo}
-          alt="user image"
-        />
+        <div className="mx-0 sm:mx-6 md:mx-7">
+          <img
+            class="sm:h-56 sm:w-56 w-40 h-44  my-0"
+            src={item.photo}
+            alt={item.name}
+          />
+          <div className=" relative -top-20 -sm-top-14 text-white text-center mb-0 ">
+            <div className="text-center">
+              <h1 className="card-title  text-sm  md:text-sm lg:text-lg text-center sm:text-xs ">
+                {item.name}
+              </h1>
+              <h6 className=" text-sm text-center">{item.proffesion}</h6>
+            </div>
+          </div>
+        </div>
       ))}
     </Glider>
   );

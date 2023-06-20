@@ -17,7 +17,7 @@ const donation = () => {
       />
 
       <div
-        className="relative h-64  bottom-56 xl:mx-48 sm:mx-8 mx-2 bg-[#3E3E3E] rounded-2xl text-center opacity-75"
+        className="relative h-64  bottom-56 xl:mx-28 sm:mx-8 mx-2 bg-[#3E3E3E] rounded-2xl text-center opacity-75"
         style={{ backgroundBlendMode: "hard-light" }}
       >
         <h1 className="text-center text-3xl font-bold  text-red-600  p-4">
@@ -29,8 +29,9 @@ const donation = () => {
         </div>
         <SelectArtist />
       </div>
-      <div className="h-96 sm:hidden"></div>
-      <div className=" grid  justify-center   md:flex  md:justify-evenly">
+
+      <div className="h-96 sm:hidden "></div>
+      <div className=" grid justify-center md:flex md:justify-evenly  -mt-44 sm:mt-24">
         <div className=" max-w-lg text-center">
           <div className="flex gap-5 justify-center">
             <h1 className="text-5xl  mb-4">Donation</h1>
