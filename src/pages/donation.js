@@ -7,14 +7,17 @@ import SelectArtist from "@/components/SelectArtist";
 import React from "react";
 
 const donation = () => {
-  return (
-    <div>
-      <Navbar />
-      <Header
-        image="/banner/donationbanner.jpg"
-        name="Donation"
-        page="Donation"
-      />
+
+    return (
+        <div>
+            <Navbar />
+            <Header
+                image='/banner/donationbanner.jpg'
+                
+                img='/DONATION.png'
+                page='Donation'
+            />
+
 
       <div
         className="relative h-64  bottom-56 xl:mx-28 sm:mx-8 mx-2 bg-[#3E3E3E] rounded-2xl text-center opacity-75"

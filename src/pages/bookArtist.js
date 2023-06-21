@@ -108,7 +108,7 @@ const bookArtist = () => {
             <section className=''>
                 <Header
                     image='/banner/bookArtistBanner.jpg'
-                    name='BOOK ARTIST'
+                    img='/BookArtist.png'
                     page='Book Artist'
                 />
 

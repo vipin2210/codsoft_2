@@ -9,6 +9,7 @@ import SimpleCarousalComing from "@/components/SimpleCarousalComing";
 import { useState } from "react";
 import Glider from "react-glider";
 import "glider-js/glider.min.css";
+import ScrollTop from "@/components/ScrollTop";
 
 const images = [
     { img: "/Dharohar1.png" },
@@ -36,7 +37,7 @@ const pastevent = [
     },
 ];
 
-const events = () => {
+const services = () => {
     const [selectedOption, setSelectedOption] = useState("upcomingEvent");
 
     function handleChange(event) {
@@ -53,7 +54,7 @@ const events = () => {
                         className='object-fill  h-80 w-full'
                         src='/banner/eventsbanner.jpg'
                     />
-                    <Breadcrum name='Events' page='Services/Events' />
+                    <Breadcrum img='EVENTS.png' page='Services/Events' />
                     {/* Button */}
                     <div>
                         <div class='containerTab '>
@@ -594,7 +595,6 @@ const events = () => {
                                                 src='/funkaar1/9.JPG'
                                             />
                                         </div>
-                                        
                                     </Glider>
                                 </div>
 
@@ -795,8 +795,9 @@ const events = () => {
                     </div>
                 )}
             </div>
+            <ScrollTop />
         </div>
     );
 };
 
-export default events;
+export default services;

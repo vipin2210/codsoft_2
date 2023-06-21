@@ -37,7 +37,7 @@ const service = () => {
             <div className='bg-[#000215]'>
                 <Header
                     image='/banner/campaignbanner.jpg'
-                    name='Campaign'
+                    img='CAMPAIGN.png'
                     page='Services/Campaign'
                 />
 
