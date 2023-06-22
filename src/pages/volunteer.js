@@ -1,19 +1,18 @@
+import Navbar from "@/components/Navbar";
 import React from "react";
 import { useForm } from "react-hook-form";
-
-import Navbar from "@/components/Navbar";
-
-export const FormHelpPartner = () => {
+export const Volunteer = () => {
     const form = useForm();
-    const { register, control } = form;
+    const { register } = form;
     return (
-        // bg-[#0e101c]
         <div>
             <Navbar />
             <div className='flex flex-col justify-center bg-[#0e101c]'>
-                <div className=' text-center sm:text-start font-bold text-[#FFD12F]  p-10 border-b-2 border-[rgb(79,98,148)]'>
-                    <h1 className='text-4xl'>HelpArtistIndia Partner</h1>
-                    <p className='text-white mt-2'>
+                <div className=' font-bold text-[#FFD12F]  p-10 border-b-2 border-[hsl(223,30%,45%)] text-center'>
+                    <h1 className='text-4xl md:text-center'>
+                        Help Artist India Volunteer
+                    </h1>
+                    <p className='text-white mt-2 '>
                         This free lorem ipsum generator lets you choose how many
                         sentences, paragraphs or list items you want. You can
                         also select to include HTML markup and specify how big
@@ -24,13 +23,13 @@ export const FormHelpPartner = () => {
 
                 <form className='flex flex-col gap-5 items-center m-10  text-white'>
                     <div className='flex flex-col md:flex-row gap-9'>
-                        <div className='flex flex-col gap-5 '>
+                        <div className='flex flex-col gap-5 md:w-1/2 '>
                             <div>
                                 <label
                                     className=' font-extrabold'
                                     htmlFor='namec'
                                 >
-                                    Name of the Org\Company
+                                    Name
                                     <span className='text-red-500 text-[18px]'>
                                         {" "}
                                         *
@@ -40,16 +39,16 @@ export const FormHelpPartner = () => {
                                     className=' w-full border-4 rounded-md p-1  text-black text-[14px]'
                                     type='text'
                                     id='namec'
+                                    required
                                     {...register("namec")}
                                 />
                             </div>
-
                             <div>
                                 <label
                                     className=' font-extrabold'
-                                    htmlFor='gstNo'
+                                    htmlFor='age'
                                 >
-                                    GST No.
+                                    Age
                                     <span className='text-red-500 text-[18px]'>
                                         {" "}
                                         *
@@ -57,92 +56,35 @@ export const FormHelpPartner = () => {
                                 </label>
                                 <input
                                     className=' w-full border-4 rounded-md p-1  text-black text-[14px]'
-                                    type='text'
-                                    id='gstNo.'
-                                    {...register("gstNo")}
+                                    type='number'
+                                    id='age'
+                                    required
+                                    {...register("age")}
                                 />
                             </div>
                             <div>
                                 <label
                                     className=' font-extrabold'
-                                    htmlFor='aadhar'
+                                    htmlFor='qua'
                                 >
-                                    Aadhar Card of the Org
+                                    Qualification
                                     <span className='text-red-500 text-[18px]'>
                                         {" "}
                                         *
                                     </span>
                                 </label>
                                 <input
-                                    className=' w-full border-4 rounded-md p-1   text-black   text-[14px] bg-white '
-                                    type='file'
-                                    id='aadhar'
-                                    {...register("aadharcard")}
-                                />
-                            </div>
-                            <div className='hidden md:block'>
-                                <label
-                                    className=' font-extrabold'
-                                    htmlFor='purpose'
-                                >
-                                    Purpose
-                                    <span className='text-red-500 text-[18px]'>
-                                        {" "}
-                                        *
-                                    </span>
-                                </label>
-                                <textarea
-                                    className=' block w-full border-4 rounded-md p-1  text-black text-[14px] h-28'
+                                    className=' w-full border-4 rounded-md p-1   text-black text-[14px]'
                                     type='text'
-                                    id='purpose'
-                                    rows='8'
-                                    placeholder='Write....'
-                                    {...register("purpose")}
+                                    id='qua'
+                                    required
+                                    {...register("qua")}
                                 />
                             </div>
-                            <div className=' block md:hidden'>
-                                <label
-                                    className=' font-extrabold'
-                                    htmlFor='pancard'
-                                >
-                                    PAN Card of the Org
-                                    <span className='text-red-500 text-[18px]'>
-                                        {" "}
-                                        *
-                                    </span>
-                                </label>
-                                <input
-                                    className=' w-full border-4 rounded-md p-1   text-black   text-[14px] bg-white '
-                                    type='file'
-                                    id='pancard'
-                                    {...register("pancard")}
-                                />
-                            </div>
-                        </div>
-                        <div className='flex flex-col gap-5 '>
                             <div>
                                 <label
                                     className=' font-extrabold'
-                                    htmlFor='username'
-                                >
-                                    Name of the Contact Person
-                                    <span className='text-red-500 text-[18px]'>
-                                        {" "}
-                                        *
-                                    </span>
-                                </label>
-                                <input
-                                    className=' w-full border-4 rounded-md p-1 text-black text-[14px]'
-                                    type='text'
-                                    id='username'
-                                    {...register("username")}
-                                />
-                            </div>
-
-                            <div>
-                                <label
-                                    className=' font-extrabold'
-                                    htmlFor='location'
+                                    htmlFor='loc'
                                 >
                                     Location
                                     <span className='text-red-500 text-[18px]'>
@@ -153,53 +95,93 @@ export const FormHelpPartner = () => {
                                 <input
                                     className=' w-full border-4 rounded-md p-1   text-black text-[14px]'
                                     type='text'
-                                    id='location'
-                                    {...register("location")}
+                                    id='loc'
+                                    required
+                                    {...register("loc")}
                                 />
                             </div>
-                            <div className='hidden md:block'>
+                            <div>
                                 <label
                                     className=' font-extrabold'
-                                    htmlFor='pancard'
+                                    htmlFor='con'
                                 >
-                                    PAN Card of the Org
+                                    Emergency Contact No.
                                     <span className='text-red-500 text-[18px]'>
                                         {" "}
                                         *
                                     </span>
                                 </label>
                                 <input
-                                    className=' w-full border-4 rounded-md p-1 text-black   text-[14px] bg-white '
-                                    type='file'
-                                    id='pancard'
-                                    {...register("pancard")}
+                                    className=' w-full border-4 rounded-md p-1 text-black text-[14px]'
+                                    type='text'
+                                    id='con'
+                                    {...register("con")}
                                 />
                             </div>
-                            <div className='block md:hidden'>
+                        </div>
+                        <div className='flex flex-col gap-5 '>
+                            <div>
                                 <label
                                     className=' font-extrabold'
-                                    htmlFor='purpose'
+                                    htmlFor='aadhar'
                                 >
-                                    Purpose
+                                    Aadhar Card No.
                                     <span className='text-red-500 text-[18px]'>
                                         {" "}
                                         *
                                     </span>
                                 </label>
-
-                                <textarea
-                                    className='  w-full border-4 rounded-md p-1  text-black text-[14px] h-28'
-                                    type='text'
-                                    id='purpose'
-                                    rows='8'
-                                    placeholder='Write....'
-                                    {...register("purpose")}
+                                <input
+                                    className=' w-full border-4 rounded-md p-1   text-black text-[14px]'
+                                    type='number'
+                                    id='aadhar'
+                                    {...register("aadhar")}
+                                    required
                                 />
                             </div>
                             <div>
+                                <label
+                                    className=' font-extrabold'
+                                    htmlFor='doc'
+                                >
+                                    PDF for Document
+                                    <span className='text-red-500 text-[18px]'>
+                                        {" "}
+                                        *
+                                    </span>
+                                </label>
+                                <input
+                                    className=' w-full border-2 rounded-md p-1 bg-white  text-black text-[14px]'
+                                    type='file'
+                                    id='doc'
+                                    required
+                                    {...register("doc")}
+                                />
+                            </div>
+                            <div>
+                                <label
+                                    className=' font-extrabold'
+                                    htmlFor='photo'
+                                >
+                                    Photograph
+                                    <span className='text-red-500 text-[18px]'>
+                                        {" "}
+                                        *
+                                    </span>
+                                </label>
+                                <input
+                                    className=' w-full border-2 rounded-md p-1 bg-white  text-black text-[14px]'
+                                    type='file'
+                                    id='photo'
+                                    required
+                                    {...register("photo")}
+                                />
+                            </div>
+
+                            <div className=''>
                                 <div className=''>
                                     <label
-                                        className=' font-extrabold'
+                                        className=' font-extrabold '
                                         htmlFor='date'
                                     >
                                         Date
@@ -212,21 +194,19 @@ export const FormHelpPartner = () => {
                                         className=' w-full border-4 rounded-md p-1  text-black text-[14px]'
                                         type='date'
                                         id='date'
+                                        required
                                         {...register("date")}
                                     />
                                 </div>
-
-                                <button className=' w-full sm:w-fit  border   uppercase px-[50px] py-[15px] rounded-lg mt-5 bg-[#FF0000]  text-white hover:bg-neutral-800'>
+                                <button className='border w-full  sm:w-fit uppercase px-[50px] py-[15px] rounded-lg mt-5 hover:bg-neutral-800 bg-[#ff0000] '>
                                     Submit
                                 </button>
                             </div>
                         </div>
                     </div>
                 </form>
-                {/* <DevTool control={control} /> */}
             </div>
         </div>
     );
 };
-
-export default FormHelpPartner;
+export default Volunteer;

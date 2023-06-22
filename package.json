@@ -11,6 +11,7 @@
   "dependencies": {
     "@glidejs/glide": "^3.6.0",
     "@headlessui/react": "^1.7.14",
+    "@hookform/devtools": "^4.3.1",
     "@material-tailwind/react": "^2.0.1",
     "autoprefixer": "10.4.14",
     "embla-carousel-autoplay": "^8.0.0-rc05",
@@ -28,6 +29,7 @@
     "react-hook-form": "^7.44.3",
     "react-icons": "^4.9.0",
     "react-phone-number-input": "^3.2.23",
+    "react-radio-buttons": "^1.2.2",
     "react-responsive-carousel": "^3.2.23",
     "react-scroll-up-button": "^1.6.4",
     "styled-components": "^5.3.11",

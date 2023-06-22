@@ -82,7 +82,7 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
     const videoRef = useRef();
     const setPlayBack = () => {
-        videoRef.current.playbackRate = 0.4;
+        videoRef.current.playbackRate = 0.2;
     };
     return (
         <main>
