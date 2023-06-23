@@ -116,8 +116,24 @@ const SelectArtist = () => {
           </h1>
         </div>
 
-        <div className="-mt-9">
-          <div>
+        <div className="-mt-7 mb-4">
+          <div className=" sm:flex  mx-8">
+            <div className="grow  ">
+              <label for="default-input" className="block mb-2 text-sm " />
+              <input
+                type="text"
+                id="default-input"
+                placeholder="Message..."
+                className="w-full h-12 sm:rounded-l-lg border-2 border-black sm:border-r-0 !outline-none"
+              />
+            </div>
+            <div className="grow-0 w-28 sm:w-[20%] h-12  p-2 sm:rounded-r-lg bg-white border-2 border-black sm:border-l-0 text-center  mt-2  mx-auto sm:mx-0">
+              <div className=" bg-black h-full w-full  rounded-md">
+                <button className="text-white p-1">Submit</button>
+              </div>
+            </div>
+          </div>
+          {/* <div>
             <div className="flex flex-col p-3  w-full">
               <div className="grid grid-flow-row sm:grid-flow-col">
                 <div
@@ -138,7 +154,7 @@ const SelectArtist = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
