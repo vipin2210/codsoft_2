@@ -1,5 +1,6 @@
 import React from "react";
 
+//BookArtist
 const BookArtistCard = ({ props }) => {
   const { photo, name, proffesion } = props;
   return (
